@@ -4,11 +4,11 @@
 PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 15
-  productGUID: f0c961a107a2c9d42bb8f3ddd2433d2e
+  productGUID: 8faaddd52019f6a4db2061babf68dcae
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
-  defaultScreenOrientation: 4
+  defaultScreenOrientation: 3
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
@@ -580,9 +580,9 @@ PlayerSettings:
   facebookXfbml: 0
   facebookFrictionlessRequests: 1
   apiCompatibilityLevel: 6
-  cloudProjectId: 17b623ac-3763-4e68-b043-271a15aa04d7
+  cloudProjectId: 05ff96b3-ec4d-41ac-a0d1-b2ee23615620
   framebufferDepthMemorylessMode: 0
-  projectName: Bear Stories
+  projectName: Bear Stories (1)
   organizationId: colin-venida
   cloudEnabled: 0
   enableNativePlatformBackendsForNewInputSystem: 0
