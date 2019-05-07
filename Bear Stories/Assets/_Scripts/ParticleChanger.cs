@@ -5,13 +5,11 @@ using UnityEngine.UI;
 
 public class ParticleChanger : MonoBehaviour
 {
-    public Dropdown particleDrop;
-    //public Image icon;
-    public Texture[] partTextures;
-    public ParticleSystem partSystem;
+    public Dropdown particleDrop;    
+    public Texture[] partTextures;   
     public ParticleSystemRenderer partRend;
+    public Image sky;
 
-    //private bool isOn = true;
 
     public void ChangeParticle( int selection )
     {
@@ -20,14 +18,17 @@ public class ParticleChanger : MonoBehaviour
         {
             case 0:
                 partRend.enabled = true;
+                sky.color = new Color32( 161, 181, 191, 255 );
                 partRend.material.mainTexture = partTextures[0];
                 break;
             case 1:
                 partRend.enabled = true;
+                sky.color = new Color32( 112, 128, 135, 255 );
                 partRend.material.mainTexture = partTextures[1];
                 break;
             case 2: //off
                 partRend.enabled = false;
+                sky.color = new Color32( 154, 217, 245, 255 );                
                 break;
             default:
                 break;
