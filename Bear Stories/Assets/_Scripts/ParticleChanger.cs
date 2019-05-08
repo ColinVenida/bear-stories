@@ -8,6 +8,7 @@ public class ParticleChanger : MonoBehaviour
     public Dropdown particleDrop;    
     public Texture[] partTextures;   
     public ParticleSystemRenderer partRend;
+    public ParticleSystem partSystem;
     public Image sky;
 
 
@@ -16,26 +17,29 @@ public class ParticleChanger : MonoBehaviour
         //particleDrop.
         switch( selection)
         {
-            case 0:
-                partRend.enabled = true;
+            case 0:  //sun                
+                partSystem.Stop();
+                sky.color = new Color32( 154, 217, 245, 255 );
+                break;                
+            case 1:  //rain                   
                 sky.color = new Color32( 161, 181, 191, 255 );
-                partRend.material.mainTexture = partTextures[0];
-                break;
-            case 1:
-                partRend.enabled = true;
+                partRend.material.mainTexture = partTextures[0];                
+                partSystem.Play();
+                break;                
+            case 2: //snow                
                 sky.color = new Color32( 112, 128, 135, 255 );
                 partRend.material.mainTexture = partTextures[1];
-                break;
-            case 2: //off
-                partRend.enabled = false;
-                sky.color = new Color32( 154, 217, 245, 255 );                
+                partSystem.Play();
                 break;
             default:
                 break;
         }   //end switch
     }
 
-
+    private void Start()
+    {
+        partSystem.Stop(); 
+    }
 
     // Update is called once per frame
     void Update()

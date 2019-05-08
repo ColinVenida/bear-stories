@@ -1,0 +1,14 @@
+english - spanish - german
+
+the [color] elephant - el elefante [color] - der [color] elefant
+
+gray - gris - graue
+red - rojo - roter 
+green - verde - grüner
+blue - azul - blaue
+yellow - amarillo - gelbe
+pink - rosa - rosa
+
+sat in the sun - se sentó al sol - saß in der Sonne
+sat in the rian - se sentó en la lluvia - saß im Regen
+sat in the snow - se sentó en la nieve - saß im Schnee
