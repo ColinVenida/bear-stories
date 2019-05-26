@@ -1,0 +1,26 @@
+========Task List========
+magic button
+-finalize artwork
+	-finalize png image
+	-finalize paticle effect
+
+story formatting
+-create class that auto formats text depending on the language
+	-discuss language gramar with Alec to see if there are
+	common word patterns
+
+image swapper
+-create class/prefab that swaps a GameObject's image
+
+animation
+-learn/use Unity's animation tools and get objects to animate
+on a button click
+
+artwork design
+-complete page designs, (possibly with Rick?)
+
+Meet with Rick to discuss artwork/story/payment
+
+Meet with Alec to discuss story changes/translations/payment
+
+=======Completed Tasks=======
