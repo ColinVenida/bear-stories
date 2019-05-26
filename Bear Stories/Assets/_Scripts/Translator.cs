@@ -31,17 +31,17 @@ public class Translator : MonoBehaviour
         {
             case 0:  //English
                 story1.text = "Harold, the";
-                story2.text = "sat in the";
+                story2.text = "dances in the";
                 break;
 
             case 1:  //Español (spanish)  
                 story1.text = "Harold, el";
-                story2.text = "se sentó";                
+                story2.text = "baila";                
                 break;
 
             case 2:  //Deutsch  (german)
                 story1.text = "Harold, der";
-                story2.text = "saß";                
+                story2.text = "tanzt herein";               
                 break;
 
             default:
