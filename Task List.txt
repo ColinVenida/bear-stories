@@ -1,20 +1,43 @@
 ========Task List========
+
+-------------------
 magic button
 -finalize artwork
 	-finalize png image
 	-finalize paticle effect
+
+animation
+-learn/use Unity's animation tools and get objects to animate
+on a button click
+
+image swapper
+-create class/prefab that swaps a GameObject's image
+
+**redesign GameObject architecture
+	-which objects should animator, animator controller, etc. go?
+		-on the image we're animating, on a new gameobject?
+
+-------------------
 
 story formatting
 -create class that auto formats text depending on the language
 	-discuss language gramar with Alec to see if there are
 	common word patterns
 
-image swapper
--create class/prefab that swaps a GameObject's image
+-create monobehavior that labels text boxes "noun," "adjective," "verb" etc.
 
-animation
--learn/use Unity's animation tools and get objects to animate
-on a button click
+
+-------------------
+
+UI
+scene for story selection
+design a scene for the reader to choose a story
+
+page turning animation
+create an animation that simulates a page turning in the story
+
+
+
 
 artwork design
 -complete page designs, (possibly with Rick?)
