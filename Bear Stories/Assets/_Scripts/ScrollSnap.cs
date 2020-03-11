@@ -23,9 +23,7 @@ public class ScrollSnap : MonoBehaviour
             //OnEnable() of the actual DropdownList object is called
 
         //dividing (parentDrop.value + 1) / (total items in the Dropdown) shows us how far down the viewport we need to go
-        float y = contentTrans.rect.height * (parentDrop.value + 1 / parentDrop.options.Count);        
-        contentTrans.position = new Vector3 ( 0 , y);      
+        float y = contentTrans.rect.height * (parentDrop.value + 1 / parentDrop.options.Count);
+        contentTrans.position = new Vector3( contentTrans.position.x, y );        
     }
-
-  
 }
