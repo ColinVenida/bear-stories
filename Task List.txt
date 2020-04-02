@@ -29,7 +29,7 @@ Create/Design scenes that accomodate multiple pages
 			Book
 				Page Array[]
 					Pages
-				Page Controls
+					Page Controls
 			Language Controls
 			Voice Over Controls
 
