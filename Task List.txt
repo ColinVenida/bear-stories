@@ -1,23 +1,11 @@
 ========Task List========
 
--------------------
-magic button
--finalize artwork
-	-finalize png image
-	-finalize paticle effect
 
-animation
--learn/use Unity's animation tools and get objects to animate
-on a button click
-
+===Design and Programming Tasks===
+----------------------------------
 image swapper
--create class/prefab that swaps a GameObject's image
+-create class/prefab that swaps a GameObject's image on button push
 
-**redesign GameObject architecture
-	-which objects should animator, animator controller, etc. go?
-		-on the image we're animating, on a new gameobject?
-
--------------------
 
 story formatting
 -create class that auto formats text depending on the language
@@ -26,24 +14,61 @@ story formatting
 
 -create monobehavior that labels text boxes "noun," "adjective," "verb" etc.
 
+-design/create a scene for the reader to choose a story
 
+
+Create/Design scenes that accomodate multiple pages
+-have dropdown options saved between pages
+-create an animation that simulates a page turning in the story
+*NOTE* a simple design is have page turning buttons up in the front of the story, separated from the Page Game Objects.
+	This can also apply to the Language and Voice Over Controls
+
+	eg.
+		Main Camera
+		Canvas
+			Book
+				Page Array[]
+					Pages
+				Page Controls
+			Language Controls
+			Voice Over Controls
+
+	-Create a Book Prefab, and a Page Prefab
+		A Book object will have an array of Pages and UI controls for the Pages
+
+-compile a list of art assets needed for each story.  Send list to Rick and discuss payment.
+
+
+===UI Art Tasks===
 -------------------
+magic button
+-finalize artwork
+	-finalize png image
+	-finalize paticle effect
 
-UI
-scene for story selection
-design a scene for the reader to choose a story
-
-page turning animation
-create an animation that simulates a page turning in the story
-
-
+Create UI Art that reflects the theme of the story
+	eg. Jungle theme, Space theme, etc.
 
 
-artwork design
--complete page designs, (possibly with Rick?)
+===Bugs===
+----------
 
-Meet with Rick to discuss artwork/story/payment
+Weather Particle effect is not consistent when switching pages
+	-there is no rain/snow when the option is selected, or it rains/snows when the sun is selected
+	-the Play On Awake check box makes it 
 
-Meet with Alec to discuss story changes/translations/payment
 
 =======Completed Tasks=======
+-----------------------------
+
+-Talk with Alec about writing very 5 short stories for the project
+
+***Notes on the animation tools are in a txt file with youtube tutorial link***
+	"Unity Animator Notes"
+animation
+-learn/use Unity's animation tools and get objects to animate
+on a button click
+
+**redesign GameObject architecture
+	-which objects should animator, animator controller, etc. go?
+		-on the image we're animating, on a new gameobject?
