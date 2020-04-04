@@ -9,7 +9,8 @@ public class PageController : MonoBehaviour
     public Button btnNext;
     public Button btnPrev;
 
-    private int currentPage;
+    public Text pageNumber;
+    private int currentPage;    
 
     public void NextPage()
     {
@@ -63,6 +64,10 @@ public class PageController : MonoBehaviour
             btnNext.gameObject.SetActive( true );
             btnPrev.gameObject.SetActive( true );
         }
+
+        //update the page number
+        pageNumber.text = ( (currentPage + 1).ToString() + "/" + PageArray.Length.ToString() );
+
     }
 
     // Start is called before the first frame update
