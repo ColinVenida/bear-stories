@@ -1,11 +1,66 @@
 ========Task List========
 
 
+====Create a Demo====
+---------------------
+
+complete UI Art Tasks
+complete TestScene tasks
+complete Youtube video
+
+
+
+===UI Art Tasks===
+-------------------
+magic button
+-finalize artwork
+	-finalize button image
+	-finalize the play/pause sprites
+	-finalize button's paticle effect
+	-create a particle effect that plays on the affected game object (eg. swapping an image, playing a sound, starting an animation)
+
+Create UI Art that reflects the theme of the story
+	-artwork will go on the buttons/borders of the scene
+	eg. Jungle theme, Space theme, etc.
+
+
+Update BookSelect Scene UI artwork
+	-put in a texture pattern for the background
+	-create a border/background for the title and ScrollRect
+	-create a border for each BookCover (?)
+	-find a stylized font
+
+Creat MainMenu btn Art (Home Icon?)
+
+
+===TestScene===
+---------------
+Complete the TestScene Book ("Harolds Day")
+
+outline:
+	Cover/title
+		dancing (complete)
+		sleeping (elephant dreams of [blank])
+	Ending
+
+Pages need to be Translated into spanish and german
+
+
+===Deployment Tasks===
+----------------------
+
+Build a APK and test on the phone/tablet
+
+Build Android Bundle and submit to the Google Play store
+
+Create a Youtube video that shows a demo for book
+	-Write script and go through the story
+
+
 ===Design and Programming Tasks===
 ----------------------------------
 image swapper
 -create class/prefab that swaps a GameObject's image on button push
-
 
 story formatting
 -create class that auto formats text depending on the language
@@ -14,8 +69,28 @@ story formatting
 
 -create monobehavior that labels text boxes "noun," "adjective," "verb" etc.
 
--design/create a scene for the reader to choose a story
+-compile a list of art assets needed for each story.  Send list to Rick and discuss payment.
 
+
+
+===Bugs===
+----------
+
+Weather Particle effect is not consistent when switching pages
+	-there is no rain/snow when the option is selected, or it rains/snows when the sun is selected
+	-the Play On Awake check box makes it inconsistent
+		//create a bool variable weatherActivated (?) that checks during OnAwake()
+
+
+=======Completed Tasks=======
+-----------------------------
+
+4/6/2020
+========
+
+-design/create a scene for the reader to choose a story
+***Project now has a home scene that allows users to choose the story.  Created a ScrollRect and a BookCover prefab that enlarges the cover
+when the BookCover is pressed
 
 Create/Design scenes that accomodate multiple pages
 -have dropdown options saved between pages
@@ -36,30 +111,10 @@ Create/Design scenes that accomodate multiple pages
 	-Create a Book Prefab, and a Page Prefab
 		A Book object will have an array of Pages and UI controls for the Pages
 
--compile a list of art assets needed for each story.  Send list to Rick and discuss payment.
+***Created a Page, and Book prefabs with supporting scripts.  All universal GameObjets should be 
+encapsulated inside these prefabs.  Will update prefabs as needed.
 
-
-===UI Art Tasks===
--------------------
-magic button
--finalize artwork
-	-finalize png image
-	-finalize paticle effect
-
-Create UI Art that reflects the theme of the story
-	eg. Jungle theme, Space theme, etc.
-
-
-===Bugs===
-----------
-
-Weather Particle effect is not consistent when switching pages
-	-there is no rain/snow when the option is selected, or it rains/snows when the sun is selected
-	-the Play On Awake check box makes it 
-
-
-=======Completed Tasks=======
------------------------------
+=======
 
 -Talk with Alec about writing very 5 short stories for the project
 
