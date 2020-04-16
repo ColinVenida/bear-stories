@@ -15,9 +15,9 @@ public class Translator : MonoBehaviour
     public Text story1;
     public Text story2;
 
-    private string[] engColors = { "Gray Elephant", "Red Elephant", "Green Elephant", "Blue Elephant", "Yellow Elephant", "Pink Elephant" };
-    private string[] espColors = { "Elefante Gris", "Elefante Rojo", "Elefante Verde", "Elefante Azul", "Elefante Amarillo", "Elefante Rosa" };
-    private string[] deuColors = { "Graue Elefant", "Roter Elefant", "Grüner Elefant", "Blaue Elefant", "Gelbe Elefant", "Rosa Elefant" };
+    private string[] engColors = { "gray elephant", "red elephant", "green elephant", "blue elephant", "yellow elephant", "pink elephant" };
+    private string[] espColors = { "elefante gris", "elefante rojo", "elefante verde", "elefante azul", "elefante amarillo", "elefante rosa" };
+    private string[] deuColors = { "graue Elefant", "roter Elefant", "grüner Elefant", "blaue Elefant", "gelbe Elefant", "rosa Elefant" };
 
     private string[] engPart = { "sun", "rain", "snow" };
     private string[] espPart = { "al sol", "en la lluvia", "en la nieve" };
@@ -41,7 +41,7 @@ public class Translator : MonoBehaviour
 
             case 2:  //Deutsch  (german)
                 story1.text = "Harold, der";
-                story2.text = "tanzt herein";               
+                story2.text = "tanzt";               
                 break;
 
             default:

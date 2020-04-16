@@ -7991,17 +7991,17 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Gray Elephant,
+    - m_Text: gray elephant,
       m_Image: {fileID: 0}
-    - m_Text: Red Elephant,
+    - m_Text: red elephant,
       m_Image: {fileID: 0}
-    - m_Text: Green Elephant,
+    - m_Text: green elephant,
       m_Image: {fileID: 0}
-    - m_Text: Blue Elephant,
+    - m_Text: blue elephant,
       m_Image: {fileID: 0}
-    - m_Text: Yellow Elephant,
+    - m_Text: yellow elephant,
       m_Image: {fileID: 0}
-    - m_Text: Pink Elephant,
+    - m_Text: pink elephant,
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -8841,6 +8841,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Book
       objectReference: {fileID: 0}
+    - target: {fileID: 8144410372241159197, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: colorDrop
+      value: 
+      objectReference: {fileID: 677192903}
+    - target: {fileID: 8144410372241159197, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: partDrop
+      value: 
+      objectReference: {fileID: 991911781}
     - target: {fileID: 8144410372999417330, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8961,16 +8971,6 @@ PrefabInstance:
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: ChangeLanguage
       objectReference: {fileID: 0}
-    - target: {fileID: 8144410372241159197, guid: 9ee88b85f6b820c4e95efb1665b12224,
-        type: 3}
-      propertyPath: colorDrop
-      value: 
-      objectReference: {fileID: 677192903}
-    - target: {fileID: 8144410372241159197, guid: 9ee88b85f6b820c4e95efb1665b12224,
-        type: 3}
-      propertyPath: partDrop
-      value: 
-      objectReference: {fileID: 991911781}
     - target: {fileID: 8095912161035737632, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_Text
@@ -9758,7 +9758,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Gray Elephant,
+  m_Text: gray elephant,
 --- !u!222 &989419533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9894,11 +9894,11 @@ MonoBehaviour:
   m_Value: 0
   m_Options:
     m_Options:
-    - m_Text: Sun
+    - m_Text: sun
       m_Image: {fileID: 21300000, guid: 39c8702f4bd78ec459083ed263e15b3f, type: 3}
-    - m_Text: Rain
+    - m_Text: rain
       m_Image: {fileID: 21300000, guid: 48eb10522e3e4394b9df2b62cf12726a, type: 3}
-    - m_Text: Snow
+    - m_Text: snow
       m_Image: {fileID: 21300000, guid: 49621c7dc1649ba4ca96b04da9093330, type: 3}
   m_OnValueChanged:
     m_PersistentCalls:
@@ -13292,7 +13292,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Sun
+  m_Text: sun
 --- !u!222 &1896360341
 CanvasRenderer:
   m_ObjectHideFlags: 0
