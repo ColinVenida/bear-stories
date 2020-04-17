@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/_Stories/BookSelect/BookSelect.unity
+    path: Assets/_Scenes/BookSelect.unity
     guid: 292821969604fb84084e74dd3599f0ce
   - enabled: 1
-    path: Assets/_Stories/TestStory/Scenes/TestScene.unity
+    path: Assets/_Scenes/TestScene.unity
     guid: 114adee787acde34d8c69a17c3ead927
   m_configObjects: {}
