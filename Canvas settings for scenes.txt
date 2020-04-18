@@ -1,0 +1,8 @@
+Canvas settings for scenes
+
+Canvas 	> Canvas > Render Mode > Screen Space - Overlay
+	> Canvas Scaler > UI Scale Mode > Scale with screen Size
+			> Reference Resolution > [2160, 1080]
+			> Screen Match Mode > Expand
+			>Reference Pixels Per Unit > 100
+	

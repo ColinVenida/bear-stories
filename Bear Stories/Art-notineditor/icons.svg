@@ -22,6 +22,18 @@
   <defs
      id="defs1008">
     <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect916"
+       is_visible="true"
+       offset_points="0,0.13229166"
+       sort_points="true"
+       interpolator_type="CubicBezierJohan"
+       interpolator_beta="0.2"
+       start_linecap_type="zerowidth"
+       linejoin_type="extrp_arc"
+       miter_limit="4"
+       end_linecap_type="zerowidth" />
+    <inkscape:path-effect
        effect="skeletal"
        id="path-effect6996"
        is_visible="true"
@@ -47,12 +59,12 @@
      inkscape:cx="458.74395"
      inkscape:cy="924.27114"
      inkscape:document-units="px"
-     inkscape:current-layer="g7130"
+     inkscape:current-layer="layer5"
      showgrid="false"
-     inkscape:window-width="1364"
-     inkscape:window-height="683"
-     inkscape:window-x="199"
-     inkscape:window-y="50"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
@@ -137,6 +149,72 @@
        inkscape:export-ydpi="96.402161" />
   </g>
   <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="home">
+    <g
+       id="g926"
+       transform="matrix(1.2824317,0,0,1.4446698,-28.147432,-28.764493)"
+       inkscape:export-filename="C:\Users\Business Bears\Desktop\home-icon.png"
+       inkscape:export-xdpi="95.848694"
+       inkscape:export-ydpi="95.848694">
+      <path
+         sodipodi:nodetypes="ssssssssssssssssss"
+         inkscape:connector-curvature="0"
+         id="rect900"
+         d="m 43.95397,39.00265 c -2.751215,0 -4.96601,2.513511 -4.96601,5.635175 v 21.276561 c 0,3.121663 2.214795,5.634682 4.96601,5.634682 h 26.004275 c 2.751214,0 4.966011,-2.513019 4.966011,-5.634682 V 44.637825 c 0,-3.121664 -2.214797,-5.635175 -4.966011,-5.635175 z m 3.076639,15.821432 h 7.871798 c 0.979597,0 1.768512,0.894647 1.768512,2.00615 v 11.197345 c 0,1.1115 -0.788915,2.00615 -1.768512,2.00615 h -7.871798 c -0.979598,0 -1.76808,-0.89465 -1.76808,-2.00615 V 56.830232 c 0,-1.111503 0.788482,-2.00615 1.76808,-2.00615 z"
+         style="fill:#edffb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.3088688;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         transform="matrix(1.4588469,0,0,0.75502155,78.209151,62.611598)"
+         inkscape:transform-center-y="-3.1511149"
+         d="m 3.0791799,-19.089808 c -1.5727316,2.724051 -34.4197219,2.724051 -35.9924529,-10e-7 -1.572732,-2.724051 14.850763,-31.170378 17.996227,-31.170378 3.145463,0 19.5689576,28.446328 17.9962259,31.170379 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0.0873923"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.5707963"
+         sodipodi:arg1="0.52359878"
+         sodipodi:r2="10.390126"
+         sodipodi:r1="20.780252"
+         sodipodi:cy="-29.479935"
+         sodipodi:cx="-14.917047"
+         sodipodi:sides="3"
+         id="path920"
+         style="fill:#edffb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+    <g
+       id="g926-9"
+       transform="matrix(1.2824317,0,0,1.4446698,81.187768,-29.817189)"
+       inkscape:export-filename="C:\Users\Business Bears\Desktop\home-icon.png"
+       inkscape:export-xdpi="95.848694"
+       inkscape:export-ydpi="95.848694"
+       style="fill:#ab1fb7;fill-opacity:1">
+      <path
+         sodipodi:nodetypes="ssssssssssssssssss"
+         inkscape:connector-curvature="0"
+         id="rect900-3"
+         d="m 43.95397,39.00265 c -2.751215,0 -4.96601,2.513511 -4.96601,5.635175 v 21.276561 c 0,3.121663 2.214795,5.634682 4.96601,5.634682 h 26.004275 c 2.751214,0 4.966011,-2.513019 4.966011,-5.634682 V 44.637825 c 0,-3.121664 -2.214797,-5.635175 -4.966011,-5.635175 z m 3.076639,15.821432 h 7.871798 c 0.979597,0 1.768512,0.894647 1.768512,2.00615 v 11.197345 c 0,1.1115 -0.788915,2.00615 -1.768512,2.00615 h -7.871798 c -0.979598,0 -1.76808,-0.89465 -1.76808,-2.00615 V 56.830232 c 0,-1.111503 0.788482,-2.00615 1.76808,-2.00615 z"
+         style="fill:#ab1fb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.3088688;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         transform="matrix(1.4588469,0,0,0.75502155,78.209151,62.611598)"
+         inkscape:transform-center-y="-3.1511149"
+         d="m 3.0791799,-19.089808 c -1.5727316,2.724051 -34.4197219,2.724051 -35.9924529,-10e-7 -1.572732,-2.724051 14.850763,-31.170378 17.996227,-31.170378 3.145463,0 19.5689576,28.446328 17.9962259,31.170379 z"
+         inkscape:randomized="0"
+         inkscape:rounded="0.0873923"
+         inkscape:flatsided="true"
+         sodipodi:arg2="1.5707963"
+         sodipodi:arg1="0.52359878"
+         sodipodi:r2="10.390126"
+         sodipodi:r1="20.780252"
+         sodipodi:cy="-29.479935"
+         sodipodi:cx="-14.917047"
+         sodipodi:sides="3"
+         id="path920-4"
+         style="fill:#ab1fb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         sodipodi:type="star" />
+    </g>
+  </g>
+  <g
      style="display:none"
      id="g7035"
      inkscape:groupmode="layer"
@@ -172,7 +250,7 @@
      inkscape:label="Voice on"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline">
+     style="display:none">
     <g
        id="g7019"
        transform="matrix(0.45859523,0,0,0.51293155,34.753785,7.6945657)"
