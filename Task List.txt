@@ -1,17 +1,31 @@
 ========Task List========
 
+===Design and Programming Tasks===
+----------------------------------
+image swapper
+-create class/prefab that swaps a GameObject's image on button push/dropdown option
 
-====Create a Demo====
----------------------
 
-complete UI Art Tasks
-complete TestScene tasks
-complete Youtube video
+Books/Pages/Translator
+-update book/page prefabs so they have data members for their stories, translations, and voice lines
 
+-update book/page prefabs so they fill in their stories and translations on runtime
+
+-add a save/resume feature for books
+
+-create system that handles the book's text and voice translations
+
+-create class that auto formats text/UI depending on the language
+	-discuss language gramar with Alec to see if there are
+	common word patterns
+	-create monobehavior that labels text boxes "noun," "adjective," "verb" etc.
 
 
 ===UI Art Tasks===
 -------------------
+add Patreon button to the menu bar.
+	-block out and adjust menu bar for different scenes (eg. no home button on the main menu)
+
 magic button
 -finalize artwork
 	-finalize button image
@@ -22,15 +36,6 @@ magic button
 Create UI Art that reflects the theme of the story
 	-artwork will go on the buttons/borders of the scene
 	eg. Jungle theme, Space theme, etc.
-
-
-Update BookSelect Scene UI artwork
-	-put in a texture pattern for the background
-	-create a border/background for the title and ScrollRect
-	-create a border for each BookCover (?)
-	-find a stylized font
-
-Creat MainMenu btn Art (Home Icon?)
 
 
 ===TestScene===
@@ -53,23 +58,6 @@ Build a APK and test on the phone/tablet
 
 Build Android Bundle and submit to the Google Play store
 
-Create a Youtube video that shows a demo for book
-	-Write script and go through the story
-
-
-===Design and Programming Tasks===
-----------------------------------
-image swapper
--create class/prefab that swaps a GameObject's image on button push
-
-story formatting
--create class that auto formats text depending on the language
-	-discuss language gramar with Alec to see if there are
-	common word patterns
-
--create monobehavior that labels text boxes "noun," "adjective," "verb" etc.
-
--compile a list of art assets needed for each story.  Send list to Rick and discuss payment.
 
 
 
@@ -84,6 +72,31 @@ Weather Particle effect is not consistent when switching pages
 
 =======Completed Tasks=======
 -----------------------------
+
+
+4/21/2020
+=========
+reformatted books so they have consistent rendering
+adjusted particle systems for new screen sizes
+
+4/20/2020
+=========
+-compile a list of art assets needed for each story.  Send list to Rick and discuss payment.
+
+
+4/19/2020
+=========
+created first menu bar - home button, VO toggle, Settings
+	**need to add Patreon and Credits button
+
+
+
+Update BookSelect Scene UI artwork
+	-image background
+	-create a border/background for the title and ScrollRect
+	-create a border for each BookCover (?)
+	-find a stylized font
+
 
 4/6/2020
 ========

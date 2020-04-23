@@ -15,6 +15,23 @@ public class Translator : MonoBehaviour
     public Text story1;
     public Text story2;
 
+    //public page controller
+    //private int currentPage
+
+
+    //how do I access the text members of each page???
+    //** need ot create a Page class that holds all the text members/dropdowns
+        //data structure to hold the text files
+        //data structure to hold dropdowns?
+
+    //data structure to hold the book/pages?
+
+
+    //logic flow
+    // book open > translator populates text fields of all pages?
+    //pulls from txt file
+
+
     private string[] engColors = { "gray elephant", "red elephant", "green elephant", "blue elephant", "yellow elephant", "pink elephant" };
     private string[] espColors = { "elefante gris", "elefante rojo", "elefante verde", "elefante azul", "elefante amarillo", "elefante rosa" };
     private string[] deuColors = { "graue Elefant", "roter Elefant", "grüner Elefant", "blaue Elefant", "gelbe Elefant", "rosa Elefant" };

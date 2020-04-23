@@ -2,7 +2,8 @@ Canvas settings for scenes
 
 https://docs.unity3d.com/Packages/com.unity.ugui@1.0/manual/UICanvas.html
 
-Canvas 	> Canvas > Render Mode > Screen Space - Overlay
+Canvas 	> Canvas > Render Mode > Screen Space - Overlay [CHANGED]
+Canvas 	> Canvas > Render Mode > Screen Space - Camera > set the "Render Camera" to the Main Camera
 	> Canvas Scaler > UI Scale Mode > Scale with screen Size
 			> Reference Resolution > [2160, 1080]
 			> Screen Match Mode > Expand
