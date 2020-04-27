@@ -3,8 +3,8 @@ Harold, el
 baila
 [al sol|en la lluvia|en la nieve
 Harold tiene un aperitivo!
-Su comida favorita 
-[es el cacahuate.|es la corteza de los árboles.|la fruta.
+Su comida favorita es
+[el cacahuate.|la corteza de los árboles.|la fruta.
 Es la hora de dormir.
 Harold sueña con 
 [convertirse en chef.|adoptar un gato.|nadar con peces.

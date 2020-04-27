@@ -28,22 +28,19 @@ public class Book : MonoBehaviour
     //sound[] voiceEsp
     //sound[] voiceDeus
 
-    //parameters ( TextAsset, languageTextList, languageDropList )
-    //private void SplitStory()
-    private void SplitStory( TextAsset text, List<string> langText, List<List<string>> langDrops )
+    //parameters ( TextAsset, languageTextList, languageDropList )    
+    private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )
     {
         //string story = textEng.text;        
-        string story = text.text;
+        string story = textAss.text;
         string[] splitStory = story.Split( new char[] { '\n' } );
 
         //foreach ( string s in splitStory )
         for ( int i = 0; i < splitStory.Length; i++ )
         {
-            //if the first char is '[', then skip that string
+            //if the first char is '[', then split it into another list
             if( splitStory[i][0] == '[' )
-            {
-                //TODO split again and put it in the dropdown array
-                //Debug.Log( "dropArray[0].options[0].text = " + dropArray[0].options[0].text );
+            {                
                 string trimString = splitStory[i].TrimStart( '[' );
 
                 string[] splitOptions = trimString.Split( '|' );
@@ -52,14 +49,12 @@ public class Book : MonoBehaviour
                 foreach( string s in splitOptions )
                 {                    
                     dropOptions.Add( s );
-                }
-                //engDrops.Add( dropOptions );
+                }                
                 langDrops.Add( dropOptions );
             }
             else
             {
                 //put in the text List                
-                //engText.Add( splitStory[i] );
                 langText.Add( splitStory[i] );
             }
         }//end for       
@@ -115,7 +110,7 @@ public class Book : MonoBehaviour
 
     // Start is called before the first frame update    
     void Start()
-    {        
+    {
         engText = new List<string>();
         engDrops = new List<List<string>>();
 
@@ -124,8 +119,7 @@ public class Book : MonoBehaviour
 
         deusText = new List<string>();
         deusDrops = new List<List<string>>();
-
-        //SplitStory();
+        
         SplitStory( textEng, engText, engDrops );
         SplitStory( textEsp, espText, espDrops );
         SplitStory( textDeus, deusText, deusDrops );
