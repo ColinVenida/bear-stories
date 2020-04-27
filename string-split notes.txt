@@ -1,0 +1,13 @@
+https://docs.microsoft.com/en-us/dotnet/api/system.string.split?view=netframework-4.8#System_String_Split_System_Char___
+
+how do I put the large story into separate strings?
+how do I switch between putting story into strings or as dropdown elements?
+how do I distribute the strings between pages?
+
+
+
+txt legend
+'\n' -> next Text element
+[] -> place in a dropdown
+	| next dropdown element
+= -> next page

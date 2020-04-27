@@ -5,37 +5,35 @@ using UnityEngine.UI;
 //class that handles all the text/voice for each story
 public class Book : MonoBehaviour
 {
-
-    //public page array[]
-    // public/private translator
-    //story textEng
+    //the txt files of the story.  Txt files are formatted to be string.Split()
     public TextAsset textEng;
-    //story textEsp
-    //story textDeus
+    public TextAsset textEsp;
+    public TextAsset textDeus;
 
-    //private ArrayList storyEng; //data structure that holds the story elements
     public Text[] storyText;     //array that references all the UI Texts in the book Pages
                                 //**NOTE** make sure all the Text elements are in place in the scene!
 
-    public Dropdown[] storyDrops;
+    public Dropdown[] storyDrops;   //array that refferences all the UI Dropdowns in the book Pages
 
-
-    //private ArrayList engText;   //array to hold the final english story.  This is used for translating in between languages
     private List<string> engText;   //array to hold the final english story.  This is used for translating in between languages
-
     private List<List<string>> engDrops;
 
-    //string[] storyEng
-    //string[] storyEsp
-    //string[] storyDeus
+    private List<string> espText;
+    private List<List<string>> espDrops;
+
+    private List<string> deusText;
+    private List<List<string>> deusDrops;
 
     //sound[] voiceEng
     //sound[] voiceEsp
     //sound[] voiceDeus
 
-    private void SplitStory()
-    {       
-        string story = textEng.text;        
+    //parameters ( TextAsset, languageTextList, languageDropList )
+    //private void SplitStory()
+    private void SplitStory( TextAsset text, List<string> langText, List<List<string>> langDrops )
+    {
+        //string story = textEng.text;        
+        string story = text.text;
         string[] splitStory = story.Split( new char[] { '\n' } );
 
         //foreach ( string s in splitStory )
@@ -55,38 +53,85 @@ public class Book : MonoBehaviour
                 {                    
                     dropOptions.Add( s );
                 }
-                engDrops.Add( dropOptions );                 
+                //engDrops.Add( dropOptions );
+                langDrops.Add( dropOptions );
             }
             else
             {
                 //put in the text List                
-                engText.Add( splitStory[i] );
+                //engText.Add( splitStory[i] );
+                langText.Add( splitStory[i] );
             }
-        }//end for
+        }//end for       
+
+    }//end SplitStory()
+
+    public void ChangeLanguage( int lang )
+    {
+        List<string> textList = engText;
+        List<List<string>> dropList = engDrops;       
+
+        switch ( lang )
+        {
+            case 0:     //english
+                textList = engText;
+                dropList = engDrops;
+                break;
+            case 1:     //Español (spanish)  
+                textList = espText;
+                dropList = espDrops;
+                break;
+            case 2:     //Deutsch  (german)
+                textList = deusText;
+                dropList = deusDrops;
+                break;
+            default:
+                Debug.Log( "Lang default triggered!" );
+                textList = engText;
+                dropList = engDrops;
+                break;
+        }
 
         //populate the text UI elements
-        for ( int i = 0; i < storyText.Length; i++ )
+        //Note: if an out of bounds exception is thrown, check the Txt file to see if it's formatted correctly (eg. missing a "|" )
+        for (int i = 0; i < storyText.Length; i++)
         {
-            storyText[i].text = engText[i];
+            storyText[i].text = textList[i];
         }
 
         //populate the dropdown options
-        for( int i = 0; i < storyDrops.Length; i++ )
-        {            
-            for( int j = 0; j < storyDrops[i].options.Count; j++ )
-            {
-                storyDrops[i].options[j].text = engDrops[i][j];
-            } 
-        }       
+        //Note: if an out of bounds exception is thrown, check the Txt file to see if it's formatted correctly (eg. missing a "|" )
+        for (int i = 0; i < storyDrops.Length; i++)
+        {
+            for (int j = 0; j < storyDrops[i].options.Count; j++)
+            {                
+                storyDrops[i].options[j].text = dropList[i][j];
 
-    }//end SplitStory()
+                //update the CaptionText.text
+                storyDrops[i].captionText.text = storyDrops[i].options[ storyDrops[i].value ].text;
+            }
+        }
+    }
 
     // Start is called before the first frame update    
     void Start()
     {        
         engText = new List<string>();
         engDrops = new List<List<string>>();
-        SplitStory();        
+
+        espText = new List<string>();
+        espDrops = new List<List<string>>();
+
+        deusText = new List<string>();
+        deusDrops = new List<List<string>>();
+
+        //SplitStory();
+        SplitStory( textEng, engText, engDrops );
+        SplitStory( textEsp, espText, espDrops );
+        SplitStory( textDeus, deusText, deusDrops );
+
+        //set the initial language to english for now
+        ChangeLanguage( 0 );
     }
 
 
