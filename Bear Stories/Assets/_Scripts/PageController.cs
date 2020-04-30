@@ -70,12 +70,27 @@ public class PageController : MonoBehaviour
 
     }
 
+    public void FormatPages()
+    {
+        //format all the pages to the UI elements fit in the box
+        for( int i = 0; i < PageArray.Length; i++ )
+        //for (int i = 0; i < 1; i++)
+        {
+            //PageArray[0].GetComponentInChildren<StoryBox>().Invoke( "FormatElements", 0 );
+            PageArray[i].GetComponentInChildren<StoryBox>().Invoke( "FormatElements", 0 );
+        }
+        
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         currentPage = 0;
         CheckPageBounds();
+        FormatPages();
     }
+
+
 
     // Update is called once per frame
     void Update()
