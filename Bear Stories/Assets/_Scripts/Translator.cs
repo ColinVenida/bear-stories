@@ -126,11 +126,7 @@ public class Translator : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //Debug.Log( "===ColorDrop options===" );
-        //Debug.Log( colorDrop.options[0].text );
-        //Debug.Log( colorDrop.options.Capacity );
-        
-
+       
     }
 
     // Update is called once per frame

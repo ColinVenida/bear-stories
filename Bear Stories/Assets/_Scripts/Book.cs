@@ -23,11 +23,7 @@ public class Book : MonoBehaviour
 
     private List<string> deusText;
     private List<List<string>> deusDrops;
-
-    //sound[] voiceEng
-    //sound[] voiceEsp
-    //sound[] voiceDeus
-
+       
     //parameters ( TextAsset, languageTextList, languageDropList )    
     private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )
     {

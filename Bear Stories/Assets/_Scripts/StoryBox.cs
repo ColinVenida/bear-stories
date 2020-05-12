@@ -38,7 +38,7 @@ public class StoryBox : MonoBehaviour
 
             //the VERY not-elegant solution
             //find the option with the largest string length
-            //set the dropdown value to that option, then set the dropdown's preferred width, 
+            //set the dropdown value to that option, then use the Dropdown's preferred width to resize the dropdown
             //then change the dropdown.value back to its original value
             for ( int j = 0; j < dropArray[i].options.Count; j++ )
             {       
@@ -46,8 +46,13 @@ public class StoryBox : MonoBehaviour
                {                    
                     largestIndex = j;
                }
-            }           
-            
+            }
+
+            //for (int j = 0; j < dropArray[i].options.Count; j++)
+            //{
+            //    dropArray[i].captionText.
+            //}
+
             dropArray[i].value = largestIndex;
             dropArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2( dropArray[i].captionText.preferredWidth + 150, 125 );
             dropArray[i].value = oldValue;            
@@ -62,7 +67,7 @@ public class StoryBox : MonoBehaviour
 
 
         //****NOTE*****
-        //talk about anchoredPosition vs localPosition vs rect.position here
+        //research and make notes about anchoredPosition vs localPosition vs rect.position here
 
         for( int i = 1; i < rtArray.Length; i++ )
         {

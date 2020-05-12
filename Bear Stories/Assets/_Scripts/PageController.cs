@@ -30,18 +30,13 @@ public class PageController : MonoBehaviour
     }
 
     private void TurnPage( int page )
-    {
-        //Debug.Log( "PageArray.Length == " + PageArray.Length );
-        //Debug.Log( "currentPage == " + currentPage );
-        //Debug.Log( "page == " + page );
-
+    {        
         //deactivate the current page, and activate the next page
         PageArray[currentPage].gameObject.SetActive( false );       
         PageArray[page].gameObject.SetActive( true );
   
         //update the currentPage reference
         currentPage = page;
-
         CheckPageBounds();
     }
 
@@ -73,10 +68,8 @@ public class PageController : MonoBehaviour
     public void FormatPages()
     {
         //format all the pages to the UI elements fit in the box
-        for( int i = 0; i < PageArray.Length; i++ )
-        //for (int i = 0; i < 1; i++)
-        {
-            //PageArray[0].GetComponentInChildren<StoryBox>().Invoke( "FormatElements", 0 );
+        for( int i = 0; i < PageArray.Length; i++ )        
+        {            
             PageArray[i].GetComponentInChildren<StoryBox>().Invoke( "FormatElements", 0 );
         }
         
@@ -89,8 +82,6 @@ public class PageController : MonoBehaviour
         CheckPageBounds();
         FormatPages();
     }
-
-
 
     // Update is called once per frame
     void Update()
