@@ -93,9 +93,7 @@ public class StoryBox : MonoBehaviour
                 //rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos + (135 * lineNumber) );
 
                 rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos );
-                nextX = LEFT_MARGIN + rtArray[i].rect.width + SPACE_BETWEEN;
-
-                
+                nextX = LEFT_MARGIN + rtArray[i].rect.width + SPACE_BETWEEN;                
             }
             else
             {               

@@ -1,0 +1,10 @@
+Building A Book Checklist:
+
+//A guide to building a Book so I don't forget everything.  Eg.  all the references to the 
+objects/prefabs
+
+-StoryBox
+Text
+
+Dropdowns
+Dropdowns need to be referenced in the DropArray, RTArray, and StoryDrops
