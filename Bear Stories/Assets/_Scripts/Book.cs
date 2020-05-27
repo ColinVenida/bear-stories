@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 //class that handles all the text/voice for each story
@@ -38,11 +39,21 @@ public class Book : MonoBehaviour
             if( splitStory[i][0] == '[' )
             {                
                 string trimString = splitStory[i].TrimStart( '[' );
+                //Debug.Log("trimString = " + trimString);
+                string trimString2 = trimString.TrimEnd('\n');
+                //Debug.Log("trimString2 = " + trimString2);
 
-                string[] splitOptions = trimString.Split( '|' );
+                //string[] splitOptions = trimString.Split( '|' );
+                string[] splitOptions = trimString2.Split('|');
                 List<string> dropOptions = new List<string>();
 
-                foreach( string s in splitOptions )
+                //**bug fix**
+                //the last index of the splitOptions always had an extra char for some reason (ie. "snow" would have a length of 5)
+                //we are removing the extra char here
+                string lastIndex = splitOptions[splitOptions.Length - 1].Remove(splitOptions[splitOptions.Length - 1].Length - 1);  
+                splitOptions[splitOptions.Length - 1] = lastIndex;
+
+                foreach ( string s in splitOptions )
                 {                    
                     dropOptions.Add( s );
                 }                

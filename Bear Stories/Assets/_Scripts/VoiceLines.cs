@@ -41,8 +41,7 @@ public class VoiceLines : MonoBehaviour
 
     public void ChangeAudio( int lang )
     {
-
-        Debug.Log("ChangeAudio(), " + lang);
+        //Debug.Log("ChangeAudio(), " + lang);
         switch ( lang )
         {
             case 0: //English

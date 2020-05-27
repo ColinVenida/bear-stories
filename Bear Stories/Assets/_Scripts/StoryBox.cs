@@ -14,57 +14,53 @@ public class StoryBox : MonoBehaviour
 
     //reference to the UI dropdowns
     public Dropdown[] dropArray;
-    
+     
     private const int LEFT_MARGIN = 90;
     private const int SPACE_BETWEEN = 60;
     private const int LINE_HEIGHT = 135;
     private RectTransform rt;
 
-    private void ResizeElements()
-    {
-        
-        //an objects perferredWidth is what the width the object WANTS to be
-        //resize the UI-text elements
-        for (int i = 0; i < textArray.Length; i++)
-        {            
-            textArray[i].rectTransform.sizeDelta = new Vector2( textArray[i].preferredWidth, 125 );            
-        }     
+    //public ContentSizeFitter csf;
 
+    private void ResizeDropdowns()
+    {       
         //resize the dropdbox based on the option with the largest preferredWidth
         for( int i = 0; i < dropArray.Length; i++ ) 
         {            
-            int largestIndex = 0;
-            int oldValue = dropArray[i].value;
-
-            //the VERY not-elegant solution
-            //find the option with the largest string length
-            //set the dropdown value to that option, then use the Dropdown's preferred width to resize the dropdown
-            //then change the dropdown.value back to its original value
-            for ( int j = 0; j < dropArray[i].options.Count; j++ )
-            {       
-               if( dropArray[i].options[j].text.Length > dropArray[i].options[largestIndex].text.Length )
-               {                    
-                    largestIndex = j;
-               }
+            
+            //resize the dropdown based on the current option's string length
+            int width = 0;
+            if (dropArray[i].options[dropArray[i].value].text.Length < 5)
+            {
+                width = 300;
             }
-
-            //for (int j = 0; j < dropArray[i].options.Count; j++)
-            //{
-            //    dropArray[i].captionText.
-            //}
-
-            dropArray[i].value = largestIndex;
-            dropArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2( dropArray[i].captionText.preferredWidth + 150, 125 );
-            dropArray[i].value = oldValue;            
+            else
+            {
+                width = 100 + ((dropArray[i].options[dropArray[i].value].text.Length) * 50);
+                //width = drop.options[option].text.Length * 50;
+            }
+            //rt.sizeDelta = new Vector2( 150 + ((drop.options[option].text.Length ) * 50), 125);
+            dropArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2(width, 125);
         }
     }
 
-    private void RepositionElements()
-    {                
-        float nextX = LEFT_MARGIN + rtArray[0].rect.width + SPACE_BETWEEN;        
+    private void ResizeText()
+    {
+        //resize the UI-text elements
+        for (int i = 0; i < textArray.Length; i++)
+        {
+            textArray[i].rectTransform.sizeDelta = new Vector2(textArray[i].preferredWidth, 125);
+        }
+    }
+
+    public void RepositionElements()
+    {
+        //float nextX = LEFT_MARGIN + rtArray[0].rect.width + SPACE_BETWEEN;        
+        float nextX = rtArray[0].rect.width + SPACE_BETWEEN;
         float yPos = rtArray[0].anchoredPosition.y;  
         int lineNumber = -1;
-
+        
+        //Debug.Log("nextX Start = " + nextX);
 
         //****NOTE*****
         //research and make notes about anchoredPosition vs localPosition vs rect.position here
@@ -86,21 +82,29 @@ public class StoryBox : MonoBehaviour
                 lineNumber--;
                 //Debug.Log( " i, lineNumber = " + i + ", " + lineNumber );      
                 
-                yPos -= LINE_HEIGHT;               
-                
+                yPos -= LINE_HEIGHT;
+
+                //Debug.Log("yPos = " + yPos);
+
                 //rtArray[i].localPosition = new Vector3( LEFT_MARGIN, yPos + (135 * lineNumber) );
                 //rtArray[i].localPosition = new Vector3( LEFT_MARGIN, yPos ) ;
                 //rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos + (135 * lineNumber) );
 
-                rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos );
-                nextX = LEFT_MARGIN + rtArray[i].rect.width + SPACE_BETWEEN;                
+                //rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos );
+                rtArray[i].anchoredPosition = new Vector3(0, yPos);
+
+                //nextX = LEFT_MARGIN + rtArray[i].rect.width + SPACE_BETWEEN;
+                nextX = rtArray[i].rect.width + SPACE_BETWEEN;
+
             }
             else
-            {               
+            {
                 //rtArray[i].localPosition = new Vector3( nextX, yPos );
                 //rtArray[i].transform.localPosition= new Vector3( nextX, yPos );
+                //Debug.Log("nextX before = " + nextX);
                 rtArray[i].anchoredPosition = new Vector3( nextX, yPos );
-                nextX += rtArray[i].rect.width + SPACE_BETWEEN;                
+                nextX += rtArray[i].rect.width + SPACE_BETWEEN;
+                //Debug.Log("nextX After = " + nextX);
             }
         }//end for
 
@@ -109,7 +113,8 @@ public class StoryBox : MonoBehaviour
     public void FormatElements()
     {
         rt = this.GetComponent<RectTransform>();
-        ResizeElements();
+        ResizeDropdowns();
+        ResizeText();
         RepositionElements();
     }
 

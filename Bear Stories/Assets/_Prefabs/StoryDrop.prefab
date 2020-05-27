@@ -161,7 +161,7 @@ GameObject:
   - component: {fileID: 3541574386745156340}
   - component: {fileID: 3541574386745156346}
   - component: {fileID: 3541574386745156342}
-  - component: {fileID: 3541574386745156337}
+  - component: {fileID: 743111733964988618}
   m_Layer: 5
   m_Name: StoryDrop
   m_TagString: Untagged
@@ -283,8 +283,8 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: ColorChange
+      - m_Target: {fileID: 743111733964988618}
+        m_MethodName: Resize
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -312,7 +312,7 @@ MonoBehaviour:
   espVoice: []
   deutVoice: []
   source: {fileID: 0}
---- !u!114 &3541574386745156337
+--- !u!114 &743111733964988618
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -321,17 +321,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 3541574386745156344}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1679637790, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Script: {fileID: 11500000, guid: 30810b4cb9e73fc49a88c8204b08f749, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 0
-  m_MinWidth: -1
-  m_MinHeight: -1
-  m_PreferredWidth: -1
-  m_PreferredHeight: -1
-  m_FlexibleWidth: 1
-  m_FlexibleHeight: -1
-  m_LayoutPriority: 1
+  sBox: {fileID: 0}
 --- !u!1 &3541574386804708681
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,6 +534,7 @@ GameObject:
   - component: {fileID: 3541574386974023219}
   - component: {fileID: 3541574386974023216}
   - component: {fileID: 3541574386974023217}
+  - component: {fileID: 5263419979157069594}
   m_Layer: 5
   m_Name: Label
   m_TagString: Untagged
@@ -564,8 +558,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 34.600037, y: -0.5}
-  m_SizeDelta: {x: -119.2, y: -13}
+  m_AnchoredPosition: {x: 34.600037, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3541574386974023216
 CanvasRenderer:
@@ -597,7 +591,7 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 96
+    m_FontSize: 90
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 5
@@ -609,6 +603,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Option 1
+--- !u!114 &5263419979157069594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3541574386974023222}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 2
+  m_VerticalFit: 0
 --- !u!1 &3541574387191932065
 GameObject:
   m_ObjectHideFlags: 0
