@@ -15,12 +15,9 @@ public class StoryBox : MonoBehaviour
     //reference to the UI dropdowns
     public Dropdown[] dropArray;
      
-    private const int LEFT_MARGIN = 90;
     private const int SPACE_BETWEEN = 60;
     private const int LINE_HEIGHT = 135;
     private RectTransform rt;
-
-    //public ContentSizeFitter csf;
 
     private void ResizeDropdowns()
     {       
@@ -36,10 +33,8 @@ public class StoryBox : MonoBehaviour
             }
             else
             {
-                width = 100 + ((dropArray[i].options[dropArray[i].value].text.Length) * 50);
-                //width = drop.options[option].text.Length * 50;
-            }
-            //rt.sizeDelta = new Vector2( 150 + ((drop.options[option].text.Length ) * 50), 125);
+                width = 100 + ((dropArray[i].options[dropArray[i].value].text.Length) * 50);                
+            }            
             dropArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2(width, 125);
         }
     }
@@ -54,8 +49,7 @@ public class StoryBox : MonoBehaviour
     }
 
     public void RepositionElements()
-    {
-        //float nextX = LEFT_MARGIN + rtArray[0].rect.width + SPACE_BETWEEN;        
+    {        
         float nextX = rtArray[0].rect.width + SPACE_BETWEEN;
         float yPos = rtArray[0].anchoredPosition.y;  
         int lineNumber = -1;
@@ -70,8 +64,7 @@ public class StoryBox : MonoBehaviour
             //check if the nextX + element.width is greater than the StoryBox.width
             //true
             //  lineNumber--;
-            //  start new line at LEFT_MARGIN.  
-            //  nextX = LEFT_MARGIN + element.width
+            //  nextX = element.width
             //else
             //  Place element next to previous element.  
             //  nextX += element.width + Space
@@ -80,31 +73,24 @@ public class StoryBox : MonoBehaviour
             if ( nextX + rtArray[i].rect.width > rt.rect.width )
             {
                 lineNumber--;
-                //Debug.Log( " i, lineNumber = " + i + ", " + lineNumber );      
-                
+                  
                 yPos -= LINE_HEIGHT;
-
-                //Debug.Log("yPos = " + yPos);
 
                 //rtArray[i].localPosition = new Vector3( LEFT_MARGIN, yPos + (135 * lineNumber) );
                 //rtArray[i].localPosition = new Vector3( LEFT_MARGIN, yPos ) ;
                 //rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos + (135 * lineNumber) );
 
-                //rtArray[i].anchoredPosition = new Vector3( LEFT_MARGIN, yPos );
-                rtArray[i].anchoredPosition = new Vector3(0, yPos);
-
-                //nextX = LEFT_MARGIN + rtArray[i].rect.width + SPACE_BETWEEN;
+                
+                rtArray[i].anchoredPosition = new Vector3(0, yPos);                
                 nextX = rtArray[i].rect.width + SPACE_BETWEEN;
 
             }
             else
             {
                 //rtArray[i].localPosition = new Vector3( nextX, yPos );
-                //rtArray[i].transform.localPosition= new Vector3( nextX, yPos );
-                //Debug.Log("nextX before = " + nextX);
+                //rtArray[i].transform.localPosition= new Vector3( nextX, yPos );                
                 rtArray[i].anchoredPosition = new Vector3( nextX, yPos );
-                nextX += rtArray[i].rect.width + SPACE_BETWEEN;
-                //Debug.Log("nextX After = " + nextX);
+                nextX += rtArray[i].rect.width + SPACE_BETWEEN;                
             }
         }//end for
 

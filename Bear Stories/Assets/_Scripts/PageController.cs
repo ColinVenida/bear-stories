@@ -8,9 +8,11 @@ public class PageController : MonoBehaviour
     public GameObject[] PageArray;
     public Button btnNext;
     public Button btnPrev;
-
+    public Toggle voiceToggle;
     public Text pageNumber;
-    private int currentPage;    
+
+    private int currentPage;
+    private List<VoiceManager> voiceManagers;
 
     public void NextPage()
     {
@@ -34,10 +36,17 @@ public class PageController : MonoBehaviour
         //deactivate the current page, and activate the next page
         PageArray[currentPage].gameObject.SetActive( false );       
         PageArray[page].gameObject.SetActive( true );
-  
+
+        
         //update the currentPage reference
         currentPage = page;
-        CheckPageBounds();
+
+        if (voiceToggle.isOn)
+        {
+            //Debug.Log("TurnPage PlayVO");
+            PlayAutoVO();
+        }
+            CheckPageBounds();
     }
 
     private void CheckPageBounds()
@@ -65,6 +74,17 @@ public class PageController : MonoBehaviour
 
     }
 
+    private void PlayAutoVO()
+    {
+        Debug.Log("PlayAutoVO()");
+        voiceManagers[currentPage].PlayPageVO();
+        //if (voiceManagers[page].voiceToggle.isOn)
+        //{
+        //    Debug.Log("TurnPage PlayVO");
+            
+        //}
+    }
+
     public void FormatPages()
     {
         //format all the pages to the UI elements fit in the box
@@ -75,12 +95,27 @@ public class PageController : MonoBehaviour
         
     }
 
+
     // Start is called before the first frame update
     void Start()
     {
         currentPage = 0;
         CheckPageBounds();
         FormatPages();
+        if (voiceToggle.isOn)
+        {
+            //Debug.Log("TurnPage PlayVO");
+            PlayAutoVO();
+        }
+    }
+
+    public void Awake()
+    {
+        voiceManagers = new List<VoiceManager>();
+        for (int i = 0; i < PageArray.Length; i++)
+        {            
+            voiceManagers.Add( PageArray[i].GetComponent<VoiceManager>() );            
+        }        
     }
 
     // Update is called once per frame

@@ -7,22 +7,9 @@ using System.Runtime.CompilerServices;
 using UnityEditorInternal;
 using System.Net;
 
-//class that handles the VO lines for each line
+//class that handles the VO lines for each line and each language
 public class VoiceLines : MonoBehaviour
-{
-
-    //[Serializable]
-    //public class VoiceArray
-    //{
-    //    public AudioClip[] voiceLines;  //array that holds all the variations of the line
-    //    public Dropdown voiceDrop;      //reference to the dropdown that controls the line
-    //}
-
-    //public VoiceArray[] engVoice;
-    //public VoiceArray[] espVoice;
-    //public VoiceArray[] deusVoice;
-
-    //public Dropdown[] dropArray;
+{   
 
     public AudioClip[] engVoice;    
     public AudioClip[] espVoice;
@@ -30,18 +17,12 @@ public class VoiceLines : MonoBehaviour
     public AudioSource source;
 
     private int langSelect;
-    private int currentIndex = 0;
-    
+    private int currentIndex = 0;    
     private AudioClip[] currentLang;
-
-
-    //private VoiceArray[] currentLang;
-
-    
 
     public void ChangeAudio( int lang )
     {
-        //Debug.Log("ChangeAudio(), " + lang);
+        Debug.Log("ChangeAudio(), " + lang);
         switch ( lang )
         {
             case 0: //English
@@ -77,9 +58,22 @@ public class VoiceLines : MonoBehaviour
        
     }
 
+    public AudioClip[] GetCurrentLang()
+    {
+        return currentLang;
+    }
+
     public void PlayVO()
     {
-        source.PlayOneShot(currentLang[currentIndex]);
+        if( currentLang == null )
+        {
+            Debug.Log( "currentlang == null!" );
+            return;
+        }
+        else
+        {
+            source.PlayOneShot(currentLang[currentIndex]);
+        }        
     }
 
     public float GetLineDuration()
@@ -89,10 +83,13 @@ public class VoiceLines : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        //source = GetComponent<AudioSource>();
-        ChangeAudio( 0 );
+    {        
         
+    }
+
+    public void Awake()
+    {
+        ChangeAudio(0);
     }
 
     // Update is called once per frame

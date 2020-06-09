@@ -1,15 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class VoiceManager : MonoBehaviour
 {
 
-    public VoiceLines[] voiceLines;
+    public VoiceLines[] voiceLines; //the page's current set of voice lines
+    public Toggle voiceToggle;    
 
     public void PlayPageVO()
     {
-        Debug.Log("PlayPageVO()");
+        //Debug.Log("PlayPageVO()");
         StartCoroutine( VoiceCoroutine() );
     }
 
