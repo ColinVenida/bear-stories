@@ -2,23 +2,16 @@
 
 ===Design and Programming Tasks===
 ----------------------------------
-image swapper
--create class/prefab that swaps a GameObject's image on button push/dropdown option
-
 
 Books/Pages/Translator
 -update book/page prefabs so they have data members for their stories, translations, and voice lines
-
--update book/page prefabs so they fill in their stories and translations on runtime
+	-finish voice line logic
 
 -add a save/resume feature for books
 
--create system that handles the book's text and voice translations
+image swapper
+-create class/prefab that swaps a GameObject's image on button push/dropdown option
 
--create class that auto formats text/UI depending on the language
-	-discuss language gramar with Alec to see if there are
-	common word patterns
-	-create monobehavior that labels text boxes "noun," "adjective," "verb" etc.
 
 
 ===UI Art Tasks===
@@ -26,16 +19,23 @@ Books/Pages/Translator
 add Patreon button to the menu bar.
 	-block out and adjust menu bar for different scenes (eg. no home button on the main menu)
 
+Create UI Art/Design that reflects the theme of the story
+	-artwork will go on the buttons/borders/StoryBox of the scene
+	eg. Jungle theme, Space theme, etc.
+
+	Finilize Play Voice button on the StoryBox
+		-artwork
+		-position
+		-
+
+Create Particle Effects for clicking - make it module
+
 magic button
 -finalize artwork
 	-finalize button image
 	-finalize the play/pause sprites
 	-finalize button's paticle effect
 	-create a particle effect that plays on the affected game object (eg. swapping an image, playing a sound, starting an animation)
-
-Create UI Art that reflects the theme of the story
-	-artwork will go on the buttons/borders of the scene
-	eg. Jungle theme, Space theme, etc.
 
 
 ===TestScene===
@@ -59,8 +59,6 @@ Build a APK and test on the phone/tablet
 Build Android Bundle and submit to the Google Play store
 
 
-
-
 ===Bugs===
 ----------
 
@@ -72,6 +70,20 @@ Weather Particle effect is not consistent when switching pages
 
 =======Completed Tasks=======
 -----------------------------
+
+
+5/27/2020
+=========
+-create class that auto formats text/UI depending on the language
+	-discuss language gramar with Alec to see if there are
+	common word patterns
+
+
+4/26/2020
+=========
+-update book/page prefabs so they fill in their stories and translations on runtime
+
+-create system that handles the book's text and voice translations
 
 
 4/21/2020

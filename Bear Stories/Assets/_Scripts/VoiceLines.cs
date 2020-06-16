@@ -15,6 +15,7 @@ public class VoiceLines : MonoBehaviour
     public AudioClip[] espVoice;
     public AudioClip[] deutVoice;
     public AudioSource source;
+    public VoiceManager voiceManager;
 
     private int langSelect;
     private int currentIndex = 0;    
@@ -44,7 +45,7 @@ public class VoiceLines : MonoBehaviour
     //function to play the line based on the given int.  Int should be the value of the Dropdown
     public void PlayVO( int line )
     {       
-        Debug.Log( "PlayVO(), line = " + line );
+        //Debug.Log( "PlayVO(), line = " + line );        
         //check the line        
         if( line > currentLang.Length )
         {
@@ -53,9 +54,21 @@ public class VoiceLines : MonoBehaviour
         else
         {
             currentIndex = line;
-            source.PlayOneShot(currentLang[currentIndex]);
+            StartCoroutine( PlayVoice() );                 
+        }       
+    }
+
+    IEnumerator PlayVoice()
+    {
+        if ( voiceManager.IsVoicePlaying() )
+        {
+            yield return new WaitForSeconds( voiceManager.GetWaitTime() );
         }
-       
+        else
+        {
+            voiceManager.SetPlayingTrue( currentLang[currentIndex].length );            
+        }
+        source.PlayOneShot( currentLang[currentIndex] );
     }
 
     public AudioClip[] GetCurrentLang()
@@ -72,7 +85,7 @@ public class VoiceLines : MonoBehaviour
         }
         else
         {
-            source.PlayOneShot(currentLang[currentIndex]);
+            source.PlayOneShot( currentLang[currentIndex] );
         }        
     }
 
@@ -83,13 +96,13 @@ public class VoiceLines : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {        
-        
+    {
+        voiceManager = GetComponentInParent<VoiceManager>();
     }
 
     public void Awake()
     {
-        ChangeAudio(0);
+        ChangeAudio( 0 );
     }
 
     // Update is called once per frame
