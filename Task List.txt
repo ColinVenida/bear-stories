@@ -1,5 +1,9 @@
 ========Task List========
 
+6/30/2020 Task list has now been moved to a Google Sheet
+
+==============================
+
 ===Design and Programming Tasks===
 ----------------------------------
 
