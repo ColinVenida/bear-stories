@@ -651,6 +651,7 @@ MonoBehaviour:
   - {fileID: 751268912211848841}
   btnNext: {fileID: 8144410372256836112}
   btnPrev: {fileID: 8144410372042539346}
+  voiceToggle: {fileID: 0}
   pageNumber: {fileID: 8144410372257358486}
 --- !u!1 &8144410372102593962
 GameObject:
@@ -1401,8 +1402,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: -0.06225586}
+  m_AnchoredPosition: {x: 0.0793457, y: -0.09484863}
+  m_SizeDelta: {x: 0.23071, y: -0.0050049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5932696631167110664
 MonoBehaviour:
@@ -1917,16 +1918,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.099853516
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0036621094
-      objectReference: {fileID: 0}
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2032,6 +2023,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.099853516
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0036621094
+      objectReference: {fileID: 0}
     - target: {fileID: 2558215813999254033, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2052,6 +2053,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.010009766
       objectReference: {fileID: 0}
+    - target: {fileID: 2563064080086133390, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: voiceToggle
+      value: 
+      objectReference: {fileID: 8370218283586668656}
     - target: {fileID: 98154649120582741, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_Text
@@ -2062,11 +2068,6 @@ PrefabInstance:
       propertyPath: m_Text
       value: Story Text 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2563064080086133390, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: voiceToggle
-      value: 
-      objectReference: {fileID: 8370218283586668656}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!1 &751268911464433431 stripped
@@ -2097,16 +2098,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.099853516
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0036621094
       objectReference: {fileID: 0}
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2213,6 +2204,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.099853516
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0036621094
+      objectReference: {fileID: 0}
     - target: {fileID: 2558215813999254033, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2223,17 +2224,22 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 33632087476809634, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 33632087476809634, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2563064080086133390, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: voiceToggle
+      value: 
+      objectReference: {fileID: 8370218283586668656}
     - target: {fileID: 2019421541122778019, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 33632087476809634, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 33632087476809634, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
@@ -2258,11 +2264,6 @@ PrefabInstance:
       propertyPath: m_Text
       value: Story Text 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2563064080086133390, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: voiceToggle
-      value: 
-      objectReference: {fileID: 8370218283586668656}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!1 &751268912519597315 stripped
@@ -2317,16 +2318,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -0.099853516
-      objectReference: {fileID: 0}
-    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0.0036621094
       objectReference: {fileID: 0}
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2433,6 +2424,16 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -0.099853516
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716168559369651275, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.0036621094
+      objectReference: {fileID: 0}
     - target: {fileID: 2558215813999254033, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -2453,6 +2454,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: -0.010009766
       objectReference: {fileID: 0}
+    - target: {fileID: 2563064080086133390, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: voiceToggle
+      value: 
+      objectReference: {fileID: 8370218283586668656}
     - target: {fileID: 98154649120582741, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_Text
@@ -2463,11 +2469,6 @@ PrefabInstance:
       propertyPath: m_Text
       value: Story Text 2
       objectReference: {fileID: 0}
-    - target: {fileID: 2563064080086133390, guid: 1e78a2361dda5b543953d8e4fd21799a,
-        type: 3}
-      propertyPath: voiceToggle
-      value: 
-      objectReference: {fileID: 8370218283586668656}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!1 &751268912211848841 stripped
