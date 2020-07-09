@@ -40,17 +40,17 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.49497476"
-     inkscape:cx="-251.03412"
-     inkscape:cy="529.87438"
+     inkscape:zoom="1.4"
+     inkscape:cx="-51.155587"
+     inkscape:cy="935.85981"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer7"
+     inkscape:current-layer="layer10"
      showgrid="false"
      inkscape:window-width="1600"
      inkscape:window-height="837"
-     inkscape:window-x="-8"
-     inkscape:window-y="-8"
-     inkscape:window-maximized="1"
+     inkscape:window-x="-32000"
+     inkscape:window-y="-32000"
+     inkscape:window-maximized="0"
      showguides="false" />
   <metadata
      id="metadata5">
@@ -69,7 +69,7 @@
      id="layer5"
      inkscape:label="background"
      sodipodi:insensitive="true"
-     style="display:inline">
+     style="display:none">
     <image
        y="-47.038372"
        x="-390.67621"
@@ -83,7 +83,7 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="characters"
-     style="display:inline">
+     style="display:none">
     <image
        y="114.41066"
        x="-390.50497"
@@ -203,16 +203,19 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="white rect"
-     style="display:inline">
+     style="display:none">
     <rect
-       style="fill:#fffffa;fill-opacity:1;fill-rule:nonzero;stroke:#a68c79;stroke-width:0.79374999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1223)"
+       style="fill:#ffffff;fill-opacity:0.98067633;fill-rule:nonzero;stroke:none;stroke-width:0.79374999;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1223)"
        id="rect1035"
        width="253.24403"
        height="84.666664"
        x="-229.05356"
        y="166.97618"
        ry="4.4720407"
-       transform="matrix(1.3857065,0,0,-1.4324664,70.18029,371.94138)" />
+       transform="matrix(1.4631373,0,0,-1.4619241,96.004614,367.19737)"
+       inkscape:export-filename="C:\Users\Business Bears\Desktop\white-blur.png"
+       inkscape:export-xdpi="81.547325"
+       inkscape:export-ydpi="81.547325" />
   </g>
   <g
      inkscape:groupmode="layer"
@@ -354,52 +357,61 @@
      inkscape:groupmode="layer"
      id="layer8"
      inkscape:label="black text"
-     style="display:inline">
+     style="display:none">
     <text
        xml:space="preserve"
        style="font-style:normal;font-weight:normal;font-size:14.77668762px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.36950934;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       x="-286.71561"
-       y="34.860065"
+       x="-229.82857"
+       y="40.977829"
        id="text825-5"
        transform="scale(0.81749538,1.2232485)"><tspan
          sodipodi:role="line"
-         x="-286.71561"
-         y="34.860065"
+         x="-229.82857"
+         y="40.977829"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36950934;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan839-6">Soogie loves to salsa, Roogie loves to rumba,</tspan><tspan
          sodipodi:role="line"
-         x="-286.71561"
-         y="53.330925"
+         x="-229.82857"
+         y="59.448689"
          style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.36950934;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan843-9">Choogie loves to cha-cha, Toogie loves to tango,</tspan><tspan
          sodipodi:role="line"
-         x="-286.71561"
-         y="71.801788"
+         x="-229.82857"
+         y="77.919548"
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.36950934;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan845-1"><tspan
    style="fill:#000000;fill-opacity:1;stroke-width:0.36950934"
    id="tspan1163">Everybody in the jungle bops with Bongo</tspan>.</tspan><tspan
          sodipodi:role="line"
-         x="-286.71561"
-         y="90.272644"
+         x="-229.82857"
+         y="96.390404"
          style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.36950934;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          id="tspan847-1" /></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer10"
+     inkscape:label="replay button">
     <g
        style="display:inline"
        id="g1032-8"
-       transform="matrix(0.6415817,0,0,0.68218939,120.37985,61.201309)">
+       transform="matrix(1.0795182,0,0,1.1946667,123.89363,-43.027885)"
+       inkscape:export-filename="C:\Users\Business Bears\Desktop\replay-bongo.png"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96">
       <ellipse
          ry="14.174107"
          rx="15.68601"
          cy="43.188988"
          cx="-93.549133"
          id="path1026-9"
-         style="fill:#cac9ca;fill-opacity:0.9758454;fill-rule:nonzero;stroke:none;stroke-width:0.53380311;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+         style="fill:#c9b79e;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.53380311;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
       <g
          transform="matrix(0.43258829,0,0,0.4568539,27.431147,49.702116)"
-         id="g1022-1">
+         id="g1022-1"
+         style="fill:#05833c;fill-opacity:1">
         <path
-           style="fill:#1259d1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.65882099;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#05833c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1.65882099;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            d="m -1049.5488,-140.17188 c -27.6156,3e-4 -52.6166,10.06332 -70.7138,26.33279 -18.0971,16.26947 -29.2903,38.745396 -29.2901,63.571512 -4e-4,49.65223154 44.7728,89.903696 100.0039,89.904297 55.23189,3.57e-4 100.00627,-40.25138789 100.00583,-89.904297 4.4e-4,-49.652911 -44.77394,-89.904662 -100.00583,-89.904302 z m -14.1426,26.24415 c 46.3055,-4.5e-4 70.2724,28.501321 70.27231,63.660152 3.43654,38.595275 -31.39901,62.657 -75.98661,50.80301294 -34.1619,-23.57178894 -76.5757,15.06953006 -80.147,-50.08872694 -10e-5,-35.158256 29.2901,-64.285798 85.8613,-64.374438 z"
            id="path973-6"
            inkscape:connector-curvature="0"
@@ -407,7 +419,7 @@
            transform="scale(0.26458333)" />
         <path
            sodipodi:type="star"
-           style="fill:#1259d1;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37332708;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           style="fill:#05833c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.37332708;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
            id="path995-2"
            sodipodi:sides="3"
            sodipodi:cx="-306.82541"
