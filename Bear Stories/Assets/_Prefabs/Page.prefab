@@ -95,12 +95,12 @@ RectTransform:
   - {fileID: 1716168559369651275}
   - {fileID: 2558215813999254033}
   m_Father: {fileID: 8436172347563690122}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1000, y: -125}
-  m_SizeDelta: {x: 1520.3, y: 602.7}
+  m_AnchoredPosition: {x: -943.8, y: -81}
+  m_SizeDelta: {x: 1407.9, y: 558.1}
   m_Pivot: {x: 0.000000022182888, y: 1}
 --- !u!114 &4540585706113192364
 MonoBehaviour:
@@ -116,6 +116,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rtArray: []
   textArray: []
+  textHeight: 0
+  dropHeight: 0
   dropArray: []
 --- !u!222 &5831118917235073113
 CanvasRenderer:
@@ -188,7 +190,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8436172347563690122}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -230,7 +232,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: -165.5}
-  m_SizeDelta: {x: 500, y: 125}
+  m_SizeDelta: {x: 500, y: 100}
   m_Pivot: {x: -0.00000006027631, y: 1}
 --- !u!222 &718148515986214964
 CanvasRenderer:
@@ -262,10 +264,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 96
+    m_FontSize: 72
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
+    m_BestFit: 0
+    m_MinSize: 7
     m_MaxSize: 96
     m_Alignment: 0
     m_AlignByGeometry: 0
@@ -612,8 +614,8 @@ RectTransform:
   m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
   m_Children:
   - {fileID: 2019421541122778019}
-  - {fileID: 33632087476809634}
   - {fileID: 1067887822887350411}
+  - {fileID: 33632087476809634}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -768,7 +770,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 100, y: 0.000030517578}
-  m_SizeDelta: {x: 484, y: 125}
+  m_SizeDelta: {x: 484, y: 100}
   m_Pivot: {x: 0.00000010320518, y: 1.0000002}
 --- !u!222 &5772747039192239764
 CanvasRenderer:
@@ -800,11 +802,11 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 96
+    m_FontSize: 72
     m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 9
-    m_MaxSize: 96
+    m_BestFit: 0
+    m_MinSize: 7
+    m_MaxSize: 300
     m_Alignment: 0
     m_AlignByGeometry: 0
     m_RichText: 1
@@ -902,7 +904,7 @@ PrefabInstance:
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 125
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
@@ -1067,7 +1069,7 @@ PrefabInstance:
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 125
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}

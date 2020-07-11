@@ -23,9 +23,10 @@ public class DropResize : MonoBehaviour
         }
         else
         {
-            width = 100 + ((drop.options[option].text.Length) * 50);            
+            //width = 100 + ((drop.options[option].text.Length) * 50);  
+            width = ( ( drop.options[option].text.Length ) * 40 );
         }
-        rt.sizeDelta = new Vector2(width, 125);
+        rt.sizeDelta = new Vector2(width, sBox.dropHeight);
         sBox.RepositionElements();
     }
 

@@ -11,6 +11,8 @@ public class StoryBox : MonoBehaviour
 
     //reference to the UI texts
     public Text[] textArray;
+    public int textHeight;
+    public int dropHeight;
 
     //reference to the UI dropdowns
     public Dropdown[] dropArray;
@@ -33,18 +35,20 @@ public class StoryBox : MonoBehaviour
             }
             else
             {
-                width = 100 + ((dropArray[i].options[dropArray[i].value].text.Length) * 50);                
+                //width = 100 + ( ( dropArray[i].options[dropArray[i].value].text.Length ) * 50 );                
+                width = ( ( dropArray[i].options[dropArray[i].value].text.Length ) * 40 );
             }            
-            dropArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2(width, 125);
+            dropArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2( width, dropHeight );
         }
     }
 
     private void ResizeText()
     {
         //resize the UI-text elements
-        for (int i = 0; i < textArray.Length; i++)
+        for ( int i = 0; i < textArray.Length; i++ )
         {
-            textArray[i].rectTransform.sizeDelta = new Vector2(textArray[i].preferredWidth, 125);
+            Debug.Log( "preferredWidth = " + textArray[i].preferredWidth );
+            textArray[i].rectTransform.sizeDelta = new Vector2( textArray[i].preferredWidth, textHeight );
         }
     }
 
