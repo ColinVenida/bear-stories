@@ -47,7 +47,7 @@ public class VoiceLines : MonoBehaviour
     {       
         //Debug.Log( "PlayVO(), line = " + line );        
         //check the line        
-        if( line > currentLang.Length )
+        if( line >= currentLang.Length )
         {
             Debug.Log("line on current language not set!, " + line);
         }

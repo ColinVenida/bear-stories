@@ -22,8 +22,7 @@ public class StoryBox : MonoBehaviour
     private RectTransform rt;
 
     private void ResizeDropdowns()
-    {       
-        //resize the dropdbox based on the option with the largest preferredWidth
+    {               
         for( int i = 0; i < dropArray.Length; i++ ) 
         {            
             

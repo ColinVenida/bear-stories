@@ -46,7 +46,7 @@ public class PageController : MonoBehaviour
             //Debug.Log("TurnPage PlayVO");
             PlayAutoVO();
         }
-            CheckPageBounds();
+        CheckPageBounds();
     }
 
     private void CheckPageBounds()

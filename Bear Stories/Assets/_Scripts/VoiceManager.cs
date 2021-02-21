@@ -50,11 +50,11 @@ public class VoiceManager : MonoBehaviour
         return waitTime;       
     }
 
-    public void SetPlayingTrue( float wait )
+    public void SetPlayingTrue( float lineDuration )
     {
         Debug.Log( "SetPlayingTrue()" );
         voicePlaying = true;
-        waitTime += wait;
+        waitTime += lineDuration;
     }
 
     // Start is called before the first frame update
