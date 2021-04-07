@@ -16,34 +16,29 @@ public class Book : MonoBehaviour
 
     public Dropdown[] storyDrops;   //array that refferences all the UI Dropdowns in the book Pages
 
-    private List<string> engText;   //array to hold the final english story.  This is used for translating in between languages
+    private List<string> engText;   //list to hold the final english story.  This is used for translating in between languages
     private List<List<string>> engDrops;
 
     private List<string> espText;
     private List<List<string>> espDrops;
 
     private List<string> deusText;
-    private List<List<string>> deusDrops;
-       
-    //parameters ( TextAsset, languageTextList, languageDropList )    
+    private List<List<string>> deusDrops;       
+    
     private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )
-    {
-        //string story = textEng.text;        
+    {        
         string story = textAss.text;
         string[] splitStory = story.Split( new char[] { '\n' } );
 
-        //foreach ( string s in splitStory )
+        
         for ( int i = 0; i < splitStory.Length; i++ )
         {
             //if the first char is '[', then split it into another list
             if( splitStory[i][0] == '[' )
             {                
-                string trimString = splitStory[i].TrimStart( '[' );
-                //Debug.Log("trimString = " + trimString);
-                string trimString2 = trimString.TrimEnd('\n');
-                //Debug.Log("trimString2 = " + trimString2);
-
-                //string[] splitOptions = trimString.Split( '|' );
+                string trimString = splitStory[i].TrimStart( '[' );                
+                string trimString2 = trimString.TrimEnd('\n');   
+               
                 string[] splitOptions = trimString2.Split('|');
                 List<string> dropOptions = new List<string>();
 
@@ -93,24 +88,32 @@ public class Book : MonoBehaviour
                 dropList = engDrops;
                 break;
         }
+               
+        PopulateUIElements( textList );
 
-        //populate the text UI elements
+        PopulateDropOptions( dropList );        
+    }
+
+    private void PopulateUIElements( List<string> textList )
+    {
         //Note: if an out of bounds exception is thrown, check the Txt file to see if it's formatted correctly (eg. missing a "|" )
-        for (int i = 0; i < storyText.Length; i++)
+        for ( int i = 0; i < storyText.Length; i++ )
         {
             storyText[i].text = textList[i];
         }
+    }
 
-        //populate the dropdown options
+    private void PopulateDropOptions( List<List<string>> dropList )
+    {
         //Note: if an out of bounds exception is thrown, check the Txt file to see if it's formatted correctly (eg. missing a "|" )
-        for (int i = 0; i < storyDrops.Length; i++)
+        for ( int i = 0; i < storyDrops.Length; i++ )
         {
-            for (int j = 0; j < storyDrops[i].options.Count; j++)
-            {                
+            for ( int j = 0; j < storyDrops[i].options.Count; j++ )
+            {
                 storyDrops[i].options[j].text = dropList[i][j];
 
                 //update the CaptionText.text
-                storyDrops[i].captionText.text = storyDrops[i].options[ storyDrops[i].value ].text;
+                storyDrops[i].captionText.text = storyDrops[i].options[storyDrops[i].value].text;
             }
         }
     }

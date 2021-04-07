@@ -732,9 +732,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6eb07d2854f93f34a91fcca80d626ef0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  voiceLines: []
+  voiceLineElements: []
   voiceToggle: {fileID: 0}
   timeText: {fileID: 0}
+  source: {fileID: 6400339748540912152}
 --- !u!1 &8930987649591566041
 GameObject:
   m_ObjectHideFlags: 0

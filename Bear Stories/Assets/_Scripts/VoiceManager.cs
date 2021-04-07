@@ -6,10 +6,12 @@ using UnityEngine.UI;
 public class VoiceManager : MonoBehaviour
 {
 
-    public VoiceLines[] voiceLines; //the page's current set of voice lines
+    public VoiceLines[] voiceLineElements; 
     public Toggle voiceToggle;
     public Text timeText;
+    public AudioSource source;
 
+    private string currentLanguage;
     private float waitTime;
     private bool voicePlaying = false;
 
@@ -20,9 +22,9 @@ public class VoiceManager : MonoBehaviour
         {
             voicePlaying = true;
             waitTime = 0.0f;
-            for ( int i = 0; i < voiceLines.Length; i++ )
+            for ( int i = 0; i < voiceLineElements.Length; i++ )
             {
-                waitTime += voiceLines[i].GetLineDuration();
+                waitTime += voiceLineElements[i].GetLineDuration();
             }
             StartCoroutine( VoiceCoroutine() );
         }        
@@ -30,14 +32,30 @@ public class VoiceManager : MonoBehaviour
 
     IEnumerator VoiceCoroutine()
     {        
-        for( int i = 0; i < voiceLines.Length; i++ )
+        for( int i = 0; i < voiceLineElements.Length; i++ )
         {
             //play the currently selected VO
-            voiceLines[i].PlayVO();             
+            voiceLineElements[i].PlayVO();             
 
             //wait for the line to be finished before playing hte next one
-            yield return new WaitForSeconds( voiceLines[i].GetLineDuration() ); 
+            yield return new WaitForSeconds( voiceLineElements[i].GetLineDuration() ); 
         }         
+    }
+
+    public void ChangeLanguage( int value )
+    {
+        switch( value )
+        {
+            case 0:
+                currentLanguage = "ENGLISH";
+                break;
+            case 1:
+                currentLanguage = "ESPANOL";
+                break;
+            case 2:
+                currentLanguage = "DEUTCH";
+                break;
+        }
     }
 
     public bool IsVoicePlaying()

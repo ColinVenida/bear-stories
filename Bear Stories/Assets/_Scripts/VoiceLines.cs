@@ -9,17 +9,19 @@ using System.Net;
 
 //class that handles the VO lines for each line and each language
 public class VoiceLines : MonoBehaviour
-{   
+{
 
+    public Dictionary<string, AudioClip[]> voiceLanguages;
+
+    //public because we need to set them in the editor
     public AudioClip[] engVoice;    
     public AudioClip[] espVoice;
     public AudioClip[] deutVoice;
     public AudioSource source;
     public VoiceManager voiceManager;
-
-    private int langSelect;
-    private int currentIndex = 0;    
-    private AudioClip[] currentLang;
+    
+    private int currentClipIndex = 0;       //what clip is accessed (the actual voice line)
+    private AudioClip[] currentLanguage;    //what audioclip array is accessed
 
     public void ChangeAudio( int lang )
     {
@@ -27,33 +29,33 @@ public class VoiceLines : MonoBehaviour
         switch ( lang )
         {
             case 0: //English
-                currentLang = engVoice;
+                currentLanguage = engVoice;
                 break;
             case 1:
-                currentLang = espVoice;
+                currentLanguage = espVoice;
                 break;
             case 2:
-                currentLang = deutVoice;
+                currentLanguage = deutVoice;
                 break;
             default:
                 Debug.Log( "Default Voice selected.  Setting to English" );
-                currentLang = engVoice;
+                currentLanguage = engVoice;
                 break;
         }
     }
 
-    //function to play the line based on the given int.  Int should be the value of the Dropdown
-    public void PlayVO( int line )
+    //function to play the line based on the given int
+    public void PlayVO( int dropOptionValue )
     {       
         //Debug.Log( "PlayVO(), line = " + line );        
         //check the line        
-        if( line >= currentLang.Length )
+        if( dropOptionValue >= currentLanguage.Length )
         {
-            Debug.Log("line on current language not set!, " + line);
+            Debug.Log("line on current language not set!, " + dropOptionValue );
         }
         else
         {
-            currentIndex = line;
+            currentClipIndex = dropOptionValue;
             StartCoroutine( PlayVoice() );                 
         }       
     }
@@ -66,38 +68,47 @@ public class VoiceLines : MonoBehaviour
         }
         else
         {
-            voiceManager.SetPlayingTrue( currentLang[currentIndex].length );            
+            voiceManager.SetPlayingTrue( currentLanguage[currentClipIndex].length );            
         }
-        source.PlayOneShot( currentLang[currentIndex] );
+        source.PlayOneShot( currentLanguage[currentClipIndex] );
     }
 
     public AudioClip[] GetCurrentLang()
     {
-        return currentLang;
+        return currentLanguage;
     }
 
     public void PlayVO()
     {
-        if( currentLang == null )
+        if( currentLanguage == null )
         {
             Debug.Log( "currentlang == null!" );
             return;
         }
         else
         {
-            source.PlayOneShot( currentLang[currentIndex] );
+            source.PlayOneShot( currentLanguage[currentClipIndex] );
         }        
     }
 
     public float GetLineDuration()
     {
-        return currentLang[currentIndex].length;
+        return currentLanguage[currentClipIndex].length;
+    }
+
+    public AudioClip GetClip( string language, int index )
+    {
+        return voiceLanguages[language][index];
     }
 
     // Start is called before the first frame update
     void Start()
     {
         voiceManager = GetComponentInParent<VoiceManager>();
+        voiceLanguages = new Dictionary<string, AudioClip[]>();
+        voiceLanguages.Add( "ENGLISH", engVoice );
+        voiceLanguages.Add( "ESPANOL", espVoice );
+        voiceLanguages.Add( "DEUTCH", deutVoice );
     }
 
     public void Awake()
