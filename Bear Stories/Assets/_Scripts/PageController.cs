@@ -1,67 +1,52 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 public class PageController : MonoBehaviour
 {
-
-    public GameObject[] PageArray;
+    public Page[] PageArray;
     public Button btnNext;
     public Button btnPrev;
     public Toggle voiceToggle;
     public Text pageNumber;
+    public AudioSource audioSource;
 
-    private int currentPage;
-    private List<VoiceManager> voiceManagers;
 
-    public void NextPage()
+    public enum LANGUAGE_SETTING
     {
-        //check array bounds here
-        if ( currentPage + 1 < PageArray.Length )
+        ENGLISH = 0,
+        ESPANOL = 1,
+        DEUTCH = 2
+    };
+
+    private LANGUAGE_SETTING currentLanguage;
+    private int currentPageIndex;    
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        currentPageIndex = 0;
+        CheckPageBounds();
+        FormatPages();
+        if ( voiceToggle.isOn )
         {            
-            TurnPage( currentPage + 1 );
-        }
-    }
-
-    public void PrevPage()
-    {
-        if ( currentPage - 1 >= 0 )
-        {
-            TurnPage( currentPage - 1 );
-        }
-    }
-
-    private void TurnPage( int page )
-    {        
-        //deactivate the current page, and activate the next page
-        PageArray[currentPage].gameObject.SetActive( false );       
-        PageArray[page].gameObject.SetActive( true );
-
-        
-        //update the currentPage reference
-        currentPage = page;
-
-        if (voiceToggle.isOn)
-        {
-            //Debug.Log("TurnPage PlayVO");
             PlayAutoVO();
         }
-        CheckPageBounds();
     }
-
     private void CheckPageBounds()
     {
         //check whether we are at the beginning or end of the book, then turn off the appropriate next/prev button
 
         //Debug.Log( "CheckPageBounds() currentPage == " + currentPage );
         //**NOTE** this logic does not work with 2-page books!  Books must have 3 or more pages
-        if (currentPage == 0)
+        if ( currentPageIndex == 0 )
         {
-            btnPrev.gameObject.SetActive( false );           
+            btnPrev.gameObject.SetActive( false );
         }
-        else if (currentPage == PageArray.Length - 1)
+        else if ( currentPageIndex == PageArray.Length - 1 )
         {
-            btnNext.gameObject.SetActive( false );            
+            btnNext.gameObject.SetActive( false );
         }
         else
         {
@@ -70,57 +55,68 @@ public class PageController : MonoBehaviour
         }
 
         //update the page number
-        pageNumber.text = ( (currentPage + 1).ToString() + "/" + PageArray.Length.ToString() );
-
-    }
-
-    private void PlayAutoVO()
-    {
-        Debug.Log("PlayAutoVO()");
-        voiceManagers[currentPage].PlayPageVO();
-        //if (voiceManagers[page].voiceToggle.isOn)
-        //{
-        //    Debug.Log("TurnPage PlayVO");
-            
-        //}
+        pageNumber.text = ( ( currentPageIndex + 1 ).ToString() + "/" + PageArray.Length.ToString() );
     }
 
     public void FormatPages()
     {
         //format all the pages to the UI elements fit in the box
-        for( int i = 0; i < PageArray.Length; i++ )        
-        {            
-            PageArray[i].GetComponentInChildren<StoryBox>().Invoke( "FormatElements", 0 );
+        for ( int i = 0; i < PageArray.Length; i++ )
+        {
+            PageArray[i].storyBox.FormatElements();
         }
-        
     }
 
-
-    // Start is called before the first frame update
-    void Start()
+    public void NextPage()
     {
-        currentPage = 0;
-        CheckPageBounds();
-        FormatPages();
-        if (voiceToggle.isOn)
+        //check array bounds here
+        if ( currentPageIndex + 1 < PageArray.Length )
+        {            
+            TurnPage( currentPageIndex + 1 );
+        }
+    }
+
+    public void PrevPage()
+    {
+        if ( currentPageIndex - 1 >= 0 )
         {
-            //Debug.Log("TurnPage PlayVO");
+            TurnPage( currentPageIndex - 1 );
+        }
+    }
+
+    private void TurnPage( int page )
+    {        
+        //deactivate the current page, and activate the next page
+        PageArray[currentPageIndex].gameObject.SetActive( false );       
+        PageArray[page].gameObject.SetActive( true );
+
+
+        //update the currentPage reference
+        currentPageIndex = page;
+
+        if (voiceToggle.isOn)
+        {            
             PlayAutoVO();
         }
+        CheckPageBounds();
     }
 
-    public void Awake()
+    public int GetCurrentPageIndex()
     {
-        voiceManagers = new List<VoiceManager>();
-        for (int i = 0; i < PageArray.Length; i++)
-        {            
-            voiceManagers.Add( PageArray[i].GetComponent<VoiceManager>() );            
+        return currentPageIndex;
+    }
+
+
+    public void PlayAutoVO()
+    {
+        Debug.Log("PlayAutoVO()");
+        try
+        {
+            PageArray[currentPageIndex].PlaySelectedVoiceLines();
+        }
+        catch( NullReferenceException e )
+        {
+            Debug.Log( "PageController null reference" );            
         }        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

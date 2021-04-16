@@ -311,8 +311,6 @@ MonoBehaviour:
   engVoice: []
   espVoice: []
   deutVoice: []
-  source: {fileID: 0}
-  voiceManager: {fileID: 0}
 --- !u!114 &743111733964988618
 MonoBehaviour:
   m_ObjectHideFlags: 0

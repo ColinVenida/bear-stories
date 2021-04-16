@@ -6,7 +6,7 @@ using UnityEngine.UI;
 //class that handles all the text/voice for each story
 public class Book : MonoBehaviour
 {
-    //the txt files of the story.  Txt files are formatted to be string.Split()
+    //the txt files of the story
     public TextAsset textEng;
     public TextAsset textEsp;
     public TextAsset textDeus;
@@ -23,8 +23,27 @@ public class Book : MonoBehaviour
     private List<List<string>> espDrops;
 
     private List<string> deusText;
-    private List<List<string>> deusDrops;       
-    
+    private List<List<string>> deusDrops;
+
+    // Start is called before the first frame update    
+    void Start()
+    {
+        engText = new List<string>();
+        engDrops = new List<List<string>>();
+
+        espText = new List<string>();
+        espDrops = new List<List<string>>();
+
+        deusText = new List<string>();
+        deusDrops = new List<List<string>>();
+
+        SplitStory( textEng, engText, engDrops );
+        SplitStory( textEsp, espText, espDrops );
+        SplitStory( textDeus, deusText, deusDrops );
+
+        //set the initial language to english for now
+        ChangeLanguageText( 0 );
+    }
     private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )
     {        
         string story = textAss.text;
@@ -63,11 +82,12 @@ public class Book : MonoBehaviour
 
     }//end SplitStory()
 
-    public void ChangeLanguage( int lang )
+    public void ChangeLanguageText( int lang )
     {
         List<string> textList = engText;
-        List<List<string>> dropList = engDrops;       
+        List<List<string>> dropList = engDrops;
 
+        //languageIndex = lang;
         switch ( lang )
         {
             case 0:     //english
@@ -89,12 +109,11 @@ public class Book : MonoBehaviour
                 break;
         }
                
-        PopulateUIElements( textList );
-
+        PopulateTextElements( textList );
         PopulateDropOptions( dropList );        
     }
 
-    private void PopulateUIElements( List<string> textList )
+    private void PopulateTextElements( List<string> textList )
     {
         //Note: if an out of bounds exception is thrown, check the Txt file to see if it's formatted correctly (eg. missing a "|" )
         for ( int i = 0; i < storyText.Length; i++ )
@@ -116,33 +135,5 @@ public class Book : MonoBehaviour
                 storyDrops[i].captionText.text = storyDrops[i].options[storyDrops[i].value].text;
             }
         }
-    }
-
-    // Start is called before the first frame update    
-    void Start()
-    {
-        engText = new List<string>();
-        engDrops = new List<List<string>>();
-
-        espText = new List<string>();
-        espDrops = new List<List<string>>();
-
-        deusText = new List<string>();
-        deusDrops = new List<List<string>>();
-        
-        SplitStory( textEng, engText, engDrops );
-        SplitStory( textEsp, espText, espDrops );
-        SplitStory( textDeus, deusText, deusDrops );
-
-        //set the initial language to english for now
-        ChangeLanguage( 0 );
-    }
-
-
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    }    
 }
