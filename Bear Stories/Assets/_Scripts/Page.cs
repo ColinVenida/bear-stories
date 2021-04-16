@@ -2,12 +2,14 @@
 using System.Collections.Generic;
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Page : MonoBehaviour
 {
     public StoryBox storyBox;
     public VoiceLines[] voiceLineElements;
     public AudioSource audioSource;
+    public Toggle voiceToggle;
 
     private List<AudioClip> selectedLines;
 
@@ -19,11 +21,12 @@ public class Page : MonoBehaviour
     void Start()
     {
         PopulateSelectedLines();
-    }
+        Activate();
+    }    
 
     private void PopulateSelectedLines()
     {
-        int firstIndex = 0;
+        int firstIndex = 0;        
         try
         {
             for ( int i = 0; i < voiceLineElements.Length; i++ )
@@ -34,7 +37,16 @@ public class Page : MonoBehaviour
         catch ( NullReferenceException e )
         {
             Debug.Log( "Page Null Reference" );
+            Debug.Log( e.StackTrace );
         }        
+    }
+
+    public void Activate()
+    {
+        if ( voiceToggle.isOn )
+        {
+            PlaySelectedVoiceLines();
+        }
     }
 
     public void PlaySelectedVoiceLines()

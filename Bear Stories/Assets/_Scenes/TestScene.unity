@@ -1672,6 +1672,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 519420030}
+    - target: {fileID: 4023686243645406016, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: voiceToggle
+      value: 
+      objectReference: {fileID: 1114511623}
     - target: {fileID: 8174523851249703383, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_RootOrder
@@ -1697,6 +1702,11 @@ PrefabInstance:
       propertyPath: voiceLineElements.Array.data[1]
       value: 
       objectReference: {fileID: 1246799464}
+    - target: {fileID: 4023686242624057684, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: voiceToggle
+      value: 
+      objectReference: {fileID: 1114511623}
     - target: {fileID: 1637917337441585621, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_Text
@@ -3732,11 +3742,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 169858769}
+      objectReference: {fileID: 498012717}
     - target: {fileID: 6144402614131916740, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayAutoVO
+      value: PlaySelectedVoiceLines
       objectReference: {fileID: 0}
     - target: {fileID: 6144402614131916740, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -3777,11 +3787,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 169858769}
+      objectReference: {fileID: 614809760}
     - target: {fileID: 6144402615258576336, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: PlayAutoVO
+      value: PlaySelectedVoiceLines
       objectReference: {fileID: 0}
     - target: {fileID: 6144402615258576336, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -3893,6 +3903,11 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 519420030}
+    - target: {fileID: 4023686243487586506, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: voiceToggle
+      value: 
+      objectReference: {fileID: 1114511623}
     m_RemovedComponents:
     - {fileID: 4207446181345823709, guid: 9ee88b85f6b820c4e95efb1665b12224, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9ee88b85f6b820c4e95efb1665b12224, type: 3}

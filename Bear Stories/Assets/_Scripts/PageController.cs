@@ -7,11 +7,8 @@ public class PageController : MonoBehaviour
 {
     public Page[] PageArray;
     public Button btnNext;
-    public Button btnPrev;
-    public Toggle voiceToggle;
-    public Text pageNumber;
-    public AudioSource audioSource;
-
+    public Button btnPrev;    
+    public Text pageNumber;   
 
     public enum LANGUAGE_SETTING
     {
@@ -26,13 +23,9 @@ public class PageController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentPageIndex = 0;
+        currentPageIndex = 0;   //TODO properly update currentPageIndex at the start of the program
         CheckPageBounds();
-        FormatPages();
-        if ( voiceToggle.isOn )
-        {            
-            PlayAutoVO();
-        }
+        FormatPages();        
     }
     private void CheckPageBounds()
     {
@@ -89,34 +82,16 @@ public class PageController : MonoBehaviour
         //deactivate the current page, and activate the next page
         PageArray[currentPageIndex].gameObject.SetActive( false );       
         PageArray[page].gameObject.SetActive( true );
-
+        PageArray[page].Activate();
 
         //update the currentPage reference
         currentPageIndex = page;
-
-        if (voiceToggle.isOn)
-        {            
-            PlayAutoVO();
-        }
+        
         CheckPageBounds();
     }
 
     public int GetCurrentPageIndex()
     {
         return currentPageIndex;
-    }
-
-
-    public void PlayAutoVO()
-    {
-        Debug.Log("PlayAutoVO()");
-        try
-        {
-            PageArray[currentPageIndex].PlaySelectedVoiceLines();
-        }
-        catch( NullReferenceException e )
-        {
-            Debug.Log( "PageController null reference" );            
-        }        
-    }
+    }       
 }

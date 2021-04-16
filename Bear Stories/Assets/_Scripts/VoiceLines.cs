@@ -19,15 +19,14 @@ public class VoiceLines : MonoBehaviour
     
     private int currentClipIndex = 0;       //the clip that is accessed (the actual voice line)
     private AudioClip[] currentLanguage;    //the audioclip array that is accessed
-
-    public void Awake()
+        
+    public void Start()
     {
-        ChangeAudio( 0 );
+        ChangeVoiceAudio( 0 );
     }
-    
-    public void ChangeAudio( int lang )
-    {
-        Debug.Log("ChangeAudio(), " + lang);
+
+    public void ChangeVoiceAudio( int lang )
+    {        
         switch ( lang )
         {
             case 0: //English
