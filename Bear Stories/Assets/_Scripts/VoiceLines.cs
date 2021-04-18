@@ -47,8 +47,18 @@ public class VoiceLines : MonoBehaviour
 
     public void PlayVoiceLine( int option )
     {        
-        page.UpdateSelectedLine( lineIndex, option );        
-        audioSource.PlayOneShot( currentLanguage[option] );
+        page.UpdateSelectedVoiceLine( lineIndex, option );
+        page.UpdateSelectedVLIndex( lineIndex, option );
+        try
+        {
+            audioSource.PlayOneShot( currentLanguage[option] );
+        }
+        catch( IndexOutOfRangeException e )
+        {
+            Debug.Log( "===PlayVoiceLine()===" );
+            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!" );
+            Debug.Log( e.StackTrace );
+        }        
     }    
 
     public AudioClip[] GetCurrentLang()

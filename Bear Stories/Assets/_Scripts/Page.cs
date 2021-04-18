@@ -11,31 +11,45 @@ public class Page : MonoBehaviour
     public AudioSource audioSource;
     public Toggle voiceToggle;
 
-    private List<AudioClip> selectedLines;
+    private List<AudioClip> selectedVoiceLines;
+    private List<int> selectedVLIndexes;
 
     public void Awake()
     {
-        selectedLines = new List<AudioClip>();        
+        selectedVoiceLines = new List<AudioClip>();
+        selectedVLIndexes = new List<int>();
     }
 
     void Start()
     {
-        PopulateSelectedLines();
+        PopulateSelectedVLIndexes();
+        PopulateSelectedVoiceLines();
         Activate();
     }    
 
-    private void PopulateSelectedLines()
+    private void PopulateSelectedVLIndexes()
     {
-        int firstIndex = 0;        
+        //hardcoded values for now.  TODO: save the values as PlayerPrefs
+        int firstIndex = 0;
+        for ( int i = 0; i < voiceLineElements.Length; i++ )
+        {
+            selectedVLIndexes.Add( firstIndex );
+        }   
+    }
+
+    private void PopulateSelectedVoiceLines()
+    {        
         try
         {
             for ( int i = 0; i < voiceLineElements.Length; i++ )
             {
-                selectedLines.Add( voiceLineElements[i].GetCurrentLang()[firstIndex] );
+                int index = selectedVLIndexes[i];
+                selectedVoiceLines.Add( voiceLineElements[i].GetCurrentLang()[index] );
             }
         }
         catch ( NullReferenceException e )
         {
+            Debug.Log( "===PopulateSelectedVoiceLines()===" );
             Debug.Log( "Page Null Reference" );
             Debug.Log( e.StackTrace );
         }        
@@ -56,16 +70,57 @@ public class Page : MonoBehaviour
 
     IEnumerator VoiceCoroutine()
     {        
-        for( int i = 0; i < selectedLines.Count; i++ )
+        for( int i = 0; i < selectedVoiceLines.Count; i++ )
         {            
-            audioSource.PlayOneShot( selectedLines[i] );
-            yield return new WaitForSeconds( selectedLines[i].length );
+            audioSource.PlayOneShot( selectedVoiceLines[i] );
+            yield return new WaitForSeconds( selectedVoiceLines[i].length );
         }
     }
-
-    public void UpdateSelectedLine( int lineIndex, int dropOption )
+        
+    public void UpdateSelectedVoiceLine( int line, int dropOption )
     {
-        selectedLines[lineIndex] = voiceLineElements[lineIndex].GetCurrentLang()[dropOption];
+        try
+        {
+            selectedVoiceLines[line] = voiceLineElements[line].GetCurrentLang()[dropOption];
+        }
+        catch ( IndexOutOfRangeException e )
+        {
+            Debug.Log( "===UpdateSelectedVoiceLines()===" );
+            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );
+            Debug.Log( e.StackTrace );
+        }        
     }
 
+    public void UpdateSelectedVLIndex( int index, int value )
+    {
+        selectedVLIndexes[index] = value;
+    }
+
+    public void ChangeVoiceLanguage( int language )
+    {
+        for( int i = 0; i < voiceLineElements.Length; i++ )
+        {
+            voiceLineElements[i].ChangeVoiceAudio( language );            
+        }
+        ChangeSelectedLineLanguage();
+    }
+
+    private void ChangeSelectedLineLanguage()
+    {
+        for( int i = 0; i < selectedVoiceLines.Count; i++ )
+        {
+            try
+            {
+                int voiceIndex = selectedVLIndexes[i];
+                AudioClip clip = voiceLineElements[i].GetCurrentLang()[voiceIndex];
+                selectedVoiceLines[i] = clip;
+            }
+            catch( IndexOutOfRangeException e )
+            {
+                Debug.Log( "===ChangeSelectedLineLanguage()===" );
+                Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );
+                Debug.Log( e.StackTrace );
+            }            
+        }
+    }   
 }

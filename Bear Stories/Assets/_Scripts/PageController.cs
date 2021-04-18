@@ -94,4 +94,16 @@ public class PageController : MonoBehaviour
     {
         return currentPageIndex;
     }       
+
+    public void ChangeVoiceLanguage( int languageOption )
+    {
+        //not all pages are ready for Harold's Story, need to set a contant value for the for loop
+        int readyPages = 1;
+
+        //for( int i = 0; i < PageArray.Length; i++ )
+        for ( int i = 0; i < readyPages; i++ )
+        {
+            PageArray[i].ChangeVoiceLanguage( languageOption );
+        }
+    }
 }

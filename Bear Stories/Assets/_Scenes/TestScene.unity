@@ -2200,7 +2200,7 @@ PrefabInstance:
     - target: {fileID: 8144410372241159186, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 8144410372241159186, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -2261,11 +2261,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 169858769}
     - target: {fileID: 8144410372241159186, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[2].m_MethodName
-      value: ChangeAudio
+      value: ChangeVoiceLanguage
       objectReference: {fileID: 0}
     - target: {fileID: 8144410372241159186, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -3042,6 +3042,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
+      propertyPath: espVoice.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: deutVoice.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
       propertyPath: engVoice.Array.data[1]
       value: 
       objectReference: {fileID: 8300000, guid: fedf34ab797640c489635ad84369ec6f, type: 3}
@@ -3075,6 +3085,26 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 519420030}
+    - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: deutVoice.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: eac2cc7f66e5cef4082e57d5dd175b27, type: 3}
+    - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: deutVoice.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c43e0136ddfd4042a3441c8ddaebc7b, type: 3}
+    - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: espVoice.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 15c9427e55cfcd54b99cad8fda4a9d39, type: 3}
+    - target: {fileID: 647220552107575729, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: espVoice.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: f43e7281c4f411048becac84ead700a0, type: 3}
     - target: {fileID: 647220551794832758, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_Text
@@ -3595,6 +3625,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
+      propertyPath: espVoice.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: deutVoice.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
       propertyPath: engVoice.Array.data[0]
       value: 
       objectReference: {fileID: 8300000, guid: 7c29cef1cf332294a8d801104f587ac5, type: 3}
@@ -3638,6 +3678,31 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 519420030}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: espVoice.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: e0ee6a999f2556e479b62698880d6a9e, type: 3}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: espVoice.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 3b5b9974dabf81c4995cb869587b6f2c, type: 3}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: espVoice.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: a7022fd0bd258eb4bb62944b5c44bfe4, type: 3}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: deutVoice.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 09a7a60257d894e4aad8d576e059ac6a, type: 3}
+    - target: {fileID: 4366964096483263130, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: deutVoice.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 6bc487869ac531c4a8ee865bd7fd69d4, type: 3}
     - target: {fileID: 5951250885453978875, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: voiceLines.Array.size
