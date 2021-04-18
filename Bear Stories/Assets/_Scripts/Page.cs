@@ -38,7 +38,7 @@ public class Page : MonoBehaviour
     }
 
     private void PopulateSelectedVoiceLines()
-    {        
+    {       
         try
         {
             for ( int i = 0; i < voiceLineElements.Length; i++ )
@@ -49,9 +49,8 @@ public class Page : MonoBehaviour
         }
         catch ( NullReferenceException e )
         {
-            Debug.Log( "===PopulateSelectedVoiceLines()===" );
-            Debug.Log( "Page Null Reference" );
-            Debug.Log( e.StackTrace );
+            Debug.Log( e.StackTrace );            
+            Debug.Log( "Page Null Reference" );            
         }        
     }
 
@@ -85,9 +84,8 @@ public class Page : MonoBehaviour
         }
         catch ( IndexOutOfRangeException e )
         {
-            Debug.Log( "===UpdateSelectedVoiceLines()===" );
-            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );
-            Debug.Log( e.StackTrace );
+            Debug.Log( e.StackTrace );            
+            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );            
         }        
     }
 
@@ -117,9 +115,8 @@ public class Page : MonoBehaviour
             }
             catch( IndexOutOfRangeException e )
             {
-                Debug.Log( "===ChangeSelectedLineLanguage()===" );
-                Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );
                 Debug.Log( e.StackTrace );
+                Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );                
             }            
         }
     }   

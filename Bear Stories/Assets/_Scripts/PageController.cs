@@ -8,7 +8,8 @@ public class PageController : MonoBehaviour
     public Page[] PageArray;
     public Button btnNext;
     public Button btnPrev;    
-    public Text pageNumber;   
+    public Text pageNumber;
+    public Dropdown languageDrop;
 
     public enum LANGUAGE_SETTING
     {
@@ -22,11 +23,13 @@ public class PageController : MonoBehaviour
 
     // Start is called before the first frame update
     void Start()
-    {
-        currentPageIndex = 0;   //TODO properly update currentPageIndex at the start of the program
+    {        
+        currentPageIndex = 0;   //TODO properly update currentPageIndex with PlayerPref at the start of the program? (not sure if I really need to do this)
         CheckPageBounds();
-        FormatPages();        
+        FormatPages();
+        SetLanguageFromPref();
     }
+   
     private void CheckPageBounds()
     {
         //check whether we are at the beginning or end of the book, then turn off the appropriate next/prev button
@@ -58,6 +61,35 @@ public class PageController : MonoBehaviour
         {
             PageArray[i].storyBox.FormatElements();
         }
+    }
+
+    private void SetLanguageFromPref()
+    {        
+        int language = 0;
+
+        if ( PlayerPrefs.HasKey( "Selected Language" ) )
+        {
+            language = PlayerPrefs.GetInt( "Selected Language" );            
+        }
+        else
+        {
+            PlayerPrefs.SetInt( "Selected Language", language );
+        }
+
+        languageDrop.value = language;
+    }
+
+    public void ChangeVoiceLanguage( int languageOption )
+    {
+        //not all pages are ready for Harold's Story, need to set a contant value for the for loop
+        int readyPages = 1;
+
+        //for( int i = 0; i < PageArray.Length; i++ )
+        for ( int i = 0; i < readyPages; i++ )
+        {
+            PageArray[i].ChangeVoiceLanguage( languageOption );
+        }
+        PlayerPrefs.SetInt( "Selected Language", languageOption );
     }
 
     public void NextPage()
@@ -93,17 +125,5 @@ public class PageController : MonoBehaviour
     public int GetCurrentPageIndex()
     {
         return currentPageIndex;
-    }       
-
-    public void ChangeVoiceLanguage( int languageOption )
-    {
-        //not all pages are ready for Harold's Story, need to set a contant value for the for loop
-        int readyPages = 1;
-
-        //for( int i = 0; i < PageArray.Length; i++ )
-        for ( int i = 0; i < readyPages; i++ )
-        {
-            PageArray[i].ChangeVoiceLanguage( languageOption );
-        }
-    }
+    }   
 }

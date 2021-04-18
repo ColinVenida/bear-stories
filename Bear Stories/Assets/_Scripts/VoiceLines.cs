@@ -16,13 +16,27 @@ public class VoiceLines : MonoBehaviour
     public AudioClip[] deutVoice;
     public Page page;
     public AudioSource audioSource;
-    
+
+    private int selectedLanguage;
     private int currentClipIndex = 0;       //the clip that is accessed (the actual voice line)
     private AudioClip[] currentLanguage;    //the audioclip array that is accessed
         
     public void Start()
     {
-        ChangeVoiceAudio( 0 );
+        SetLanguageFromPref();
+        ChangeVoiceAudio( selectedLanguage );
+    }
+
+    private void SetLanguageFromPref()
+    {        
+        if ( PlayerPrefs.HasKey( "Selected Language" ) )
+        {
+            selectedLanguage = PlayerPrefs.GetInt( "Selected Language" );            
+        }
+        else
+        {
+            PlayerPrefs.SetInt( "Selected Language", selectedLanguage );
+        }
     }
 
     public void ChangeVoiceAudio( int lang )
@@ -55,9 +69,8 @@ public class VoiceLines : MonoBehaviour
         }
         catch( IndexOutOfRangeException e )
         {
-            Debug.Log( "===PlayVoiceLine()===" );
-            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!" );
-            Debug.Log( e.StackTrace );
+            Debug.Log( e.StackTrace );            
+            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!" );            
         }        
     }    
 
