@@ -1697,6 +1697,11 @@ PrefabInstance:
       propertyPath: isActivePage
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4023686243645406016, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: isFirstPage
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8174523851249703383, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_RootOrder
