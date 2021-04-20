@@ -75,18 +75,17 @@ public class PageController : MonoBehaviour
         {
             PlayerPrefs.SetInt( "Selected Language", language );
         }
-
         languageDrop.value = language;
     }
 
     public void ChangeVoiceLanguage( int languageOption )
     {
         //not all pages are ready for Harold's Story, need to set a contant value for the for loop
-        int readyPages = 1;
+        int readyPages = 2;
 
         //for( int i = 0; i < PageArray.Length; i++ )
         for ( int i = 0; i < readyPages; i++ )
-        {
+        {            
             PageArray[i].ChangeVoiceLanguage( languageOption );
         }
         PlayerPrefs.SetInt( "Selected Language", languageOption );
@@ -111,14 +110,22 @@ public class PageController : MonoBehaviour
 
     private void TurnPage( int page )
     {        
-        //deactivate the current page, and activate the next page
-        PageArray[currentPageIndex].gameObject.SetActive( false );       
-        PageArray[page].gameObject.SetActive( true );
+        //move the pages here
+        RectTransform currentPageTransform = PageArray[currentPageIndex].GetComponent<RectTransform>();
+        RectTransform nextPageTransform = PageArray[page].GetComponent<RectTransform>();
+
+        float currentPageWidth = currentPageTransform.rect.width;
+        float nextPageWidth = nextPageTransform.rect.width;
+
+        currentPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Right, currentPageWidth, currentPageWidth );
+        nextPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Left, 0, nextPageWidth );  
+                
+        PageArray[currentPageIndex].Deactivate();
         PageArray[page].Activate();
 
         //update the currentPage reference
         currentPageIndex = page;
-        
+
         CheckPageBounds();
     }
 

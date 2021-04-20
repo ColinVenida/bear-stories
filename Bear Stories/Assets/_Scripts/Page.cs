@@ -10,12 +10,13 @@ public class Page : MonoBehaviour
     public VoiceLines[] voiceLineElements;
     public AudioSource audioSource;
     public Toggle voiceToggle;
-
+    public bool isFirstPage;
+    
     private List<AudioClip> selectedVoiceLines;
     private List<int> selectedVLIndexes;
 
     public void Awake()
-    {
+    {        
         selectedVoiceLines = new List<AudioClip>();
         selectedVLIndexes = new List<int>();
     }
@@ -24,12 +25,15 @@ public class Page : MonoBehaviour
     {
         PopulateSelectedVLIndexes();
         PopulateSelectedVoiceLines();
-        Activate();
+        if( isFirstPage )
+        {
+            Activate();
+        }        
     }    
 
     private void PopulateSelectedVLIndexes()
     {
-        //hardcoded values for now.  TODO: save the values as PlayerPrefs
+        //hardcoded values for now.  TODO: save the values as PlayerPrefs (do I need to do this???)
         int firstIndex = 0;
         for ( int i = 0; i < voiceLineElements.Length; i++ )
         {
@@ -55,11 +59,19 @@ public class Page : MonoBehaviour
     }
 
     public void Activate()
-    {
+    {        
         if ( voiceToggle.isOn )
         {
             PlaySelectedVoiceLines();
         }
+    }
+
+    public void Deactivate()
+    {
+        //stop the audio playing. does not work yet; second line still plays after the WaitForSeconds
+        audioSource.Stop();
+        StopCoroutine( VoiceCoroutine() );
+        
     }
 
     public void PlaySelectedVoiceLines()
@@ -105,7 +117,7 @@ public class Page : MonoBehaviour
 
     private void ChangeSelectedLineLanguage()
     {
-        for( int i = 0; i < selectedVoiceLines.Count; i++ )
+        for ( int i = 0; i < selectedVoiceLines.Count; i++ )
         {
             try
             {
@@ -113,11 +125,11 @@ public class Page : MonoBehaviour
                 AudioClip clip = voiceLineElements[i].GetCurrentLang()[voiceIndex];
                 selectedVoiceLines[i] = clip;
             }
-            catch( IndexOutOfRangeException e )
+            catch ( IndexOutOfRangeException e )
             {
                 Debug.Log( e.StackTrace );
-                Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );                
-            }            
+                Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );
+            }
         }
     }   
 }

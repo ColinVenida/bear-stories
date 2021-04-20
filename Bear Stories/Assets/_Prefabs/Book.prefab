@@ -1990,7 +1990,7 @@ PrefabInstance:
     - target: {fileID: 8893422947904535414, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5103074552610704693, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2055,7 +2055,7 @@ PrefabInstance:
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.4477539
+      value: 2181.8
       objectReference: {fileID: 0}
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2137,6 +2137,16 @@ PrefabInstance:
       propertyPath: voiceToggle
       value: 
       objectReference: {fileID: 8370218283586668656}
+    - target: {fileID: 5592433486449281066, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790359880343896833, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 98154649120582741, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_Text
@@ -2389,7 +2399,7 @@ PrefabInstance:
     - target: {fileID: 8893422947904535414, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5103074552610704693, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2454,7 +2464,7 @@ PrefabInstance:
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0.4477539
+      value: 4363.1
       objectReference: {fileID: 0}
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2536,6 +2546,16 @@ PrefabInstance:
       propertyPath: voiceToggle
       value: 
       objectReference: {fileID: 8370218283586668656}
+    - target: {fileID: 5592433486449281066, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8790359880343896833, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 98154649120582741, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_Text
