@@ -9,6 +9,12 @@ public class DropResize : MonoBehaviour
 
     public StoryBox sBox;
 
+    private void Start()
+    {
+        rt = this.GetComponent<RectTransform>();
+        drop = this.GetComponent<Dropdown>();
+    }
+
     //resize the dropdown based on the current option's label length
     public void Resize( int option )
     {
@@ -29,11 +35,4 @@ public class DropResize : MonoBehaviour
         rt.sizeDelta = new Vector2(width, sBox.dropHeight);
         sBox.RepositionElements();
     }
-
-    private void Start()
-    {
-        rt = this.GetComponent<RectTransform>();
-        drop = this.GetComponent<Dropdown>();
-    }
-
 }
