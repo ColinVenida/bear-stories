@@ -11,9 +11,11 @@ public class StoryBox : MonoBehaviour
 
     public int textHeight;
     public int dropHeight;
+
+    public bool haveTextOnSeparateLines;
      
     private const int SPACE_BETWEEN = 60;
-    private const int LINE_HEIGHT = 135;
+    private const int LINE_HEIGHT = 100;
     private RectTransform boxRT;
 
     public void Start()
@@ -63,26 +65,49 @@ public class StoryBox : MonoBehaviour
     }
 
     public void RepositionElements()
-    {        
+    {      
+        if( haveTextOnSeparateLines )
+        {
+            ArrangeInSeparateLines();
+        }
+        else
+        {
+            ArrangeWithTextWraping();
+        }
+    }
+
+    private void ArrangeInSeparateLines()
+    {
+        float yPos = rtArray[0].anchoredPosition.y;
+
+        for ( int i = 1; i < rtArray.Length; i++ )
+        {
+            yPos -= LINE_HEIGHT;
+            rtArray[i].anchoredPosition = new Vector3( 0, yPos );
+        }
+    }
+
+    private void ArrangeWithTextWraping()
+    {
         float nextX = rtArray[0].rect.width + SPACE_BETWEEN;
-        float yPos = rtArray[0].anchoredPosition.y;          
-        
+        float yPos = rtArray[0].anchoredPosition.y;
+
         //****NOTE*****
         //research and make notes about anchoredPosition vs localPosition vs rect.position here
-        for( int i = 1; i < rtArray.Length; i++ )
+        for ( int i = 1; i < rtArray.Length; i++ )
         {
             //if the element won't fit on the current line            
             if ( nextX + rtArray[i].rect.width > boxRT.rect.width )
-            {                  
+            {
                 yPos -= LINE_HEIGHT;
-                
-                rtArray[i].anchoredPosition = new Vector3(0, yPos);                
+
+                rtArray[i].anchoredPosition = new Vector3( 0, yPos );
                 nextX = rtArray[i].rect.width + SPACE_BETWEEN;
             }
             else
-            {               
+            {
                 rtArray[i].anchoredPosition = new Vector3( nextX, yPos );
-                nextX += rtArray[i].rect.width + SPACE_BETWEEN;                
+                nextX += rtArray[i].rect.width + SPACE_BETWEEN;
             }
         }//end for
     }

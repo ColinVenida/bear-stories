@@ -18,10 +18,6 @@ public class DropResize : MonoBehaviour
     //resize the dropdown based on the current option's label length
     public void Resize( int option )
     {
-       
-        //Debug.Log("options.text = " + (drop.options[option].text));
-        //Debug.Log("options.text.Length = " + (drop.options[option].text.Length ) );
-        
         int width = 0;
         if (drop.options[option].text.Length < 5 )
         {
