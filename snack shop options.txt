@@ -1,0 +1,16 @@
+-snacks
+chocolates/chocolates/Schokolade
+empanadas
+Strudel
+
+-teeth colors
+yellow teeth/dientes amarillos/gelbe Zähne
+green teeth/dientes verdes/grüne Zähne
+red teeth/dientes rojos/rote Zähne
+polka-dotted teeth/dientes  /punktmuster Zähne
+
+
+
+chocolates
+rollos de canela
+

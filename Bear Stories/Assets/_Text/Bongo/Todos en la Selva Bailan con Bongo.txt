@@ -3,18 +3,18 @@ Bongo tiene un amigo llamado Toogie.
 Toogie baila tango todo el día.
 Toogie baila tango,
 Todos en la selva bailan con Bongo. 
-Bongo tiene una amiga llamado Choogie.
+Bongo tiene una amiga llamada Choogie.
 Choogie baila cha-cha-cha todo el día.
 Choogie baila cha-cha-cha,
 Toogie baila tango,
 Todos en la selva bailan con Bongo.
-Bongo tiene una amiga llamado Roogie.
+Bongo tiene una amiga llamada Roogie.
 Roogie baila rumba todo el día.
 Roogie baila rumba,
 Choogie baila cha-cha-cha,
 Toogie baila tango,
 Todos en la selva bailan con Bongo.
-Bongo tiene una amiga llamado Soogie.
+Bongo tiene una amiga llamada Soogie.
 Soogie baila salsa todo el día.
 Soogie baila salsa,
 Roogie baila rumba,

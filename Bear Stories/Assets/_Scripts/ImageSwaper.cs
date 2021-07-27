@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ImageSwaper : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Sprite[] sprites;    
+    public Image swapImage;
+    public Dropdown dropDown;
+    
+    public void SwapImageWithDropdown( int dropValue )
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
+        if( dropValue < sprites.Length )
+        {
+            swapImage.sprite = sprites[dropValue];
+        }
+        else
+        {
+            Debug.Log( "***no associated sprite for the dropdown option: " + dropValue );
+        }
         
     }
 }

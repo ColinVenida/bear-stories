@@ -173,7 +173,7 @@ GameObject:
   m_Component:
   - component: {fileID: 33632087476809634}
   m_Layer: 5
-  m_Name: Sprites
+  m_Name: Images
   m_TagString: Untagged
   m_Icon: {fileID: -5397416234189338067, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -622,7 +622,7 @@ RectTransform:
   m_GameObject: {fileID: 8893422947904535414}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.00008, y: 1.00008, z: 1.00008}
+  m_LocalScale: {x: 1.0000772, y: 1.0000772, z: 1.0000772}
   m_Children:
   - {fileID: 2019421541122778019}
   - {fileID: 1067887822887350411}

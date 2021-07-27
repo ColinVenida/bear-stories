@@ -1,0 +1,41 @@
+===Title===
+font: Comic Sans
+color (green tint):
+	R: 94.1
+	G: 100.0
+	B: 95.3
+	L: 98.6
+	C: 7.8
+	h: 149.3
+
+color (white looks better):
+	R: 96.1
+	G: 96.1
+	B: 96.1
+	L: 96.5
+	C: 0.0
+	h: 141.2
+
+
+effect/filter:	
+	Filter > Light and Shadow > Long Shadow	
+		Style: Finite
+		Angle: 45.0
+		Length: 10.0	//8.0 Length for credits
+		
+
+		Color (Green)
+		R: 5.3
+		G: 12.3
+		B: 4.6
+		L: 10.0
+		C: 15.2
+		h: 140.2
+
+		Color (Brown)  //I think brown looks better
+		R: 29.5
+		G: 21.2
+		B: 8.3
+		L: 24.6
+		C: 24.9
+		h: 74.1
