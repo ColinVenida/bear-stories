@@ -440,7 +440,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: 2346a5a822e5fcc43955b36fae825ac6, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 6a11348a7cb09914289af43dcfc832db, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -539,7 +540,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: 661f9575e702d6644bf37b90d40cc468, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 05a6b07bb709bee40bc9d14e251030a0, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -1486,7 +1488,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.04638672, y: -0.040893555}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -0.68701, y: -0.3271502}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629837923
@@ -1541,7 +1543,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: a2525bcf37070664fb3bb40bb4046b35, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 27f1ff507ea14344a885a0df69accb73, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -2555,7 +2558,12 @@ PrefabInstance:
     - target: {fileID: 6579553186400008088, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0063476562
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579553186400008088, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2155530644930106639, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -2664,6 +2672,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[3].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 6190723971304859825, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -943.75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee88b85f6b820c4e95efb1665b12224, type: 3}
@@ -2875,7 +2888,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: c6c6275ec8edba647ad3be2e618507cb, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 7a9288cd45747da41908f31e6e51ea64, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -3243,7 +3257,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: 2bdfa12e4894ad449bb0eae2eff1ec09, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 7ec582d9da6717a44a3c0af849d3d143, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -3390,7 +3405,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: 5ec2957ef98e7954fb2fd2c7c29f014a, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 2bf05846f906f9442b0d35a1e00111df, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -3433,7 +3449,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: 679073bd310a2d84eb2080fb00d4389f, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: c179de9280b3930428ffd23bbddfe49c, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -3646,7 +3663,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: c0e687236744aa24e89f72a49752be4c, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: d9afae8c03511e94ebcf12462e55d817, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -4115,7 +4133,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: a2525bcf37070664fb3bb40bb4046b35, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: 27f1ff507ea14344a885a0df69accb73, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
@@ -4355,7 +4374,8 @@ MonoBehaviour:
   lineIndex: 0
   engVoice:
   - {fileID: 8300000, guid: e4878459bbc14414dbf3be2d1f48dad7, type: 3}
-  espVoice: []
+  espVoice:
+  - {fileID: 8300000, guid: f3c72d9848c04cc49bfa63f52a034f01, type: 3}
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}

@@ -82,12 +82,8 @@ public class PageController : MonoBehaviour
     }
 
     public void ChangeVoiceLanguage( int languageOption )
-    {
-        //not all pages are ready for Harold's Story, need to set a contant value for the for loop
-        int readyPages = 2;
-
-        //for( int i = 0; i < PageArray.Length; i++ )
-        for ( int i = 0; i < readyPages; i++ )
+    {        
+        for( int i = 0; i < PageArray.Length; i++ )        
         {            
             PageArray[i].ChangeVoiceLanguage( languageOption );
         }
