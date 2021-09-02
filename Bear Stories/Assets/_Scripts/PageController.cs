@@ -10,15 +10,7 @@ public class PageController : MonoBehaviour
     public Button btnPrev;    
     public Text pageNumber;
     public Dropdown languageDrop;
-
-    public enum LANGUAGE_SETTING
-    {
-        ENGLISH = 0,
-        ESPANOL = 1,
-        DEUTCH = 2
-    };
-
-    private LANGUAGE_SETTING currentLanguage;
+        
     private int currentPageIndex;    
 
     // Start is called before the first frame update

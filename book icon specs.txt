@@ -1,0 +1,26 @@
+book icon specs
+
+book color
+	R: 67.1
+	G: 12.2
+	B: 71.8
+	L: 42.6
+	C: 82.2
+	h: 323.8
+font: san-serif black color
+
+book selected
+filter > light and shadow > drop shadow
+	x: 0.0 
+	y: 0.0
+	blur radius: 15.0
+	color
+		R: 98.7
+		G: 93.9
+		B: 51.7
+		L: 93.9
+		C: 53.5
+		h: 96.5
+	opacity: 1.0
+	
+

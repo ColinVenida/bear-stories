@@ -16,7 +16,7 @@
    id="svg1014"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
    sodipodi:docname="icons.svg"
-   inkscape:export-filename="C:\Users\Business Bears\Desktop\voice-on-icon.png"
+   inkscape:export-filename="D:\Programming_Projects\Unity Projects\bear-stories\Bear Stories\Assets-notineditor\book-select-icon.png"
    inkscape:export-xdpi="95.848694"
    inkscape:export-ydpi="95.848694">
   <defs
@@ -55,11 +55,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.780427"
-     inkscape:cx="458.74395"
-     inkscape:cy="924.27114"
+     inkscape:zoom="2.085139"
+     inkscape:cx="236.91229"
+     inkscape:cy="968.12217"
      inkscape:document-units="px"
-     inkscape:current-layer="layer5"
+     inkscape:current-layer="layer7"
      showgrid="false"
      inkscape:window-width="1600"
      inkscape:window-height="837"
@@ -68,7 +68,8 @@
      inkscape:window-maximized="1"
      showguides="false"
      inkscape:guide-bbox="true"
-     units="px">
+     units="px"
+     inkscape:snap-global="false">
     <sodipodi:guide
        position="97.907898,209.44388"
        orientation="1,0"
@@ -151,13 +152,15 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="home">
+     inkscape:label="home"
+     style="display:none">
     <g
        id="g926"
        transform="matrix(1.2824317,0,0,1.4446698,-28.147432,-28.764493)"
        inkscape:export-filename="C:\Users\Business Bears\Desktop\home-icon.png"
        inkscape:export-xdpi="95.848694"
-       inkscape:export-ydpi="95.848694">
+       inkscape:export-ydpi="95.848694"
+       style="fill:#edffb7;fill-opacity:1">
       <path
          sodipodi:nodetypes="ssssssssssssssssss"
          inkscape:connector-curvature="0"
@@ -212,6 +215,98 @@
          id="path920-4"
          style="fill:#ab1fb7;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.30000001;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          sodipodi:type="star" />
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="book-selected-background"
+     style="display:inline">
+    <rect
+       style="display:inline;fill:#ffe9b9;fill-opacity:0.90588235;fill-rule:nonzero;stroke:none;stroke-width:1.85208344;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.90588235"
+       id="rect5049"
+       width="78.587746"
+       height="55.13699"
+       x="8.6221523"
+       y="9.7619753"
+       ry="17.828907" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Books"
+     style="display:inline">
+    <g
+       id="g5072"
+       transform="matrix(0.77692416,0,0,0.71711034,-52.251213,-90.08146)"
+       inkscape:export-filename="D:\Programming_Projects\Unity Projects\bear-stories\Bear Stories\Assets-notineditor\UI\book.png"
+       inkscape:export-xdpi="95.848694"
+       inkscape:export-ydpi="95.848694">
+      <path
+         style="fill:#ab1fb7;fill-opacity:1;stroke:none;stroke-width:0.92127103px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 91.887801,153.45531 0.986169,38.94727 c 0,0 17.02521,-2.3919 31.6693,3.43375 6.98211,2.77758 0.84825,-2.5405 -5.44002,-4.9564 0,0 -15.31043,-4.36499 -23.936992,-2.0902 -0.169554,-6.7024 -0.157175,-25.81562 -0.384367,-36.5494 -2.629786,0.26477 -2.894084,1.21498 -2.894084,1.21498 z"
+         id="path5064"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccsscccc" />
+      <path
+         style="fill:#ab1fb7;fill-opacity:1;stroke:none;stroke-width:0.86671025px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 127.72589,192.53224 c -0.0441,-5.54518 -0.0768,-38.64195 -0.0768,-38.64195 0,0 -4.33138,-7.58631 -13.27229,-7.86849 -9.35263,-0.29509 -16.070324,4.1216 -16.070324,4.1216 0.0034,12.8957 0.412955,23.35583 0.37468,36.25144 6.494274,-2.31374 25.105184,-1.22708 29.044774,6.1374 z"
+         id="path5066"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccscccc" />
+      <path
+         sodipodi:nodetypes="ccsscccc"
+         inkscape:connector-curvature="0"
+         id="path5068"
+         d="m 165.39756,153.45531 -0.98616,38.94727 c 0,0 -17.02524,-2.3919 -31.66932,3.43375 -6.98211,2.77758 -0.84825,-2.5405 5.44002,-4.9564 0,0 15.31042,-4.36499 23.93697,-2.0902 0.16943,-6.7024 0.15724,-25.81562 0.3844,-36.5494 2.62978,0.26477 2.89409,1.21498 2.89409,1.21498 z"
+         style="fill:#ab1fb7;fill-opacity:1;stroke:none;stroke-width:0.92127103px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         sodipodi:nodetypes="ccscccc"
+         inkscape:connector-curvature="0"
+         id="path5070"
+         d="m 129.55946,192.53224 c 0.0441,-5.54518 0.0768,-38.64195 0.0768,-38.64195 0,0 4.33138,-7.58631 13.27229,-7.86849 9.35261,-0.29509 16.07033,4.1216 16.07033,4.1216 -0.003,12.8957 -0.41295,23.35583 -0.37469,36.25144 -6.49427,-2.31374 -25.10518,-1.22708 -29.04477,6.1374 z"
+         style="fill:#ab1fb7;fill-opacity:1;stroke:none;stroke-width:0.86671025px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+    </g>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;font-size:12.61434269px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.31535855"
+       x="34.814133"
+       y="62.98592"
+       id="text5076"
+       transform="scale(1.0371376,0.96419222)"><tspan
+         sodipodi:role="line"
+         id="tspan5074"
+         x="34.814133"
+         y="62.98592"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:12.61436749px;font-family:'Segoe UI Emoji';-inkscape-font-specification:'Segoe UI Emoji, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:0.31535855">Deu</tspan></text>
+    <path
+       style="fill:#29de41;fill-opacity:1;stroke:none;stroke-width:1.09490633;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m -73.203566,5.4098837 c 0,0 7.432903,11.2500913 11.79095,11.3740173 3.260688,0.09272 18.571455,-14.5294613 20.903834,-17.15404929 2.332385,-2.62458401 -0.754167,-2.71394501 -3.864012,-0.43930497 -3.109843,2.27464296 -10.532142,11.56253226 -17.198435,12.16450726 -4.686625,0.423209 -7.99235,-8.6884463 -9.393887,-9.1223853 -3.036851,-0.940259 -2.23845,3.177215 -2.23845,3.177215 z"
+       id="path875"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssssc" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="book-select-icon"
+     style="display:inline">
+    <g
+       transform="translate(-1.112178e-6,-9.4671481e-6)"
+       style="display:inline"
+       id="g4625">
+      <path
+         sodipodi:nodetypes="cssc"
+         inkscape:connector-curvature="0"
+         id="path4599"
+         d="m 36.646428,3.2468315 c 0,0 0.833919,7.0598255 9.074384,12.3562355 2.727007,1.752734 5.872753,-0.558182 4.420371,-3.776385 C 46.44865,3.6447293 36.646428,3.2468315 36.646428,3.2468315 Z"
+         style="fill:#53e6c6;fill-opacity:1;stroke:none;stroke-width:0.18526393px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+      <path
+         style="fill:#53e6c6;fill-opacity:1;stroke:none;stroke-width:0.18526393px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 58.839647,3.2468315 c 0,0 -0.833919,7.0598255 -9.074384,12.3562355 -2.727007,1.752734 -5.872753,-0.558182 -4.420371,-3.776385 3.692533,-8.1819527 13.494755,-8.5798505 13.494755,-8.5798505 z"
+         id="path4603"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cssc" />
     </g>
   </g>
   <g

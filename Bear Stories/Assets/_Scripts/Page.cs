@@ -33,7 +33,7 @@ public class Page : MonoBehaviour
 
     private void PopulateSelectedVLIndexes()
     {
-        //hardcoded values for now.  TODO: save the values as PlayerPrefs (do I need to do this???)
+        //set them to index 0 for now.  TODO: save the values as PlayerPrefs (do I need to do this???)
         int firstIndex = 0;
         for ( int i = 0; i < voiceLineElements.Length; i++ )
         {

@@ -8,6 +8,7 @@ using UnityEditorInternal;
 using System.Net;
 
 //class that handles the VO lines for each line and each language
+//add this behavior to Texts or UI-Dropdowns
 public class VoiceLines : MonoBehaviour
 {
     public int lineIndex;
