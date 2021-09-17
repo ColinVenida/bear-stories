@@ -34,20 +34,22 @@ public class StoryBox : MonoBehaviour
     {
         int minimumLength = 5;
         int boxWidth;
+        const int MINIMUM_WIDTH = 300;
+        const int CHAR_WIDTH = 40;
 
         for ( int i = 0; i < dropElementsArray.Length; i++ )
         {
             //resize the dropdown based on the current option's string length       
             int currentValue = dropElementsArray[i].value;
-            int optionLength = dropElementsArray[i].options[currentValue].text.Length;
+            int optionLength = dropElementsArray[i].options[currentValue].text.Length;            
 
             if ( optionLength < minimumLength )
             {
-                boxWidth = 300;
+                boxWidth = MINIMUM_WIDTH;
             }
             else
             {                
-                boxWidth = ( ( optionLength ) * 40 );
+                boxWidth = ( optionLength * CHAR_WIDTH );
             }
             dropElementsArray[i].GetComponent<RectTransform>().sizeDelta = new Vector2( boxWidth, dropHeight );
         }
@@ -121,15 +123,12 @@ public class StoryBox : MonoBehaviour
         AdjustStoryBoxPosition( numberOfLines );                
         AdjustStoryBoxHeight( numberOfLines );
     }
-
     private void AdjustStoryBoxPosition( int linesInBox )    
     {
         const float BOTTOM_OFFSET = 50.0f;
         float adjustedY = (LINE_HEIGHT * linesInBox) + BOTTOM_OFFSET;  
         storyBoxRT.anchoredPosition = new Vector3( storyBoxRT.anchoredPosition.x, adjustedY );  
     }
-
-
     private void AdjustStoryBoxHeight( int linesInBox )
     {
         const float BOTTOM_OFFSET = 25.0f;
