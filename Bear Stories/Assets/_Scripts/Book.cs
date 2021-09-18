@@ -48,29 +48,13 @@ public class Book : MonoBehaviour
     {        
         string story = textAss.text;
         string[] splitStory = story.Split( new char[] { '\n' } );
-
         
         for ( int i = 0; i < splitStory.Length; i++ )
         {
             //if the first char is '[', then split it into another list
             if( splitStory[i][0] == '[' )
-            {                
-                string trimString = splitStory[i].TrimStart( '[' );                
-                string trimString2 = trimString.TrimEnd('\n');   
-               
-                string[] splitOptions = trimString2.Split('|');
-                List<string> dropOptions = new List<string>();
-
-                //**bug fix**
-                //the last index of the splitOptions always had an extra char for some reason (ie. "snow" would have a length of 5)
-                //we are removing the extra char here
-                string lastIndex = splitOptions[splitOptions.Length - 1].Remove(splitOptions[splitOptions.Length - 1].Length - 1);  
-                splitOptions[splitOptions.Length - 1] = lastIndex;
-
-                foreach ( string s in splitOptions )
-                {                    
-                    dropOptions.Add( s );
-                }                
+            {
+                List<string> dropOptions = CreateDropOptions( splitStory[i] );
                 langDrops.Add( dropOptions );
             }
             else
@@ -78,9 +62,39 @@ public class Book : MonoBehaviour
                 //put in the text List                
                 langText.Add( splitStory[i] );
             }
-        }//end for       
+        }
+    }
 
-    }//end SplitStory()
+    private List<string> CreateDropOptions( string optionLine )
+    {
+        string[] optionsArray = RemoveAndSplitDropOptionString( optionLine );
+
+        List<string> dropOptions = new List<string>();
+
+        foreach ( string s in optionsArray )
+        {
+            dropOptions.Add( s );
+        }     
+        return dropOptions;
+    }
+
+    private string[] RemoveAndSplitDropOptionString( string uglyString )
+    {
+        string trimString = uglyString.TrimStart( '[' );
+        string trimString2 = trimString.TrimEnd( '\n' );
+
+        string[] optionsArray = trimString2.Split( '|' );
+
+        //**bug workaround**
+        //the last index of the optionsArray always had an extra char for some reason (ie. "snow" would have a length of 5)
+        //we are removing the extra char here
+        int lastIndex = optionsArray.Length - 1;
+        string lastOption = optionsArray[lastIndex].Remove( optionsArray[lastIndex].Length - 1 );
+        optionsArray[lastIndex] = lastOption;
+
+        return optionsArray;
+    }
+
 
     public void ChangeLanguageText( int lang )
     {
