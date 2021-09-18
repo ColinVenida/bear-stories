@@ -24,10 +24,9 @@ public class PageController : MonoBehaviour
    
     private void CheckPageBounds()
     {
-        //check whether we are at the beginning or end of the book, then turn off the appropriate next/prev button
-
-        //Debug.Log( "CheckPageBounds() currentPage == " + currentPage );
         //**NOTE** this logic does not work with 2-page books!  Books must have 3 or more pages
+
+        //check whether we are at the beginning or end of the book, then turn off the appropriate next/prev button
         if ( currentPageIndex == 0 )
         {
             btnPrev.gameObject.SetActive( false );

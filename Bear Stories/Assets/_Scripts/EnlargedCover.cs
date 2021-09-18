@@ -18,10 +18,11 @@ public class EnlargedCover : MonoBehaviour
         switch( bookId )
         {
             case 0:
-                SceneManager.LoadScene( "TestScene" );
+                SceneManager.LoadScene( "Bongo" );
                 break;
-            //case 1:
-            //    break;
+            case 1:
+               SceneManager.LoadScene( "TestScene" );
+               break;
             //case 2:
             //    break;           
             default:

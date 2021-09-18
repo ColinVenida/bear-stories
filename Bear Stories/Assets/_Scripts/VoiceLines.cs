@@ -61,13 +61,15 @@ public class VoiceLines : MonoBehaviour
     }
 
     public void PlayVoiceLine( int option )
-    {        
-        if( !page.voiceToggle.isOn )
+    {
+        page.UpdateSelectedVoiceLine( lineIndex, option );
+        page.UpdateSelectedVLIndex( lineIndex, option );
+
+        if ( !page.voiceToggle.isOn )
         {
             return;
         }
-        page.UpdateSelectedVoiceLine( lineIndex, option );
-        page.UpdateSelectedVLIndex( lineIndex, option );
+        
         try
         {
             audioSource.PlayOneShot( currentLanguage[option] );
