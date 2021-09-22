@@ -39,17 +39,5 @@ public class EnlargedCover : MonoBehaviour
     public void SetBookId( int id )
     {
         bookId = id;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    }      
 }

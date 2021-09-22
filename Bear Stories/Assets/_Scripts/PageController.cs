@@ -69,8 +69,7 @@ public class PageController : MonoBehaviour
         else
         {
             PlayerPrefs.SetInt( "Selected Language", language );
-        }
-        //languageDrop.value = language;
+        }        
         languageMenu.ChangeLanguageFromPlayerPref( language );
     }
 

@@ -18,11 +18,5 @@ public class PopupWindow : MonoBehaviour
         {
             this.gameObject.SetActive( !this.gameObject.activeSelf );
         }
-    }
-	
-	// Update is called once per frame
-	void Update () 
-	{
-       
-    }
+    }	
 }

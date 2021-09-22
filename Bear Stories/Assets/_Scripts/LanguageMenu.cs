@@ -23,9 +23,9 @@ public class LanguageMenu : MonoBehaviour
 
     void Start()
     {
-        engButton.onClick.AddListener( () => ChangeLanguage( (int) Language.ENGLISH ) );
-        espButton.onClick.AddListener( () => ChangeLanguage( ( int )Language.ESPANOL ) );
-        deuButton.onClick.AddListener( () => ChangeLanguage( ( int )Language.DEUTCH ) );
+        engButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.ENGLISH ) );
+        espButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.ESPANOL ) );
+        deuButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.DEUTCH ) );
     }
 
     public void ChangeLanguageFromPlayerPref( int language )
@@ -36,7 +36,7 @@ public class LanguageMenu : MonoBehaviour
         titlePage_imageSwaper.SwapImageWithIndex( language );
     }
 
-    private void ChangeLanguage( int language )
+    private void ChangeLanguageWithButton( int language )
     {        
         book.ChangeLanguageText( language );
         pageController.ChangeVoiceLanguage( language );
@@ -44,6 +44,4 @@ public class LanguageMenu : MonoBehaviour
         titlePage_imageSwaper.SwapImageWithIndex( language );
         popupWindow.ToggleWindow();
     }    
-
-
 }
