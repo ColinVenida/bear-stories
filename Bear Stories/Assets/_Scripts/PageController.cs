@@ -9,7 +9,8 @@ public class PageController : MonoBehaviour
     public Button btnNext;
     public Button btnPrev;    
     public Text pageNumber;
-    public Dropdown languageDrop;
+    //public Dropdown languageDrop;
+    public LanguageMenu languageMenu;
         
     private int currentPageIndex;    
 
@@ -69,7 +70,8 @@ public class PageController : MonoBehaviour
         {
             PlayerPrefs.SetInt( "Selected Language", language );
         }
-        languageDrop.value = language;
+        //languageDrop.value = language;
+        languageMenu.ChangeLanguageFromPlayerPref( language );
     }
 
     public void ChangeVoiceLanguage( int languageOption )

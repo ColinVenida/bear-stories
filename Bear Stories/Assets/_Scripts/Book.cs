@@ -117,7 +117,7 @@ public class Book : MonoBehaviour
                 dropList = deusDrops;
                 break;
             default:
-                Debug.Log( "Lang default triggered!" );
+                Debug.Log( "ChangeLanguageText default triggered! Setting to English" );
                 textList = engText;
                 dropList = engDrops;
                 break;
