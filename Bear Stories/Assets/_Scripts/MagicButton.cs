@@ -4,43 +4,28 @@ using UnityEngine;
 using UnityEngine.UI;
 public class MagicButton : MonoBehaviour
 {
-    public Animator animator;  
-    public List<ImageSwaper> swapList;  //images in the story to swap out
-    public Image stateImage;            //play/pause image
-    public Sprite[] stateArray;
+    public Animator animator;      
+    public Image currentImage;           
+    public Sprite[] stateArray;  
+    public AudioSource audioSource;
+    public AudioClip audioClip;
 
-    //public List<AudioClip> audioList;
-    //public AudioClip clip;
-
-    public AudioSource source;
-    private bool animate = false;
+    private bool shouldAnimate = false;
 
     public void MakeMagic()
     {
         //play the stuff here
-        animate = !animate;        
-        if ( animate )
+        shouldAnimate = !shouldAnimate;        
+        if ( shouldAnimate )
         {
-            source.Play();
-            animator.SetBool("PlayAnimation", animate);
-            stateImage.sprite = stateArray[1];
+            audioSource.Play();
+            animator.SetBool("PlayAnimation", shouldAnimate );
+            currentImage.sprite = stateArray[1];
         }
         else
         {            
-            animator.SetBool("PlayAnimation", animate);
-            stateImage.sprite = stateArray[0];
+            animator.SetBool("PlayAnimation", shouldAnimate );
+            currentImage.sprite = stateArray[0];
         }        
-    }
-    
-    void Start()
-    {        
-        swapList = new List<ImageSwaper>();
-        //audioList = new List<AudioClip>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    } 
 }
