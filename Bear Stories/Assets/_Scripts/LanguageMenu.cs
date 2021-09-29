@@ -25,7 +25,7 @@ public class LanguageMenu : MonoBehaviour
     {
         engButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.ENGLISH ) );
         espButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.ESPANOL ) );
-        deuButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.DEUTCH ) );
+        deuButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.DEUTCH ) );        
     }
 
     public void ChangeLanguageFromPlayerPref( int language )

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
-//class that handles all the text/voice for each story
+
 public class Book : MonoBehaviour
 {
     //the txt files of the story
@@ -15,6 +15,8 @@ public class Book : MonoBehaviour
                                 //**NOTE** make sure all the Text elements are in place in the scene!
 
     public Dropdown[] storyDrops;   //array that refferences all the UI Dropdowns in the book Pages
+    
+    public ParticleSystem clickParticles;    
 
     private List<string> engText;   //list to hold the final english story.  This is used for translating in between languages
     private List<List<string>> engDrops;
@@ -27,7 +29,7 @@ public class Book : MonoBehaviour
 
     // Start is called before the first frame update    
     void Start()
-    {
+    {        
         engText = new List<string>();
         engDrops = new List<List<string>>();
 
@@ -150,4 +152,6 @@ public class Book : MonoBehaviour
             }
         }
     }    
+
+    
 }

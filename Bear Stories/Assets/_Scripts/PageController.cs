@@ -7,7 +7,8 @@ public class PageController : MonoBehaviour
 {
     public Page[] PageArray;
     public Button btnNext;
-    public Button btnPrev;    
+    public Button btnPrev;
+    public Button btnFin;
     public Text pageNumber;
     //public Dropdown languageDrop;
     public LanguageMenu languageMenu;
@@ -27,7 +28,9 @@ public class PageController : MonoBehaviour
     {
         //**NOTE** this logic does not work with 2-page books!  Books must have 3 or more pages
 
-        //check whether we are at the beginning or end of the book, then turn off the appropriate next/prev button
+        //check whether we are at the beginning or end of the book, then change the appropriate next/prev button
+        btnFin.gameObject.SetActive( false );
+
         if ( currentPageIndex == 0 )
         {
             btnPrev.gameObject.SetActive( false );
@@ -35,6 +38,7 @@ public class PageController : MonoBehaviour
         else if ( currentPageIndex == PageArray.Length - 1 )
         {
             btnNext.gameObject.SetActive( false );
+            btnFin.gameObject.SetActive( true );
         }
         else
         {
@@ -101,7 +105,7 @@ public class PageController : MonoBehaviour
 
     private void TurnPage( int page )
     {        
-        //move the pages here
+        //move the pages away from camera view
         RectTransform currentPageTransform = PageArray[currentPageIndex].GetComponent<RectTransform>();
         RectTransform nextPageTransform = PageArray[page].GetComponent<RectTransform>();
 

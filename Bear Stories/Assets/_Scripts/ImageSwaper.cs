@@ -10,8 +10,6 @@ public class ImageSwaper : MonoBehaviour
     public Image swapImage;
     public Dropdown dropDown;
     
-
-    //should add a try-catch statement here
     public void SwapImageWithIndex( int index )
     {
         try
