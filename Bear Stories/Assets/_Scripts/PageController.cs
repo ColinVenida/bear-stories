@@ -103,23 +103,24 @@ public class PageController : MonoBehaviour
         }
     }
 
-    private void TurnPage( int page )
+    private void TurnPage( int nextPageIndex )
     {        
         //move the pages away from camera view
         RectTransform currentPageTransform = PageArray[currentPageIndex].GetComponent<RectTransform>();
-        RectTransform nextPageTransform = PageArray[page].GetComponent<RectTransform>();
+        RectTransform nextPageTransform = PageArray[nextPageIndex].GetComponent<RectTransform>();
 
         float currentPageWidth = currentPageTransform.rect.width;
-        float nextPageWidth = nextPageTransform.rect.width;
+        float currentPageWidthDoubled = ( currentPageWidth * 2 );
+        float nextPageWidth = nextPageTransform.rect.width;         
 
-        currentPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Right, currentPageWidth, currentPageWidth );
+        currentPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Right, currentPageWidthDoubled, currentPageWidth );
         nextPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Left, 0, nextPageWidth );  
                 
         PageArray[currentPageIndex].Deactivate();
-        PageArray[page].Activate();
+        PageArray[nextPageIndex].Activate();
 
         //update the currentPage reference
-        currentPageIndex = page;
+        currentPageIndex = nextPageIndex;
 
         CheckPageBounds();
     }

@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 12953234}
   - component: {fileID: 12953237}
   - component: {fileID: 12953236}
+  - component: {fileID: 12953238}
   m_Layer: 5
   m_Name: Bongo-big
   m_TagString: Untagged
@@ -148,9 +149,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -0.026855469, y: -150}
   m_SizeDelta: {x: 650, y: 650}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0.4999996, y: 0.5}
 --- !u!114 &12953234
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -260,6 +261,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &12953238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 12953232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!224 &16596659 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5133634938189413273, guid: 9ee88b85f6b820c4e95efb1665b12224,
@@ -315,6 +331,7 @@ GameObject:
   - component: {fileID: 126641309}
   - component: {fileID: 126641311}
   - component: {fileID: 126641312}
+  - component: {fileID: 126641313}
   m_Layer: 5
   m_Name: Choogie
   m_TagString: Untagged
@@ -450,6 +467,42 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &126641313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126641307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
+--- !u!1 &135718770 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+    type: 3}
+  m_PrefabInstance: {fileID: 1900109865}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &135718771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 135718770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &168711751
 GameObject:
   m_ObjectHideFlags: 0
@@ -463,6 +516,7 @@ GameObject:
   - component: {fileID: 168711753}
   - component: {fileID: 168711756}
   - component: {fileID: 168711755}
+  - component: {fileID: 168711757}
   m_Layer: 5
   m_Name: Roogie
   m_TagString: Untagged
@@ -598,6 +652,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &168711757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168711751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &186909221
 GameObject:
   m_ObjectHideFlags: 0
@@ -902,6 +971,7 @@ GameObject:
   - component: {fileID: 304029630}
   - component: {fileID: 304029633}
   - component: {fileID: 304029632}
+  - component: {fileID: 304029634}
   m_Layer: 5
   m_Name: Soogie
   m_TagString: Untagged
@@ -1037,6 +1107,21 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &304029634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304029628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &305559017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1049,7 +1134,7 @@ GameObject:
   - component: {fileID: 305559020}
   - component: {fileID: 305559019}
   m_Layer: 5
-  m_Name: Jungle
+  m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1071,8 +1156,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &305559019
 MonoBehaviour:
@@ -1094,7 +1179,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c34ff08f36aaba3418f4a173daf50991, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96235ffb557fb1a429bd3d681272436d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1137,6 +1222,27 @@ MonoBehaviour:
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
+--- !u!1 &392526186 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+    type: 3}
+  m_PrefabInstance: {fileID: 3125177881897808192}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &392526187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 392526186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &404438329
 GameObject:
   m_ObjectHideFlags: 0
@@ -1289,7 +1395,7 @@ GameObject:
   - component: {fileID: 463809183}
   - component: {fileID: 463809182}
   m_Layer: 5
-  m_Name: Jungle
+  m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1311,8 +1417,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &463809182
 MonoBehaviour:
@@ -1334,7 +1440,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c34ff08f36aaba3418f4a173daf50991, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96235ffb557fb1a429bd3d681272436d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1455,6 +1561,7 @@ GameObject:
   - component: {fileID: 499902713}
   - component: {fileID: 499902715}
   - component: {fileID: 499902716}
+  - component: {fileID: 499902717}
   m_Layer: 5
   m_Name: Choogie-big
   m_TagString: Untagged
@@ -1478,7 +1585,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 350, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &499902713
@@ -1590,6 +1697,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &499902717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 499902711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1001 &548456498
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1847,7 +1969,7 @@ PrefabInstance:
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8436172347563690122, guid: 1e78a2361dda5b543953d8e4fd21799a,
         type: 3}
@@ -2223,7 +2345,7 @@ GameObject:
   - component: {fileID: 611094287}
   - component: {fileID: 611094286}
   m_Layer: 5
-  m_Name: Jungle
+  m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2245,8 +2367,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &611094286
 MonoBehaviour:
@@ -2268,7 +2390,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c34ff08f36aaba3418f4a173daf50991, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96235ffb557fb1a429bd3d681272436d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -2694,6 +2816,7 @@ GameObject:
   - component: {fileID: 645105589}
   - component: {fileID: 645105592}
   - component: {fileID: 645105591}
+  - component: {fileID: 645105593}
   m_Layer: 5
   m_Name: Choogie
   m_TagString: Untagged
@@ -2829,6 +2952,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &645105593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 645105587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1001 &693121172
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3342,7 +3480,7 @@ PrefabInstance:
     - target: {fileID: 294295389472267637, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 294295388071408875, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -3357,7 +3495,7 @@ PrefabInstance:
     - target: {fileID: 294295388071408875, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5932696631167110664, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -4562,6 +4700,16 @@ PrefabInstance:
       propertyPath: ShapeModule.m_Scale.z
       value: 0.01
       objectReference: {fileID: 0}
+    - target: {fileID: 4898973263238868021, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8459911953307742585, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee88b85f6b820c4e95efb1665b12224, type: 3}
 --- !u!224 &705801281 stripped
@@ -4782,6 +4930,7 @@ GameObject:
   - component: {fileID: 834697857}
   - component: {fileID: 834697859}
   - component: {fileID: 834697860}
+  - component: {fileID: 834697861}
   m_Layer: 5
   m_Name: Roogie-big
   m_TagString: Untagged
@@ -4805,7 +4954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -75}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 550, y: 550}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &834697857
@@ -4917,6 +5066,42 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &834697861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 834697855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
+--- !u!1 &854746547 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+    type: 3}
+  m_PrefabInstance: {fileID: 567352316}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &854746548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 854746547}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1001 &871661095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5049,6 +5234,7 @@ GameObject:
   - component: {fileID: 885184062}
   - component: {fileID: 885184064}
   - component: {fileID: 885184065}
+  - component: {fileID: 885184066}
   m_Layer: 5
   m_Name: Toogie-big
   m_TagString: Untagged
@@ -5072,8 +5258,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 575, y: 725}
+  m_AnchoredPosition: {x: 0, y: -150}
+  m_SizeDelta: {x: 550, y: 700}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &885184062
 MonoBehaviour:
@@ -5184,6 +5370,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &885184066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885184060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &895693290
 GameObject:
   m_ObjectHideFlags: 0
@@ -5197,6 +5398,7 @@ GameObject:
   - component: {fileID: 895693292}
   - component: {fileID: 895693294}
   - component: {fileID: 895693295}
+  - component: {fileID: 895693296}
   m_Layer: 5
   m_Name: Soogie-big
   m_TagString: Untagged
@@ -5220,7 +5422,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -35}
+  m_AnchoredPosition: {x: 0, y: -150}
   m_SizeDelta: {x: 600, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &895693292
@@ -5332,6 +5534,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &895693296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 895693290}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &941128399 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8930987649591566041, guid: 1e78a2361dda5b543953d8e4fd21799a,
@@ -5767,6 +5984,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac34f3be63d29cf4e9a1b3d1d960428c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1167539359 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+    type: 3}
+  m_PrefabInstance: {fileID: 871661095}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1167539360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167539359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1 &1232829247
 GameObject:
   m_ObjectHideFlags: 0
@@ -5884,7 +6122,7 @@ GameObject:
   - component: {fileID: 1252607687}
   - component: {fileID: 1252607686}
   m_Layer: 5
-  m_Name: Jungle
+  m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5906,8 +6144,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1252607686
 MonoBehaviour:
@@ -5929,7 +6167,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c34ff08f36aaba3418f4a173daf50991, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96235ffb557fb1a429bd3d681272436d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6304,6 +6542,27 @@ MonoBehaviour:
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
+--- !u!1 &1592571561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+    type: 3}
+  m_PrefabInstance: {fileID: 2889642146381355092}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1592571562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1592571561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!1001 &1593265457
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6329,7 +6588,7 @@ PrefabInstance:
     - target: {fileID: 5602015404618351363, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 5602015404618351363, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
         type: 3}
@@ -6424,17 +6683,17 @@ PrefabInstance:
     - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
         type: 3}
       propertyPath: ShapeModule.radius.value
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
         type: 3}
       propertyPath: lengthInSec
-      value: 1
+      value: 1.25
       objectReference: {fileID: 0}
     - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
         type: 3}
       propertyPath: InitialModule.startSpeed.scalar
-      value: 0.5
+      value: 0.25
       objectReference: {fileID: 0}
     - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
         type: 3}
@@ -6445,6 +6704,96 @@ PrefabInstance:
         type: 3}
       propertyPath: InitialModule.startLifetime.scalar
       value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ForceModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ForceModule.x.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ForceModule.y.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ForceModule.inWorldSpace
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: SizeModule.enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: SizeModule.curve.scalar
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[0].value
+      value: 0.6785698
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: simulationSpeed
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.type
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.arc.value
+      value: 360
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.m_Texture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.arc.spread
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.arc.mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.sphericalDirectionAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.randomDirectionAmount
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: ShapeModule.radiusThickness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6764902013128429239, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f,
+        type: 3}
+      propertyPath: looping
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f8b1ffacae9d4b3458d92e3a5e7d5d6f, type: 3}
@@ -6808,6 +7157,7 @@ GameObject:
   - component: {fileID: 1709235714}
   - component: {fileID: 1709235717}
   - component: {fileID: 1709235716}
+  - component: {fileID: 1709235718}
   m_Layer: 5
   m_Name: Choogie
   m_TagString: Untagged
@@ -6943,6 +7293,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1709235718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709235712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!224 &1716153344 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2019421541122778019, guid: 1e78a2361dda5b543953d8e4fd21799a,
@@ -7003,7 +7368,7 @@ GameObject:
   - component: {fileID: 1833245178}
   - component: {fileID: 1833245177}
   m_Layer: 5
-  m_Name: Jungle
+  m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7025,8 +7390,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 200, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1833245177
 MonoBehaviour:
@@ -7048,7 +7413,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c34ff08f36aaba3418f4a173daf50991, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 96235ffb557fb1a429bd3d681272436d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7091,6 +7456,27 @@ MonoBehaviour:
   deutVoice: []
   page: {fileID: 0}
   audioSource: {fileID: 0}
+--- !u!1 &1852446550 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+    type: 3}
+  m_PrefabInstance: {fileID: 985677548}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1852446551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1852446550}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!114 &1856973910 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 98154649120582741, guid: 1e78a2361dda5b543953d8e4fd21799a,
@@ -7415,6 +7801,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd1e8782a58651143a82de537d56a435, type: 3}
+--- !u!1 &1959052729 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+    type: 3}
+  m_PrefabInstance: {fileID: 1935916383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1959052730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1959052729}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!114 &1994275231 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5103074552610704693, guid: 1e78a2361dda5b543953d8e4fd21799a,
@@ -7543,7 +7950,6 @@ MonoBehaviour:
   camera: {fileID: 275655182}
   canvas: {fileID: 2015558603}
   clickParticles: {fileID: 2097830740}
-  particlesEmitted: 10
 --- !u!1 &2058816990
 GameObject:
   m_ObjectHideFlags: 0
@@ -7557,6 +7963,7 @@ GameObject:
   - component: {fileID: 2058816992}
   - component: {fileID: 2058816995}
   - component: {fileID: 2058816994}
+  - component: {fileID: 2058816996}
   m_Layer: 5
   m_Name: Roogie
   m_TagString: Untagged
@@ -7692,6 +8099,42 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2058816996
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058816990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
+--- !u!1 &2060164942 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+    type: 3}
+  m_PrefabInstance: {fileID: 693121172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2060164943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2060164942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 275655182}
+  canvas: {fileID: 2015558603}
+  clickParticles: {fileID: 2097830740}
 --- !u!114 &2066198784 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1637917337665464927, guid: 9ee88b85f6b820c4e95efb1665b12224,
