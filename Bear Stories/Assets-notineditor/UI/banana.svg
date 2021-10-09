@@ -54,7 +54,7 @@
      inkscape:pageshadow="2"
      inkscape:zoom="1.979899"
      inkscape:cx="137.41575"
-     inkscape:cy="966.77603"
+     inkscape:cy="986.97908"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -80,17 +80,11 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
-    <rect
-       style="fill:#0001ff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect4603"
-       width="98.622452"
-       height="50.781212"
-       x="-106.90781"
-       y="85.055267"
-       ry="17.828896" />
     <g
        id="g4601"
-       transform="matrix(0.1452959,-0.01417708,0.01417708,0.1452959,34.149291,-6.6639965)">
+       transform="matrix(0.1452959,-0.01417708,0.01417708,0.1452959,34.149291,-6.6639965)"
+       inkscape:export-xdpi="95.848701"
+       inkscape:export-ydpi="95.848701">
       <path
          sodipodi:nodetypes="cssssssssssc"
          inkscape:connector-curvature="0"
