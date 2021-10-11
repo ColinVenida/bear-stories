@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2889642146308924067
+--- !u!1 &6506151040731942748
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,53 +8,54 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2889642146308924076}
-  - component: {fileID: 2889642146308924078}
-  - component: {fileID: 2889642146308924077}
-  - component: {fileID: 2889642146308924072}
-  - component: {fileID: 2889642146308924079}
-  - component: {fileID: 8713175764844762174}
+  - component: {fileID: 6506151040731942739}
+  - component: {fileID: 6506151040731942737}
+  - component: {fileID: 6506151040731942738}
+  - component: {fileID: 6506151040731942743}
+  - component: {fileID: 6506151040731942736}
+  - component: {fileID: 6506151040731942742}
+  - component: {fileID: 291868080673497655}
   m_Layer: 5
-  m_Name: Toogie
+  m_Name: Roogie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2889642146308924076
+--- !u!224 &6506151040731942739
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889642146308924067}
+  m_GameObject: {fileID: 6506151040731942748}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0004501, y: 1.0004501, z: 1.0004501}
+  m_LocalScale: {x: 1.0004554, y: 1.0004554, z: 1.0004554}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 400, y: -80}
-  m_SizeDelta: {x: 325, y: 500}
+  m_AnchoredPosition: {x: -750, y: -180}
+  m_SizeDelta: {x: 450, y: 450}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &2889642146308924078
+--- !u!222 &6506151040731942737
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889642146308924067}
+  m_GameObject: {fileID: 6506151040731942748}
   m_CullTransparentMesh: 0
---- !u!114 &2889642146308924077
+--- !u!114 &6506151040731942738
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889642146308924067}
+  m_GameObject: {fileID: 6506151040731942748}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -68,7 +69,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300010, guid: c41d4f2538a493b449a09ed2f12d28f7, type: 3}
+  m_Sprite: {fileID: 21300006, guid: c41d4f2538a493b449a09ed2f12d28f7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -77,13 +78,13 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
---- !u!114 &2889642146308924072
+--- !u!114 &6506151040731942743
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889642146308924067}
+  m_GameObject: {fileID: 6506151040731942748}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 1392445389, guid: f70555f144d8491a825f0804e09c671c, type: 3}
@@ -113,11 +114,11 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 2889642146308924077}
+  m_TargetGraphic: {fileID: 6506151040731942738}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2889642146308924079}
+      - m_Target: {fileID: 6506151040731942736}
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -125,10 +126,10 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Dance-Toogie
+          m_StringArgument: Dance-Roogie
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 8713175764844762174}
+      - m_Target: {fileID: 291868080673497655}
         m_MethodName: PlaySoundFX
         m_Mode: 1
         m_Arguments:
@@ -141,17 +142,17 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
---- !u!95 &2889642146308924079
+--- !u!95 &6506151040731942736
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889642146308924067}
+  m_GameObject: {fileID: 6506151040731942748}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2687fedf1327b0346b01a287fe70aadc, type: 2}
+  m_Controller: {fileID: 9100000, guid: 9f2c976a002a7254fae92fc3ca3388fd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -160,13 +161,28 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &8713175764844762174
+--- !u!114 &6506151040731942742
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2889642146308924067}
+  m_GameObject: {fileID: 6506151040731942748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  canvas: {fileID: 0}
+  clickParticles: {fileID: 0}
+--- !u!114 &291868080673497655
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6506151040731942748}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1aaaf2cd5c299794d9ec2589261f1ff0, type: 3}
@@ -174,4 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundPlayer: {fileID: 0}
   soundClips:
-  - {fileID: 8300000, guid: cdf1424c4d070e14a95ec31865614be3, type: 3}
+  - {fileID: 8300000, guid: 099f8c430d6085447bc935d3e62c6247, type: 3}

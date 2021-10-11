@@ -71,8 +71,8 @@ public class VoiceLines : MonoBehaviour
         }
         
         try
-        {
-            audioSource.PlayOneShot( currentLanguage[option] );
+        {            
+            audioSource.PlayOneShot( currentLanguage[option] );            
         }
         catch( IndexOutOfRangeException e )
         {

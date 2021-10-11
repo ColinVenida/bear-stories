@@ -82,8 +82,8 @@ public class Page : MonoBehaviour
     IEnumerator VoiceCoroutine()
     {        
         for( int i = 0; i < selectedVoiceLines.Count; i++ )
-        {            
-            audioSource.PlayOneShot( selectedVoiceLines[i] );
+        {
+            audioSource.PlayOneShot( selectedVoiceLines[i] );            
             yield return new WaitForSeconds( selectedVoiceLines[i].length );
         }
     }
