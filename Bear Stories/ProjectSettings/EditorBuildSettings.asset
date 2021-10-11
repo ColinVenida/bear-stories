@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/Bongo.unity
     guid: 0d17135f36d12ae4e873ade6240db6b6
-  - enabled: 1
+  - enabled: 0
     path: Assets/_Scenes/TestScene.unity
     guid: 114adee787acde34d8c69a17c3ead927
   m_configObjects: {}
