@@ -1647,6 +1647,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!224 &548456499 stripped
@@ -1849,6 +1894,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!114 &555860109 stripped
@@ -2541,6 +2631,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!224 &639317025 stripped
@@ -4314,6 +4449,261 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7974546339383325581, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7974546339383325581, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7974546339383325581, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7974546340767734291, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7974546340767734291, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7974546340767734291, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7974546340408605081, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7974546340408605081, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7974546340408605081, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 4254118613144698438, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 4254118613144698438, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 4254118613144698438, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7163523293715987519, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7163523293715987519, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7163523293715987519, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 979257962616666532, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 979257962616666532, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 979257962616666532, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 2949120121129523278, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2949120121129523278, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2949120121129523278, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 2560784255949651681, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2560784255949651681, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2560784255949651681, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 2426509178701646811, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2426509178701646811, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2426509178701646811, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7212825954577100137, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7212825954577100137, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7212825954577100137, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1452972224572647438, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1452972224572647438, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1452972224572647438, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7368861278752169139, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7368861278752169139, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7368861278752169139, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7368861278926765881, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7368861278926765881, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7368861278926765881, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7368861280018953517, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7368861280018953517, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7368861280018953517, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7150342799852558828, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7150342799852558828, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7150342799852558828, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7150342800026106470, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7150342800026106470, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7150342800026106470, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 7150342798971269234, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 7150342798971269234, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 7150342798971269234, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9ee88b85f6b820c4e95efb1665b12224, type: 3}
 --- !u!224 &705801281 stripped
@@ -5762,6 +6152,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!224 &1041819767 stripped
@@ -6608,6 +7043,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!224 &1573707544 stripped
@@ -7174,6 +7654,51 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 2282627577147052012, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1676946959079901516, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 1314449594771147795, guid: 1e78a2361dda5b543953d8e4fd21799a,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1e78a2361dda5b543953d8e4fd21799a, type: 3}
 --- !u!224 &1682730235 stripped

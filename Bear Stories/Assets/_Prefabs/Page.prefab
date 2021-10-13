@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 4540585706113192364}
   - component: {fileID: 5831118917235073113}
   - component: {fileID: 6969698479765844935}
+  - component: {fileID: 2282627577147052012}
   m_Layer: 5
   m_Name: StoryBox
   m_TagString: Untagged
@@ -183,6 +184,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &2282627577147052012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 315646750621910796}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  canvas: {fileID: 0}
+  clickParticles: {fileID: 0}
 --- !u!1 &974852533959407227
 GameObject:
   m_ObjectHideFlags: 0
@@ -419,6 +435,7 @@ GameObject:
   - component: {fileID: 6004671158262387558}
   - component: {fileID: 7249639250846733574}
   - component: {fileID: 8275754388130363852}
+  - component: {fileID: 1676946959079901516}
   m_Layer: 5
   m_Name: ShowBubbleBtn
   m_TagString: Untagged
@@ -550,6 +567,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shouldSwitchState: 1
   window: {fileID: 315646750621910796}
+--- !u!114 &1676946959079901516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3673358600540215872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  canvas: {fileID: 0}
+  clickParticles: {fileID: 0}
 --- !u!1 &3832110733527199360
 GameObject:
   m_ObjectHideFlags: 0
@@ -752,6 +784,7 @@ GameObject:
   - component: {fileID: 4462870139196204390}
   - component: {fileID: 8615833974453743072}
   - component: {fileID: 2613090035146033585}
+  - component: {fileID: 1314449594771147795}
   m_Layer: 5
   m_Name: VoiceBtn
   m_TagString: Untagged
@@ -869,6 +902,21 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &1314449594771147795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5994242411223340537}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  camera: {fileID: 0}
+  canvas: {fileID: 0}
+  clickParticles: {fileID: 0}
 --- !u!1 &8893422947904535414
 GameObject:
   m_ObjectHideFlags: 0
@@ -1096,6 +1144,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoryDrop2
       objectReference: {fileID: 0}
+    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1201,11 +1254,6 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1.0000005
       objectReference: {fileID: 0}
-    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 743111733964988618, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
       propertyPath: sBox
@@ -1250,6 +1298,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StoryDrop1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
@@ -1355,11 +1408,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1.0000005
-      objectReference: {fileID: 0}
-    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 743111733964988618, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
