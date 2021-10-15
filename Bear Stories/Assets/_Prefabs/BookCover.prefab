@@ -92,6 +92,7 @@ GameObject:
   - component: {fileID: 5772198328138779322}
   - component: {fileID: 1917755465826229219}
   - component: {fileID: 3875030487886840191}
+  - component: {fileID: 2603707642546090381}
   m_Layer: 5
   m_Name: BookCover
   m_TagString: Untagged
@@ -197,7 +198,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 3875030487886840191}
-        m_MethodName: Enlarge
+        m_MethodName: ShowCover
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -223,3 +224,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enlargedCover: {fileID: 0}
   bookId: -1
+--- !u!114 &2603707642546090381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3625024983402204967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a765728023ac6044a92d5331bbf1563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 0}
+  targetImages:
+  - {fileID: 0}
+  dropDown: {fileID: 0}

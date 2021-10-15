@@ -28,9 +28,7 @@ public class PageController : MonoBehaviour
     {
         //**NOTE** this logic does not work with 2-page books!  Books must have 3 or more pages
 
-        //check whether we are at the beginning or end of the book, then change the appropriate next/prev button
-        btnFin.gameObject.SetActive( false );
-
+        //check whether we are at the beginning or end of the book, then change the appropriate next/prev button  
         if ( currentPageIndex == 0 )
         {
             btnPrev.gameObject.SetActive( false );
@@ -38,7 +36,7 @@ public class PageController : MonoBehaviour
         else if ( currentPageIndex == PageArray.Length - 1 )
         {
             btnNext.gameObject.SetActive( false );
-            btnFin.gameObject.SetActive( true );
+            
         }
         else
         {

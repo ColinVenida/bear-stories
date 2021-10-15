@@ -31,9 +31,16 @@ public class EnlargedCover : MonoBehaviour
         }
     }
 
-    public void CloseCover()
+    public void MoveCoverIntoView()
     {
-        this.gameObject.SetActive( false );
+        Vector2 vec = new Vector2( 0.0f, 0.0f );
+        this.gameObject.GetComponent<RectTransform>().anchoredPosition = vec;
+    }
+
+    public void HideCoverFromView()
+    {        
+        Vector2 vec = new Vector2( 0.0f, 2500f );
+        this.gameObject.GetComponent<RectTransform>().anchoredPosition = vec;
     }
 
     public void SetBookId( int id )

@@ -7,6 +7,7 @@ public class LanguageMenu : MonoBehaviour
 {
     public Book book;
     public PageController pageController;
+    public UITranslator uiTranslator;
     public PopupWindow popupWindow;
     public ImageSwaper titlePage_imageSwaper;
 
@@ -40,6 +41,7 @@ public class LanguageMenu : MonoBehaviour
     {        
         book.ChangeLanguageText( language );
         pageController.ChangeVoiceLanguage( language );
+        uiTranslator.TranslateUIText( language );
         pageController.FormatPages();
         titlePage_imageSwaper.SwapImageWithIndex( language );
         popupWindow.ToggleWindow();

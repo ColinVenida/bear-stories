@@ -532,6 +532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2015558600}
+  - {fileID: 1071628070}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3854,6 +3855,11 @@ PrefabInstance:
       propertyPath: swapImage
       value: 
       objectReference: {fileID: 629837923}
+    - target: {fileID: 2007434220900786986, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: targetImage
+      value: 
+      objectReference: {fileID: 629837923}
     - target: {fileID: 7620755604912865914, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_IsActive
@@ -4449,6 +4455,16 @@ PrefabInstance:
       propertyPath: m_PlayOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 477472146671218737, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 222100276150713060, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: uiTranslator
+      value: 
+      objectReference: {fileID: 1071628071}
     - target: {fileID: 7974546339383325581, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: camera
@@ -4790,6 +4806,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e7c3c48281b1384994682773f6b3047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &705801293 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5808691160457250808, guid: 9ee88b85f6b820c4e95efb1665b12224,
+    type: 3}
+  m_PrefabInstance: {fileID: 705801280}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e718dd2008404c54f923d765091e443e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &705801294 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7017440908371556967, guid: 9ee88b85f6b820c4e95efb1665b12224,
+    type: 3}
+  m_PrefabInstance: {fileID: 705801280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &705801295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 705801294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e718dd2008404c54f923d765091e443e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - End
+  - Fin
 --- !u!114 &720205699 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8095912161347697066, guid: 9ee88b85f6b820c4e95efb1665b12224,
@@ -6223,6 +6272,57 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1041819766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1071628069
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1071628070}
+  - component: {fileID: 1071628071}
+  m_Layer: 5
+  m_Name: UITranslator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1071628070
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071628069}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 0.00926, y: 0.00926, z: 0.00926}
+  m_Children: []
+  m_Father: {fileID: 275655183}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1071628071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071628069}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 769d4b6bc8bb3f34f8d169bb5884dfa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uiTexts:
+  - {fileID: 705801293}
+  - {fileID: 705801295}
 --- !u!224 &1079944828 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 2019421541122778019, guid: 1e78a2361dda5b543953d8e4fd21799a,

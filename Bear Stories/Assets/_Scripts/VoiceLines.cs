@@ -18,7 +18,7 @@ public class VoiceLines : MonoBehaviour
     public Page page;
     public AudioSource audioSource;
 
-    private int selectedLanguage;
+    private int selectedLanguage = 0;
     private int currentClipIndex = 0;       //the index for the clip that is accessed (the actual voice line)
     private AudioClip[] currentLanguage;    //the audioclip array that is accessed
         

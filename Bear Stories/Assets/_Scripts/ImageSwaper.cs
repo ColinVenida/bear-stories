@@ -7,14 +7,14 @@ using UnityEngine.UI;
 public class ImageSwaper : MonoBehaviour
 {
     public Sprite[] sprites;    
-    public Image swapImage;
+    public Image targetImage;
     public Dropdown dropDown;
     
     public void SwapImageWithIndex( int index )
     {
         try
         {
-            swapImage.sprite = sprites[index];
+              targetImage.sprite = sprites[index];                        
         }
         catch ( IndexOutOfRangeException e )
         {

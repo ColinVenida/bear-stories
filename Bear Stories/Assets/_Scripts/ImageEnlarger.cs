@@ -12,24 +12,20 @@ public class ImageEnlarger : MonoBehaviour
 
     private Image coverImage;    
 
-    UnityEvent enlargeCover = new UnityEvent();
-   
-    public void Enlarge()
+    private void Start()
     {        
-        enlargeCover.Invoke();        
+        coverImage = this.GetComponent<Image>();
     }
 
-    void ShowCover()
-    {               
-        //activate the enlargedCover and set the sprite       
-        enlargedCover.cover.gameObject.SetActive( true );
+    public void ShowCover()
+    {        
+        enlargedCover.MoveCoverIntoView();
         enlargedCover.cover.sprite = coverImage.sprite;
         enlargedCover.SetBookId( bookId );
     }
 
-    private void Start()
-    {        
-        enlargeCover.AddListener( ShowCover );
-        coverImage = this.GetComponent<Image>();
-    }
+    public void UpdateCover()
+    {
+        enlargedCover.cover.sprite = coverImage.sprite;
+    }   
 }
