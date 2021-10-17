@@ -190,4 +190,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundPlayer: {fileID: 0}
   soundClips:
-  - {fileID: 8300000, guid: 7e4d902c3ebcffc47bd7b2d390df6900, type: 3}
+  - {fileID: 8300000, guid: f8fb21349d10b2e478858840235c64c3, type: 3}
