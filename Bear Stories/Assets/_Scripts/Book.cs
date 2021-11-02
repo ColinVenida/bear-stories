@@ -11,9 +11,7 @@ public class Book : MonoBehaviour
     public TextAsset textEsp;
     public TextAsset textDeus;
 
-    public Text[] storyText;     //array that references all the UI Texts in the book Pages
-                                //**NOTE** make sure all the Text elements are in place in the scene!
-
+    public Text[] storyText;     //array that references all the UI Texts in the book Pages   
     public Dropdown[] storyDrops;   //array that refferences all the UI Dropdowns in the book Pages
     
     public ParticleSystem clickParticles;    
@@ -102,8 +100,7 @@ public class Book : MonoBehaviour
     {
         List<string> textList = engText;
         List<List<string>> dropList = engDrops;
-
-        //languageIndex = lang;
+        
         switch ( lang )
         {
             case 0:     //english
@@ -151,7 +148,5 @@ public class Book : MonoBehaviour
                 storyDrops[i].captionText.text = storyDrops[i].options[storyDrops[i].value].text;
             }
         }
-    }    
-
-    
+    }   
 }

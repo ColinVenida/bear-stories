@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
+//**Test class for changing particles in  the scene***
 public class ParticleChanger : MonoBehaviour
 {
     public Dropdown particleDrop;    
@@ -39,11 +41,5 @@ public class ParticleChanger : MonoBehaviour
     private void Start()
     {
         partSystem.Stop(); 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    }   
 }

@@ -4,7 +4,6 @@ using System;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Runtime.CompilerServices;
-//using UnityEditorInternal;
 using System.Net;
 
 //class that handles the VO lines for each line and each language

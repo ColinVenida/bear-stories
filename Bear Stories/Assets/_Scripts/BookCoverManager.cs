@@ -7,6 +7,7 @@ public class BookCoverManager : MonoBehaviour
 
     public GameObject[] bookCovers;
     public EnlargedCover cover;
+
     // Start is called before the first frame update
     void Start()
     {

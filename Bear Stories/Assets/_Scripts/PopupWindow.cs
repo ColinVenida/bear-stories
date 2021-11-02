@@ -6,9 +6,7 @@ public class PopupWindow : MonoBehaviour
 {    
     private bool stopAnim = false;
     public bool shouldSwitchState;
-    public GameObject window;
-    
-    //public Animator anim;
+    public GameObject window;    
     
     public void ToggleWindow ()
     {   

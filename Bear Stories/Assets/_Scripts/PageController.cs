@@ -35,8 +35,7 @@ public class PageController : MonoBehaviour
         }
         else if ( currentPageIndex == PageArray.Length - 1 )
         {
-            btnNext.gameObject.SetActive( false );
-            
+            btnNext.gameObject.SetActive( false );            
         }
         else
         {
@@ -86,18 +85,21 @@ public class PageController : MonoBehaviour
 
     public void NextPage()
     {
-        //check array bounds here
-        if ( currentPageIndex + 1 < PageArray.Length )
+        int nextPageIndex = currentPageIndex + 1;
+
+        if ( nextPageIndex < PageArray.Length )
         {            
-            TurnPage( currentPageIndex + 1 );
+            TurnPage( nextPageIndex );
         }
     }
 
     public void PrevPage()
     {
-        if ( currentPageIndex - 1 >= 0 )
+        int prevPageIndex = currentPageIndex - 1;
+
+        if ( prevPageIndex >= 0 )
         {
-            TurnPage( currentPageIndex - 1 );
+            TurnPage( prevPageIndex );
         }
     }
 
