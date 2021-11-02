@@ -1144,11 +1144,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: StoryDrop2
       objectReference: {fileID: 0}
-    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1254,6 +1249,11 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 1.0000005
       objectReference: {fileID: 0}
+    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 743111733964988618, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
       propertyPath: sBox
@@ -1298,11 +1298,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: StoryDrop1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3541574386745156347, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
@@ -1408,6 +1403,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Pivot.y
       value: 1.0000005
+      objectReference: {fileID: 0}
+    - target: {fileID: 3541574386974023219, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 743111733964988618, guid: e1cd0a8d4fe1cbf4cb180708a90fc132,
         type: 3}
