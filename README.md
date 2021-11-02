@@ -1,2 +1,2 @@
 # bear-stories
-An interactive storybook for children
+A collection of interactive children stories.
