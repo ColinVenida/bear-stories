@@ -9,13 +9,12 @@ public class PageController : MonoBehaviour
     public Button btnNext;
     public Button btnPrev;
     public Button btnFin;
-    public Text pageNumber;
-    //public Dropdown languageDrop;
+    public Text pageNumber;    
     public LanguageMenu languageMenu;
         
     private int currentPageIndex;    
 
-    // Start is called before the first frame update
+    
     void Start()
     {        
         currentPageIndex = 0;   //TODO properly update currentPageIndex with PlayerPref at the start of the program? (not sure if I really need to do this)
@@ -124,7 +123,6 @@ public class PageController : MonoBehaviour
 
         CheckPageBounds();
     }
-
     public int GetCurrentPageIndex()
     {
         return currentPageIndex;

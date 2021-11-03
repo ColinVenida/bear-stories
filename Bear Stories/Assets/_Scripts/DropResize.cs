@@ -19,14 +19,16 @@ public class DropResize : MonoBehaviour
     public void Resize( int option )
     {
         int width = 0;
+        const int MINIMUM_WIDTH = 300;
+        int expandedWidth = ( ( drop.options[option].text.Length ) * 40 );
+
         if (drop.options[option].text.Length < 5 )
         {
-            width = 300;
+            width = MINIMUM_WIDTH;
         }
         else
-        {
-            //width = 100 + ((drop.options[option].text.Length) * 50);  
-            width = ( ( drop.options[option].text.Length ) * 40 );
+        {            
+            width = expandedWidth;
         }
         rt.sizeDelta = new Vector2(width, sBox.dropHeight);
         sBox.RepositionElements();

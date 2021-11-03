@@ -11,7 +11,6 @@ public class ImageEnlarger : MonoBehaviour
     public int bookId;
 
     private Image coverImage;    
-
     private void Start()
     {        
         coverImage = this.GetComponent<Image>();

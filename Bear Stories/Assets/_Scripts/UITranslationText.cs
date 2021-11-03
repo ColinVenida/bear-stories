@@ -7,8 +7,7 @@ public class UITranslationText : MonoBehaviour
 {
     //language order:  English, Espanol, Deutch
     public string[] labels;
-
-    // Start is called before the first frame update
+    
     void Start()
     {
         int pref = 0;
