@@ -672,9 +672,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2346a5a822e5fcc43955b36fae825ac6, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 6a11348a7cb09914289af43dcfc832db, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: 3a4e8d2f9b66b7d459670fc3d62e39eb, type: 3}
+  page: {fileID: 41021598}
+  audioSource: {fileID: 275655184}
 --- !u!1 &304029628
 GameObject:
   m_ObjectHideFlags: 0
@@ -969,9 +970,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 661f9575e702d6644bf37b90d40cc468, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 05a6b07bb709bee40bc9d14e251030a0, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: ea5b3876df517f74e957ef433fca8b0c, type: 3}
+  page: {fileID: 811041348}
+  audioSource: {fileID: 275655184}
 --- !u!1 &392526186 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
@@ -2534,9 +2536,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a2525bcf37070664fb3bb40bb4046b35, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 27f1ff507ea14344a885a0df69accb73, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: 186dce4c264ca604d80be5cb502e121c, type: 3}
+  page: {fileID: 705801288}
+  audioSource: {fileID: 275655184}
 --- !u!1001 &639317024
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3604,7 +3607,7 @@ PrefabInstance:
     - target: {fileID: 2693909428011965508, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2949120121129523278, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -3921,6 +3924,16 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 5808691160457250808, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: labels.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5808691160457250808, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: labels.Array.data[2]
+      value: Deu
+      objectReference: {fileID: 0}
     - target: {fileID: 5932696631167110664, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: textEng
@@ -4150,7 +4163,7 @@ PrefabInstance:
     - target: {fileID: 7031985528018528747, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1077.4817
+      value: 709.98785
       objectReference: {fileID: 0}
     - target: {fileID: 7031985528018528747, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -4300,12 +4313,12 @@ PrefabInstance:
     - target: {fileID: 7453136999494646090, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7453136999494646090, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7453136999494646090, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -4320,12 +4333,12 @@ PrefabInstance:
     - target: {fileID: 7453136999494646090, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1244.8666
+      value: 1199.9796
       objectReference: {fileID: 0}
     - target: {fileID: 7453136999494646090, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -232.79
+      value: -223.33522
       objectReference: {fileID: 0}
     - target: {fileID: 7534374206508439820, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -4485,7 +4498,7 @@ PrefabInstance:
     - target: {fileID: 8124581228710127268, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 342.4939
+      value: 219.99594
       objectReference: {fileID: 0}
     - target: {fileID: 8124581228710127268, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -5113,7 +5126,7 @@ PrefabInstance:
     - target: {fileID: 8370218283586668656, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_IsOn
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8459911953307742585, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -5348,6 +5361,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - End
+  - Fin
   - Fin
 --- !u!114 &720205699 stripped
 MonoBehaviour:
@@ -6238,9 +6252,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c6c6275ec8edba647ad3be2e618507cb, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 7a9288cd45747da41908f31e6e51ea64, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: d7ec02297d53f144eaa56bfe42757383, type: 3}
+  page: {fileID: 467149752}
+  audioSource: {fileID: 275655184}
 --- !u!114 &941220260 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 98154649120582741, guid: 1e78a2361dda5b543953d8e4fd21799a,
@@ -7189,9 +7204,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 2bdfa12e4894ad449bb0eae2eff1ec09, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 7ec582d9da6717a44a3c0af849d3d143, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: be9d1ef2980baf34e9b7df8a307f1f51, type: 3}
+  page: {fileID: 959406658}
+  audioSource: {fileID: 275655184}
 --- !u!1 &1252607684
 GameObject:
   m_ObjectHideFlags: 0
@@ -7338,9 +7354,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 5ec2957ef98e7954fb2fd2c7c29f014a, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 2bf05846f906f9442b0d35a1e00111df, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: 222a958b712061a4587e1a4b93157578, type: 3}
+  page: {fileID: 1994275231}
+  audioSource: {fileID: 275655184}
 --- !u!224 &1512228359 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8144410372068772637, guid: 9ee88b85f6b820c4e95efb1665b12224,
@@ -7521,9 +7538,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 679073bd310a2d84eb2080fb00d4389f, type: 3}
   espVoice:
   - {fileID: 8300000, guid: c179de9280b3930428ffd23bbddfe49c, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: fab0208dcb6bd6846885d2a89f498ed4, type: 3}
+  page: {fileID: 1110815238}
+  audioSource: {fileID: 275655184}
 --- !u!1001 &1573707543
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7843,9 +7861,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: c0e687236744aa24e89f72a49752be4c, type: 3}
   espVoice:
   - {fileID: 8300000, guid: d9afae8c03511e94ebcf12462e55d817, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: 07a8d4c74cadd01499744842e0da3279, type: 3}
+  page: {fileID: 1394068614}
+  audioSource: {fileID: 275655184}
 --- !u!1 &1592571561 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
@@ -8628,9 +8647,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a2525bcf37070664fb3bb40bb4046b35, type: 3}
   espVoice:
   - {fileID: 8300000, guid: 27f1ff507ea14344a885a0df69accb73, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: 186dce4c264ca604d80be5cb502e121c, type: 3}
+  page: {fileID: 1585308276}
+  audioSource: {fileID: 275655184}
 --- !u!1 &1852446550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
@@ -9205,9 +9225,10 @@ MonoBehaviour:
   - {fileID: 8300000, guid: e4878459bbc14414dbf3be2d1f48dad7, type: 3}
   espVoice:
   - {fileID: 8300000, guid: f3c72d9848c04cc49bfa63f52a034f01, type: 3}
-  deutVoice: []
-  page: {fileID: 0}
-  audioSource: {fileID: 0}
+  deutVoice:
+  - {fileID: 8300000, guid: c27f81c48764c6143a2e49c33feaed4c, type: 3}
+  page: {fileID: 1777819696}
+  audioSource: {fileID: 275655184}
 --- !u!1001 &2889642146381355092
 PrefabInstance:
   m_ObjectHideFlags: 0
