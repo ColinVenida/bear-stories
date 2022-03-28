@@ -1,5 +1,7 @@
 ===Title===
 font: Comic Sans
+size: 88px
+style: bold
 color (green tint):
 	R: 94.1
 	G: 100.0

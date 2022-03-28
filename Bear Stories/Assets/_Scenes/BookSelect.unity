@@ -900,7 +900,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &442495949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -916,8 +916,8 @@ RectTransform:
   m_Father: {fileID: 549249040}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 1311.5, y: -300.75}
   m_SizeDelta: {x: 333.4, y: 416.8}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -979,7 +979,55 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 442495952}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1105626829}
+        m_TargetAssemblyTypeName: UITranslator, GameAssembly
+        m_MethodName: TranslateUIText
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 4294778808904140668}
+        m_TargetAssemblyTypeName: PopupWindow, GameAssembly
+        m_MethodName: ToggleWindow
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1221606733}
+        m_TargetAssemblyTypeName: BookCoverManager, GameAssembly
+        m_MethodName: TranslateCovers
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1191540143}
+        m_TargetAssemblyTypeName: ImageEnlarger, GameAssembly
+        m_MethodName: UpdateCover
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &442495952
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1404,7 +1452,7 @@ PrefabInstance:
     - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: sprites.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
@@ -1417,6 +1465,12 @@ PrefabInstance:
       propertyPath: sprites.Array.data[1]
       value: 
       objectReference: {fileID: 21300000, guid: 89d3694a4762af9458f20fa8513a1705,
+        type: 3}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: sprites.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: c19ac0e5adecedf409e2d8931eee8fc4,
         type: 3}
     - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
@@ -2361,7 +2415,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 375.95, y: -300.75}
+  m_AnchoredPosition: {x: 242.30005, y: -300.75}
   m_SizeDelta: {x: 333.4, y: 416.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1176002816
@@ -3321,7 +3375,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 1177.85, y: -300.75}
+  m_AnchoredPosition: {x: 776.9001, y: -300.75}
   m_SizeDelta: {x: 333.4, y: 416.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1789677837
@@ -4071,6 +4125,7 @@ MonoBehaviour:
   labels:
   - Read
   - Leer
+  - Lesen
 --- !u!1 &2104284561
 GameObject:
   m_ObjectHideFlags: 0
@@ -4490,6 +4545,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 871483041}
     m_Modifications:
+    - target: {fileID: 723366401438925772, guid: 1c60beae33678a6428bd910df65bce81,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246872256036722948, guid: 1c60beae33678a6428bd910df65bce81,
+        type: 3}
+      propertyPath: labels.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2246872256036722948, guid: 1c60beae33678a6428bd910df65bce81,
+        type: 3}
+      propertyPath: labels.Array.data[2]
+      value: Deu
+      objectReference: {fileID: 0}
     - target: {fileID: 2619027573611441790, guid: 1c60beae33678a6428bd910df65bce81,
         type: 3}
       propertyPath: window
