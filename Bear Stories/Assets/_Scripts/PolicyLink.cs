@@ -6,6 +6,6 @@ public class PolicyLink : MonoBehaviour
 {
    public void OpenUnityPolicy()
    {
-        Application.OpenURL( "https://unity3d.com/legal/privacy-policy" );
+        Application.OpenURL( "https://unity.com/legal/game-player-and-app-user-privacy-policy" );
    }
 }
