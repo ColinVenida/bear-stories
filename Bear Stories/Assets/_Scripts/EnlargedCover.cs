@@ -9,8 +9,17 @@ public class EnlargedCover : MonoBehaviour
     public Image cover;
     public Button closeBtn;
     public Button readBtn;
+    public Canvas canvas;
     
     private int bookId;
+    private Vector2 displayPoint = new Vector2 ( 0.0f, 0.0f );
+    private Vector2 offScreenPoint;
+
+    public void Start()
+    {       
+        float startY = this.GetComponent<RectTransform>().anchoredPosition.y;        
+        offScreenPoint = new Vector2( 0.0f, startY );
+    }
 
     public void ReadBook()
     {
@@ -32,15 +41,13 @@ public class EnlargedCover : MonoBehaviour
     }
 
     public void MoveCoverIntoView()
-    {
-        Vector2 vec = new Vector2( 0.0f, 0.0f );
-        this.gameObject.GetComponent<RectTransform>().anchoredPosition = vec;
+    {        
+        this.gameObject.GetComponent<RectTransform>().anchoredPosition = displayPoint;
     }
 
     public void HideCoverFromView()
-    {        
-        Vector2 vec = new Vector2( 0.0f, 2500f );
-        this.gameObject.GetComponent<RectTransform>().anchoredPosition = vec;
+    {                
+        this.gameObject.GetComponent<RectTransform>().anchoredPosition = offScreenPoint;
     }
 
     public void SetBookId( int id )
