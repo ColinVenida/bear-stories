@@ -927,6 +927,7 @@ GameObject:
   - component: {fileID: 431337957}
   - component: {fileID: 431337956}
   - component: {fileID: 431337959}
+  - component: {fileID: 431337960}
   m_Layer: 5
   m_Name: ScrollParent
   m_TagString: Untagged
@@ -988,7 +989,19 @@ MonoBehaviour:
   m_VerticalScrollbarSpacing: 0
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 431337960}
+        m_TargetAssemblyTypeName: ScrollerIconManager, GameAssembly
+        m_MethodName: UpdateIcons
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &431337957
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1040,6 +1053,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 1
+--- !u!114 &431337960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 431337954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20de08319cd55f44b8250188850ffd45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scrollRect: {fileID: 431337956}
+  scrollLeftImage: {fileID: 891203579}
+  scrollRightImage: {fileID: 1127161213}
 --- !u!1 &442495948
 GameObject:
   m_ObjectHideFlags: 0
@@ -2189,7 +2217,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -581, y: 0.022522}
+  m_AnchoredPosition: {x: -602, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &891203579
@@ -2242,6 +2270,7 @@ GameObject:
   - component: {fileID: 943366131}
   - component: {fileID: 943366133}
   - component: {fileID: 943366132}
+  - component: {fileID: 943366134}
   m_Layer: 5
   m_Name: PressBackText
   m_TagString: Untagged
@@ -2310,6 +2339,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 943366130}
   m_CullTransparentMesh: 1
+--- !u!114 &943366134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 943366130}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e718dd2008404c54f923d765091e443e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - Press your phone's back button to exit full screen
+  - spanish translation needed
+  - german translation needed
 --- !u!1001 &1034209449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2526,6 +2571,8 @@ MonoBehaviour:
   uiTexts:
   - {fileID: 879718222}
   - {fileID: 2082373104}
+  - {fileID: 1989549158}
+  - {fileID: 943366134}
 --- !u!1 &1122944735
 GameObject:
   m_ObjectHideFlags: 0
@@ -2718,7 +2765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 584.72, y: 0.022522}
+  m_AnchoredPosition: {x: 605, y: 0.022522}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1127161213
@@ -4978,6 +5025,7 @@ GameObject:
   - component: {fileID: 1989549155}
   - component: {fileID: 1989549157}
   - component: {fileID: 1989549156}
+  - component: {fileID: 1989549158}
   m_Layer: 5
   m_Name: ChooseBookText
   m_TagString: Untagged
@@ -5046,6 +5094,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1989549154}
   m_CullTransparentMesh: 1
+--- !u!114 &1989549158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989549154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e718dd2008404c54f923d765091e443e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  labels:
+  - Choose a book
+  - Escoge un libro
+  - "W\xE4hlen Sie ein Buch"
 --- !u!1 &2029756399
 GameObject:
   m_ObjectHideFlags: 0
