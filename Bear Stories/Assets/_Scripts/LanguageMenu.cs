@@ -2,48 +2,56 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using static UnityEditor.PlayerSettings.Switch;
 
 public class LanguageMenu : MonoBehaviour
 {
-    public Book book;
-    public PageController pageController;
-    public UITranslator uiTranslator;
-    public PopupWindow popupWindow;
-    public ImageSwaper titlePage_imageSwaper;
+    public GameSettings gameSettings;    
+    public PopupWindow popupWindow;    
 
     public Button engButton;
     public Button espButton;
     public Button deuButton;
-    
-    private enum Language 
-    {
-        ENGLISH = 0,
-        ESPANOL = 1,
-        DEUTCH = 2
-    }
 
     void Start()
+    {        
+        engButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) VoiceEnum.ENGLISH ) );
+        espButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) VoiceEnum.ESPANOL ) );
+        deuButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) VoiceEnum.DEUTSCH ) );           
+    }
+       
+
+    private VoiceEnum ParseLanguageInt( int languagePref )
     {
-        engButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.ENGLISH ) );
-        espButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.ESPANOL ) );
-        deuButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) Language.DEUTCH ) );        
+        VoiceEnum language;
+
+        switch ( languagePref )
+        {
+            case 0: //English
+                language = VoiceEnum.ENGLISH;
+                break;
+            case 1:
+                language = VoiceEnum.ESPANOL;
+                break;
+            case 2:
+                language = VoiceEnum.DEUTSCH;
+                break;
+            default:
+                Debug.Log( "Default Voice selected.  Setting to English" );
+                language = VoiceEnum.ENGLISH;
+                break;
+        }
+        return language;
     }
 
     public void ChangeLanguageFromPlayerPref( int language )
-    {
-        book.ChangeLanguageText( language );
-        pageController.ChangeVoiceLanguage( language );
-        pageController.FormatPages();
-        titlePage_imageSwaper.SwapImageWithIndex( language );
+    {       
+        gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );        
     }
 
     private void ChangeLanguageWithButton( int language )
     {        
-        book.ChangeLanguageText( language );
-        pageController.ChangeVoiceLanguage( language );
-        uiTranslator.TranslateUIText( language );
-        pageController.FormatPages();
-        titlePage_imageSwaper.SwapImageWithIndex( language );
+        gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );        
         popupWindow.ToggleWindow();
-    }    
+    }  
 }

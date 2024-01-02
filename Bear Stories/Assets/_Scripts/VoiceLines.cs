@@ -59,6 +59,7 @@ public class VoiceLines : MonoBehaviour
         }
     }
 
+    //play a voice line for when the reader chooses a different dropdown option
     public void PlayVoiceLine( int option )
     {
         page.UpdateSelectedVoiceLine( lineIndex, option );
@@ -71,7 +72,8 @@ public class VoiceLines : MonoBehaviour
         
         try
         {            
-            audioSource.PlayOneShot( currentLanguage[option] );            
+            audioSource.PlayOneShot( currentLanguage[option] );
+            
         }
         catch( IndexOutOfRangeException e )
         {
@@ -88,5 +90,66 @@ public class VoiceLines : MonoBehaviour
     public float GetLineDuration()
     {
         return currentLanguage[currentClipIndex].length;
+    }    
+
+    public AudioClip[] GetLanguage( VoiceEnum vEnum )
+    {
+        AudioClip[] languageClips;
+        switch( vEnum )
+        {
+            case VoiceEnum.ENGLISH:
+                languageClips = engVoice;
+                break;
+            case VoiceEnum.ESPANOL:
+                languageClips = espVoice;
+                break;
+            case VoiceEnum.DEUTSCH:
+                languageClips = deutVoice;
+                break;
+            default:
+                Debug.Log( "Voice not set, defaulting to English" );
+                languageClips = engVoice;
+                break;
+        }
+        return languageClips;
+    }
+
+    public AudioClip GetVoiceClip( VoiceEnum vEnum, int index )
+    {
+        AudioClip clip = engVoice[0];
+        if ( isVoiceIndexInBounds( vEnum, index ) )
+        {
+            switch ( vEnum )
+            {
+                case VoiceEnum.ENGLISH:
+                    clip = engVoice[index];
+                    break;
+                case VoiceEnum.ESPANOL:
+                    clip = espVoice[index];
+                    break;
+                case VoiceEnum.DEUTSCH:
+                    clip = deutVoice[index];
+                    break;
+            }
+        }        
+        return clip;
+    }
+
+    private bool isVoiceIndexInBounds( VoiceEnum vEnum, int index )
+    {
+        AudioClip[] clips = engVoice;
+        switch ( vEnum )
+        {
+            case VoiceEnum.ENGLISH:
+                clips = engVoice;
+                break;
+            case VoiceEnum.ESPANOL:
+                clips = espVoice;
+                break;
+            case VoiceEnum.DEUTSCH:
+                clips = deutVoice;
+                break;
+        }
+        return ( index >= clips.Length );
     }    
 }

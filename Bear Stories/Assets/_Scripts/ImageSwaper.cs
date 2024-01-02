@@ -4,12 +4,24 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ImageSwaper : MonoBehaviour
+public class ImageSwaper : MonoBehaviour, IObserver<VoiceEnum>
 {
+    public GameSettings gameSettings;
     public Sprite[] sprites;    
     public Image targetImage;
     public Dropdown dropDown;
     
+    void Start()
+    {
+        gameSettings.Subscribe( this );
+    }
+
+    public virtual void OnNext( VoiceEnum vEnum )
+    {
+        int index = ( int )vEnum;
+        SwapImageWithIndex( index );
+    }
+
     public void SwapImageWithIndex( int index )
     {
         try
@@ -26,5 +38,15 @@ public class ImageSwaper : MonoBehaviour
             Debug.Log( "SwapImageWithIndex(): NullReferenceException." );
             Debug.Log( e.StackTrace );
         }
+    }
+
+    public virtual void OnCompleted()
+    {
+
+    }
+
+    public virtual void OnError( Exception e )
+    {
+
     }
 }

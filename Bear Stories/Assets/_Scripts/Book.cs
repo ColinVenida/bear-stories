@@ -1,11 +1,13 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Book : MonoBehaviour
+public class Book : MonoBehaviour, IObserver<VoiceEnum>
 {
+    public GameSettings gameSettings;
     //the txt files of the story
     public TextAsset textEng;
     public TextAsset textEsp;
@@ -40,6 +42,8 @@ public class Book : MonoBehaviour
         SplitStory( textEng, engText, engDrops );
         SplitStory( textEsp, espText, espDrops );
         SplitStory( textDeus, deusText, deusDrops );
+
+        gameSettings.Subscribe( this );
 
         //set the initial language to english for now
         ChangeLanguageText( 0 );
@@ -126,6 +130,36 @@ public class Book : MonoBehaviour
         PopulateDropOptions( dropList );        
     }
 
+    public virtual void OnNext( VoiceEnum vEnum )
+    {
+        List<string> textList = engText;
+        List<List<string>> dropList = engDrops;
+
+        switch ( vEnum )
+        {
+            case VoiceEnum.ENGLISH:     //english
+                textList = engText;
+                dropList = engDrops;
+                break;
+            case VoiceEnum.ESPANOL:     //Español (spanish)  
+                textList = espText;
+                dropList = espDrops;
+                break;
+            case VoiceEnum.DEUTSCH:     //Deutsch  (german)
+                textList = deusText;
+                dropList = deusDrops;
+                break;
+            default:
+                Debug.Log( "ChangeLanguageText default triggered! Setting to English" );
+                textList = engText;
+                dropList = engDrops;
+                break;
+        }
+
+        PopulateTextElements( textList );
+        PopulateDropOptions( dropList );
+    }
+
     private void PopulateTextElements( List<string> textList )
     {
         //Note: if an out of bounds exception is thrown, check the Txt file to see if it's formatted correctly (eg. missing a "|" )
@@ -148,5 +182,16 @@ public class Book : MonoBehaviour
                 storyDrops[i].captionText.text = storyDrops[i].options[storyDrops[i].value].text;
             }
         }
-    }   
+    }
+    
+    public virtual void OnCompleted()
+    {
+        //no implementation
+    }
+
+    public virtual void OnError(Exception e )
+    {
+        //no implementation right now
+        //may need it at some point
+    }
 }

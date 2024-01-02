@@ -3,8 +3,11 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
-public class PageController : MonoBehaviour
+using Codice.CM.Client.Differences;
+
+public class PageController : MonoBehaviour, IObserver<VoiceEnum>
 {
+    public GameSettings gameSettings;
     public Page[] PageArray;
     public Button btnNext;
     public Button btnPrev;
@@ -16,7 +19,8 @@ public class PageController : MonoBehaviour
 
     
     void Start()
-    {        
+    {
+        gameSettings.Subscribe( this );
         currentPageIndex = 0;   //TODO properly update currentPageIndex with PlayerPref at the start of the program? (not sure if I really need to do this)
         CheckPageBounds();
         FormatPages();
@@ -80,6 +84,27 @@ public class PageController : MonoBehaviour
             PageArray[i].ChangeVoiceLanguage( languageOption );
         }
         PlayerPrefs.SetInt( "Selected Language", languageOption );
+    }
+
+    public virtual void OnNext( VoiceEnum vEnum )
+    {
+        int languageOption = (int) vEnum;
+
+        for ( int i = 0; i < PageArray.Length; i++ )
+        {
+            PageArray[i].ChangeVoiceLanguage( languageOption );
+        }
+        PlayerPrefs.SetInt( "Selected Language", languageOption );
+    }
+
+    public virtual void OnCompleted()
+    {
+        //no implementation
+    }
+
+    public virtual void OnError( Exception e )
+    {
+        //no implementation
     }
 
     public void NextPage()

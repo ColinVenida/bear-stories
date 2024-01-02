@@ -641,6 +641,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 261320976}
   m_CullTransparentMesh: 0
+--- !u!1 &296470109
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 296470110}
+  - component: {fileID: 296470111}
+  m_Layer: 0
+  m_Name: GameSettings
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &296470110
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296470109}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115136752}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &296470111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 296470109}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30969bc2ea1cca846be586c94042031c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &311143275
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1730,11 @@ PrefabInstance:
       objectReference: {fileID: 1191540145}
     - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
+      propertyPath: gameSettings
+      value: 
+      objectReference: {fileID: 296470111}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
       propertyPath: sprites.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -2081,7 +2130,6 @@ RectTransform:
   - {fileID: 431337955}
   - {fileID: 767660051}
   - {fileID: 20284399}
-  - {fileID: 1105626828}
   - {fileID: 1230992321}
   - {fileID: 2121151097}
   - {fileID: 1034209450}
@@ -2353,7 +2401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - Press your phone's back button to exit full screen
-  - spanish translation needed
+  - "Presione el bot\xF3n Atr\xE1s de su tel\xE9fono para salir de la pantalla completa  "
   - german translation needed
 --- !u!1001 &1034209449
 PrefabInstance:
@@ -2544,12 +2592,12 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1105626827}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 100}
+  m_LocalScale: {x: 0.009259259, y: 0.009259259, z: 0.009259259}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 871483041}
+  m_Father: {fileID: 2115136752}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2568,6 +2616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 769d4b6bc8bb3f34f8d169bb5884dfa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameSettings: {fileID: 296470111}
   uiTexts:
   - {fileID: 879718222}
   - {fileID: 2082373104}
@@ -3641,6 +3690,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 58.65
       objectReference: {fileID: 0}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: gameSettings
+      value: 
+      objectReference: {fileID: 296470111}
     - target: {fileID: 3625024983402204967, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: m_Name
@@ -4874,6 +4928,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 58.65
       objectReference: {fileID: 0}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: gameSettings
+      value: 
+      objectReference: {fileID: 296470111}
     - target: {fileID: 3625024983402204967, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: m_Name
@@ -5108,7 +5167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   labels:
   - Choose a book
-  - Escoge un libro
+  - Elija un libro
   - "W\xE4hlen Sie ein Buch"
 --- !u!1 &2029756399
 GameObject:
@@ -5601,6 +5660,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 871483041}
+  - {fileID: 1105626828}
+  - {fileID: 296470110}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2120247164
