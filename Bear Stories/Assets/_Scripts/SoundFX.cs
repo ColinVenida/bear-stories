@@ -7,7 +7,7 @@ public class SoundFX : MonoBehaviour
     public SoundFXPlayer soundPlayer;
     public AudioClip[] soundClips;
 
-    private int currentSoundIndex;
+    private int currentSoundIndex;  //no functions modify this value yet
     private float playbackPosition;
 
     private void Start()
@@ -16,19 +16,14 @@ public class SoundFX : MonoBehaviour
         playbackPosition = 0.0f;
     }
 
-    public void PlaySoundFX()
-    {
-        soundPlayer.PlaySoundEffect( soundClips[currentSoundIndex] );
-    }
-
-    public void PlaySoundFX_SaveTime()
-    {        
-        soundPlayer.PlaySound_SaveTime( this );
-    }
-
     public AudioClip GetCurrentSound()
     {
         return soundClips[currentSoundIndex];
+    }
+
+    public AudioClip GetSoundFX( int index )
+    {
+        return soundClips[index];
     }
 
     public void SetPlaybackPosition( float time )
@@ -43,13 +38,8 @@ public class SoundFX : MonoBehaviour
             playbackPosition = time;
         }
     }
-
-
     public float GetPlaybackPosition()
     {
         return playbackPosition;
-    }
-
-
-    //TODO ADD functionality to change soundClips through dropdown options and other means
+    }        
 }

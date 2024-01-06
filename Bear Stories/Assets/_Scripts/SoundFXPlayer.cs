@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class SoundFXPlayer : MonoBehaviour
 {
-
     public AudioSource audioSource;
-
     private SoundFX currentClip;
 
     public void PlaySoundEffect( AudioClip aClip )
@@ -15,17 +13,29 @@ public class SoundFXPlayer : MonoBehaviour
         audioSource.Play();           
     }
     
-    public void PlaySound_SaveTime( SoundFX soundClip )
+    public void PlaySound_SavePreviousTime( SoundFX soundClip )
     {
+        //keep playing its the same clip.  IE.  the button was pushed twice
+        if ( currentClip == soundClip )
+        {
+            return;
+        }
+
+        //save the last clip's playback spot before playing a new clip
         if( currentClip != null )
         {
-            float time = audioSource.time;
-            currentClip.SetPlaybackPosition( time );
+            SaveClipTime();
         }
 
         audioSource.clip = soundClip.GetCurrentSound();         
         audioSource.time = soundClip.GetPlaybackPosition();
         audioSource.Play();
         currentClip = soundClip;
+    }
+
+    private void SaveClipTime()
+    {
+        float time = audioSource.time;
+        currentClip.SetPlaybackPosition( time );
     }
 }

@@ -9,23 +9,26 @@ public class Page : MonoBehaviour
     public StoryBox storyBox;
     public VoiceLines[] objectsWithVoiceLines;
     public Dropdown[] storyDropdowns;
-    public AudioSource audioSource;
-    public VoiceLinePlayer voiceLinePlayer;
+    public Button[] buttonsWithSoundFX;
+    public AudioSource audioSource;    
     public SoundFXPlayer soundFXPlayer;
     public Toggle voiceToggle;
     public bool isFirstPage;    
             
     private List<int> selectedVLDropOptions;
+    private List<int> selectedSoundFXDropOptions;
     
     public void Awake()
     {        
         selectedVLDropOptions = new List<int>(); //index is which dropdown is being referenced in the scene, the value is which option is selected
+        selectedSoundFXDropOptions = new List<int>();
     }
 
     void Start()
     {        
         PopulateSelectedVLDropdownOptions();
         AddVoiceListenersToDropdowns();
+        AddListenersToSoundFXButtons();
         if ( isFirstPage )
         {            
             Activate();
@@ -69,6 +72,21 @@ public class Page : MonoBehaviour
         selectedVLDropOptions[vLine.lineIndex] = drop.value;
     }
 
+    private void AddListenersToSoundFXButtons()
+    {
+        foreach( Button sndButton in buttonsWithSoundFX )
+        {
+            SoundFX soundFX = ( SoundFX )sndButton.GetComponent<SoundFX>();
+            sndButton.onClick.AddListener( delegate { PlaySoundFX( soundFX ); } );
+        }
+    }
+
+    private void PlaySoundFX( SoundFX soundFX )
+    {
+        Debug.Log( "Playing Sound!" );        
+        soundFXPlayer.PlaySound_SavePreviousTime( soundFX );
+    }
+
     public void Activate()
     {        
         if ( voiceToggle.isOn )
@@ -78,8 +96,7 @@ public class Page : MonoBehaviour
     }
 
     public void Deactivate()
-    {
-        //stop the audio playing. does not work yet; second line still plays after the WaitForSeconds
+    {        
         audioSource.Stop();
         soundFXPlayer.audioSource.Stop();        
     }
