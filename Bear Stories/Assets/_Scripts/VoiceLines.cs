@@ -16,82 +16,7 @@ public class VoiceLines : MonoBehaviour
     public AudioClip[] deutVoice;
     public Page page;
     public AudioSource audioSource;
-
-    private int selectedLanguage = 0;
-    private int currentClipIndex = 0;       //the index for the clip that is accessed (the actual voice line)
-    private AudioClip[] currentLanguage;    //the audioclip array that is accessed
         
-    public void Start()
-    {
-        SetLanguageFromPref();
-        ChangeVoiceAudio( selectedLanguage );
-    }
-
-    private void SetLanguageFromPref()
-    {        
-        if ( PlayerPrefs.HasKey( "Selected Language" ) )
-        {
-            selectedLanguage = PlayerPrefs.GetInt( "Selected Language" );            
-        }
-        else
-        {
-            PlayerPrefs.SetInt( "Selected Language", selectedLanguage );
-        }
-    }
-
-    public void ChangeVoiceAudio( int lang )
-    {        
-        switch ( lang )
-        {
-            case 0: //English
-                currentLanguage = engVoice;
-                break;
-            case 1:
-                currentLanguage = espVoice;
-                break;
-            case 2:
-                currentLanguage = deutVoice;
-                break;
-            default:
-                Debug.Log( "Default Voice selected.  Setting to English" );
-                currentLanguage = engVoice;
-                break;
-        }
-    }
-
-    //play a voice line for when the reader chooses a different dropdown option
-    public void PlayVoiceLine( int option )
-    {
-        page.UpdateSelectedVoiceLine( lineIndex, option );
-        page.UpdateSelectedVLIndex( lineIndex, option );
-
-        if ( !page.voiceToggle.isOn )
-        {
-            return;
-        }
-        
-        try
-        {            
-            audioSource.PlayOneShot( currentLanguage[option] );
-            
-        }
-        catch( IndexOutOfRangeException e )
-        {
-            Debug.Log( e.StackTrace );            
-            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!" );            
-        }        
-    }    
-
-    public AudioClip[] GetCurrentLang()
-    {
-        return currentLanguage;
-    }
-
-    public float GetLineDuration()
-    {
-        return currentLanguage[currentClipIndex].length;
-    }    
-
     public AudioClip[] GetLanguage( VoiceEnum vEnum )
     {
         AudioClip[] languageClips;
@@ -116,7 +41,7 @@ public class VoiceLines : MonoBehaviour
 
     public AudioClip GetVoiceClip( VoiceEnum vEnum, int index )
     {
-        AudioClip clip = engVoice[0];
+        AudioClip clip = engVoice[0];        
         if ( isVoiceIndexInBounds( vEnum, index ) )
         {
             switch ( vEnum )
@@ -129,9 +54,13 @@ public class VoiceLines : MonoBehaviour
                     break;
                 case VoiceEnum.DEUTSCH:
                     clip = deutVoice[index];
-                    break;
+                    break;                
             }
-        }        
+        }
+        else
+        {
+            //there is no voice line for the given index! throw exception here
+        }
         return clip;
     }
 
@@ -150,6 +79,6 @@ public class VoiceLines : MonoBehaviour
                 clips = deutVoice;
                 break;
         }
-        return ( index >= clips.Length );
+        return ( index < clips.Length );
     }    
 }

@@ -16,6 +16,7 @@ public class ImageSwaper : MonoBehaviour, IObserver<VoiceEnum>
         gameSettings.Subscribe( this );
     }
 
+    //function called when the GameSettings.CURRENT_LANGUAGE is changed
     public virtual void OnNext( VoiceEnum vEnum )
     {
         int index = ( int )vEnum;
@@ -24,6 +25,10 @@ public class ImageSwaper : MonoBehaviour, IObserver<VoiceEnum>
 
     public void SwapImageWithIndex( int index )
     {
+        if ( sprites.Length == 0 )
+        {
+            return;
+        }
         try
         {
               targetImage.sprite = sprites[index];                        

@@ -5,9 +5,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using Codice.CM.Client.Differences;
 
-public class PageController : MonoBehaviour, IObserver<VoiceEnum>
+public class PageController : MonoBehaviour
 {
-    public GameSettings gameSettings;
+    
     public Page[] PageArray;
     public Button btnNext;
     public Button btnPrev;
@@ -19,12 +19,11 @@ public class PageController : MonoBehaviour, IObserver<VoiceEnum>
 
     
     void Start()
-    {
-        gameSettings.Subscribe( this );
+    {        
         currentPageIndex = 0;   //TODO properly update currentPageIndex with PlayerPref at the start of the program? (not sure if I really need to do this)
         CheckPageBounds();
         FormatPages();
-        SetLanguageFromPref();
+        SetLanguageFromPref();        
     }
    
     private void CheckPageBounds()
@@ -77,36 +76,6 @@ public class PageController : MonoBehaviour, IObserver<VoiceEnum>
         languageMenu.ChangeLanguageFromPlayerPref( language );
     }
 
-    public void ChangeVoiceLanguage( int languageOption )
-    {        
-        for( int i = 0; i < PageArray.Length; i++ )        
-        {            
-            PageArray[i].ChangeVoiceLanguage( languageOption );
-        }
-        PlayerPrefs.SetInt( "Selected Language", languageOption );
-    }
-
-    public virtual void OnNext( VoiceEnum vEnum )
-    {
-        int languageOption = (int) vEnum;
-
-        for ( int i = 0; i < PageArray.Length; i++ )
-        {
-            PageArray[i].ChangeVoiceLanguage( languageOption );
-        }
-        PlayerPrefs.SetInt( "Selected Language", languageOption );
-    }
-
-    public virtual void OnCompleted()
-    {
-        //no implementation
-    }
-
-    public virtual void OnError( Exception e )
-    {
-        //no implementation
-    }
-
     public void NextPage()
     {
         int nextPageIndex = currentPageIndex + 1;
@@ -141,6 +110,7 @@ public class PageController : MonoBehaviour, IObserver<VoiceEnum>
         nextPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Left, 0, nextPageWidth );  
                 
         PageArray[currentPageIndex].Deactivate();
+        //PageArray[nextPageIndex].Activate( gameSettings.CURRENT_LANGUAGE );
         PageArray[nextPageIndex].Activate();
 
         //update the currentPage reference

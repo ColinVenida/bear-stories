@@ -19,7 +19,16 @@ public class LanguageMenu : MonoBehaviour
         espButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) VoiceEnum.ESPANOL ) );
         deuButton.onClick.AddListener( () => ChangeLanguageWithButton( (int) VoiceEnum.DEUTSCH ) );           
     }
-       
+    private void ChangeLanguageWithButton( int language )
+    {
+        gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );
+        popupWindow.ToggleWindow();
+    }
+
+    public void ChangeLanguageFromPlayerPref( int language )
+    {
+        gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );
+    }  
 
     private VoiceEnum ParseLanguageInt( int languagePref )
     {
@@ -42,16 +51,5 @@ public class LanguageMenu : MonoBehaviour
                 break;
         }
         return language;
-    }
-
-    public void ChangeLanguageFromPlayerPref( int language )
-    {       
-        gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );        
-    }
-
-    private void ChangeLanguageWithButton( int language )
-    {        
-        gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );        
-        popupWindow.ToggleWindow();
-    }  
+    }    
 }

@@ -16,6 +16,7 @@ public class UITranslator : MonoBehaviour, IObserver<VoiceEnum>
         gameSettings.Subscribe( this );
     }
 
+    //function called when the GameSettings.CURRENT_LANGUAGE is changed
     public virtual void OnNext( VoiceEnum vEnum )
     {
         int language = ( int )vEnum;
@@ -34,13 +35,4 @@ public class UITranslator : MonoBehaviour, IObserver<VoiceEnum>
     {
         //no implementation
     }
-
-    public void TranslateUIText( int language )
-    {
-        for( int i = 0; i < uiTexts.Length; i++ )
-        {
-            uiTexts[i].TranslateText( language );
-        }
-    }
-
 }

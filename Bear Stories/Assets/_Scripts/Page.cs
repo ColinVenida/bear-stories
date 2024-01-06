@@ -8,70 +8,72 @@ public class Page : MonoBehaviour
 {
     public StoryBox storyBox;
     public VoiceLines[] objectsWithVoiceLines;
+    public Dropdown[] storyDropdowns;
     public AudioSource audioSource;
     public VoiceLinePlayer voiceLinePlayer;
     public SoundFXPlayer soundFXPlayer;
     public Toggle voiceToggle;
-    public bool isFirstPage;
+    public bool isFirstPage;    
+            
+    private List<int> selectedVLDropOptions;
     
-
-    private VoiceEnum voiceEnum;
-    private List<AudioClip> selectedVoiceLines;
-    private List<int> selectedVLIndexes;
-
-
-    //***TODO*** take all the language selection indexes away from VoiceLines and put them in Page
-        //ie. refactor the code so the Page class controls all the voice lines/languages
-            //reader changes settings through drop downs, Page remembers the settings, and then Get()'s the correct audio clips
-            //from VoiceLines
     public void Awake()
     {        
-        selectedVoiceLines = new List<AudioClip>();
-        selectedVLIndexes = new List<int>();
+        selectedVLDropOptions = new List<int>(); //index is which dropdown is being referenced in the scene, the value is which option is selected
     }
 
     void Start()
-    {
-        PopulateSelectedVLIndexes();
-        PopulateSelectedVoiceLines();
-        if( isFirstPage )
-        {
+    {        
+        PopulateSelectedVLDropdownOptions();
+        AddVoiceListenersToDropdowns();
+        if ( isFirstPage )
+        {            
             Activate();
-        }        
+        }
     }    
 
-    private void PopulateSelectedVLIndexes()
+    private void PopulateSelectedVLDropdownOptions()
     {
-        //set them to index 0 for now.  TODO: save the values as PlayerPrefs (do I need to do this???)
         int firstIndex = 0;
         for ( int i = 0; i < objectsWithVoiceLines.Length; i++ )
         {
-            selectedVLIndexes.Add( firstIndex );
-        }   
+            selectedVLDropOptions.Add( firstIndex );
+        }
+    }    
+
+    private void AddVoiceListenersToDropdowns()
+    {
+        foreach ( Dropdown drop in storyDropdowns )
+        {
+            drop.onValueChanged.AddListener( delegate { PlayVoiceFromDropdown( drop ); } );
+            drop.onValueChanged.AddListener( delegate { UpdateSelectedDropdownOptions( drop ); } );
+        }
     }
 
-    private void PopulateSelectedVoiceLines()
-    {       
-        try
-        {
-            for ( int i = 0; i < objectsWithVoiceLines.Length; i++ )
-            {
-                int index = selectedVLIndexes[i];
-                selectedVoiceLines.Add( objectsWithVoiceLines[i].GetCurrentLang()[index] );
-            }
-        }
-        catch ( NullReferenceException e )
-        {
-            Debug.Log( e.StackTrace );            
-            Debug.Log( "Page Null Reference" );            
-        }        
+    private void PlayVoiceFromDropdown( Dropdown drop )
+    {
+        VoiceLines vLine = (VoiceLines) drop.GetComponent( "VoiceLines" );
+        PlaySingleVoiceLine( vLine.lineIndex, drop.value );
+    }
+
+    private void PlaySingleVoiceLine( int lineIndex, int dropValue )
+    {
+        AudioClip clip = objectsWithVoiceLines[lineIndex].GetVoiceClip( GameSettings.current_language, dropValue );
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
+    private void UpdateSelectedDropdownOptions( Dropdown drop )
+    {
+        VoiceLines vLine = ( VoiceLines )drop.GetComponent( "VoiceLines" );
+        selectedVLDropOptions[vLine.lineIndex] = drop.value;
     }
 
     public void Activate()
     {        
         if ( voiceToggle.isOn )
         {
-            PlaySelectedVoiceLines();
+            PlaySelectedVoiceLines( );
         }
     }
 
@@ -79,81 +81,23 @@ public class Page : MonoBehaviour
     {
         //stop the audio playing. does not work yet; second line still plays after the WaitForSeconds
         audioSource.Stop();
-        soundFXPlayer.audioSource.Stop();
-        StopCoroutine( VoiceCoroutine() );        
+        soundFXPlayer.audioSource.Stop();        
     }
-
+        
     public void PlaySelectedVoiceLines()
-    {
-        StartCoroutine( VoiceCoroutine() );
-        //StartCoroutine( PlayVoiceClips() );
-    }
-
-    IEnumerator VoiceCoroutine()
     {        
-        for( int i = 0; i < selectedVoiceLines.Count; i++ )
-        {
-            audioSource.PlayOneShot( selectedVoiceLines[i] );            
-            yield return new WaitForSeconds( selectedVoiceLines[i].length );
-        }
+        StartCoroutine( PlayAllVoiceClips() );
     }
 
-    //IEnumerator PlayVoiceClips()
-    //{
-    //    Debug.Log( "CurrentLanguage = " + GameSettings.CURRENT_LANGUAGE );
-    //    AudioClip clip;
-    //    for ( int i = 0; i < objectsWithVoiceLines.Length; i++ )
-    //    {
-    //        clip = objectsWithVoiceLines[i].GetVoiceClip( GameSettings.CURRENT_LANGUAGE, selectedVLIndexes[i] );
-    //        audioSource.clip = clip;
-    //        audioSource.Play();
-    //        yield return new WaitForSeconds( clip.length );
-    //    }
-    //}
-
-    public void UpdateSelectedVoiceLine( int line, int dropOption )
-    {
-        try
-        {
-            selectedVoiceLines[line] = objectsWithVoiceLines[line].GetCurrentLang()[dropOption];
+    IEnumerator PlayAllVoiceClips()
+    {        
+        AudioClip clip;
+        for ( int i = 0; i < objectsWithVoiceLines.Length; i++ )
+        {            
+            clip = objectsWithVoiceLines[i].GetVoiceClip( GameSettings.current_language, selectedVLDropOptions[i] );
+            audioSource.clip = clip;
+            audioSource.Play();
+            yield return new WaitForSeconds( clip.length );
         }
-        catch ( IndexOutOfRangeException e )
-        {
-            Debug.Log( e.StackTrace );            
-            Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );            
-        }        
     }
-
-
-    public void UpdateSelectedVLIndex( int index, int value )
-    {
-        selectedVLIndexes[index] = value;
-    }
-
-    public void ChangeVoiceLanguage( int language )
-    {
-        for( int i = 0; i < objectsWithVoiceLines.Length; i++ )
-        {
-            objectsWithVoiceLines[i].ChangeVoiceAudio( language );            
-        }
-        ChangeSelectedLineLanguage();
-    }
-
-    private void ChangeSelectedLineLanguage()
-    {
-        for ( int i = 0; i < selectedVoiceLines.Count; i++ )
-        {
-            try
-            {
-                int voiceIndex = selectedVLIndexes[i];
-                AudioClip clip = objectsWithVoiceLines[i].GetCurrentLang()[voiceIndex];
-                selectedVoiceLines[i] = clip;
-            }
-            catch ( IndexOutOfRangeException e )
-            {
-                Debug.Log( e.StackTrace );
-                Debug.Log( "VOICE LINE NOT SET FOR THIS LANGUAGE AND DROPDOWN OPTION!!!" );
-            }
-        }
-    }   
 }

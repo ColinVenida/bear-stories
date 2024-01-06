@@ -3692,9 +3692,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
+      propertyPath: targetImage
+      value: 
+      objectReference: {fileID: 1416962267}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
       propertyPath: gameSettings
       value: 
       objectReference: {fileID: 296470111}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: sprites.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 417ccc0a84324e440b180d824a4df072,
+        type: 3}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: 'sprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 417ccc0a84324e440b180d824a4df072,
+        type: 3}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: 'sprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 417ccc0a84324e440b180d824a4df072,
+        type: 3}
     - target: {fileID: 3625024983402204967, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: m_Name
@@ -3720,6 +3748,12 @@ PrefabInstance:
       propertyPath: enlargedCover
       value: 
       objectReference: {fileID: 20284402}
+    - target: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a184fb7d23577e438967804082390e5,
+        type: 3}
     - target: {fileID: 8537803270846229713, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3840,6 +3874,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1416962262}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1416962267 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+    type: 3}
+  m_PrefabInstance: {fileID: 1416962262}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 484033641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1452786737
 GameObject:
   m_ObjectHideFlags: 0
@@ -4930,9 +4976,37 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
+      propertyPath: targetImage
+      value: 
+      objectReference: {fileID: 1912317743}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
       propertyPath: gameSettings
       value: 
       objectReference: {fileID: 296470111}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: sprites.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: 'sprites.Array.data[0]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 888056fe85b2e6a49a1b9c7823de4575,
+        type: 3}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: 'sprites.Array.data[1]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 888056fe85b2e6a49a1b9c7823de4575,
+        type: 3}
+    - target: {fileID: 2603707642546090381, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: 'sprites.Array.data[2]'
+      value: 
+      objectReference: {fileID: 21300000, guid: 888056fe85b2e6a49a1b9c7823de4575,
+        type: 3}
     - target: {fileID: 3625024983402204967, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: m_Name
@@ -4953,6 +5027,27 @@ PrefabInstance:
       propertyPath: enlargedCover
       value: 
       objectReference: {fileID: 20284402}
+    - target: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 0a184fb7d23577e438967804082390e5,
+        type: 3}
+    - target: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.6415094
+      objectReference: {fileID: 0}
+    - target: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.6415094
+      objectReference: {fileID: 0}
     - target: {fileID: 8537803270846229713, guid: 7a17e024967104c49a676b94a1a8aa79,
         type: 3}
       propertyPath: m_Pivot.x
@@ -5073,6 +5168,18 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1912317738}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1912317743 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5772198328138779322, guid: 7a17e024967104c49a676b94a1a8aa79,
+    type: 3}
+  m_PrefabInstance: {fileID: 1912317738}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1096511554}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1989549154
 GameObject:
   m_ObjectHideFlags: 0

@@ -5,7 +5,8 @@ using UnityEngine;
 
 public class GameSettings : MonoBehaviour, IObservable<VoiceEnum>
 {
-    private VoiceEnum current_language;
+    //TODO:  NEED TO RESEARCH AND DETERMINE IF CURRENT_LANGUAGE NEEDS TO BE PRIVATE OR NOT
+    public static VoiceEnum current_language;
     private List<IObserver<VoiceEnum>> voiceObserverList;
 
     public GameSettings()
@@ -62,15 +63,13 @@ public class GameSettings : MonoBehaviour, IObservable<VoiceEnum>
         set 
         {
             //Debug.Log( "setting new language to: " + value );
-            current_language = value; 
+            current_language = value;
             foreach ( IObserver<VoiceEnum> voiceObserver in voiceObserverList )
             {
                 voiceObserver.OnNext( current_language );
             }
         }
-    }
-
-    
+    }      
 
     public IDisposable Subscribe( IObserver<VoiceEnum> sub )
     {

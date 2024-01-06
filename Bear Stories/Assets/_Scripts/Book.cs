@@ -46,7 +46,8 @@ public class Book : MonoBehaviour, IObserver<VoiceEnum>
         gameSettings.Subscribe( this );
 
         //set the initial language to english for now
-        ChangeLanguageText( 0 );
+        //ChangeLanguageText( 0 );
+        OnNext( VoiceEnum.ENGLISH );
     }
     private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )
     {        
@@ -97,39 +98,9 @@ public class Book : MonoBehaviour, IObserver<VoiceEnum>
         optionsArray[lastIndex] = lastOption;
 
         return optionsArray;
-    }
+    }   
 
-
-    public void ChangeLanguageText( int lang )
-    {
-        List<string> textList = engText;
-        List<List<string>> dropList = engDrops;
-        
-        switch ( lang )
-        {
-            case 0:     //english
-                textList = engText;
-                dropList = engDrops;
-                break;
-            case 1:     //Español (spanish)  
-                textList = espText;
-                dropList = espDrops;
-                break;
-            case 2:     //Deutsch  (german)
-                textList = deusText;
-                dropList = deusDrops;
-                break;
-            default:
-                Debug.Log( "ChangeLanguageText default triggered! Setting to English" );
-                textList = engText;
-                dropList = engDrops;
-                break;
-        }
-               
-        PopulateTextElements( textList );
-        PopulateDropOptions( dropList );        
-    }
-
+    //function called when the GameSettings.CURRENT_LANGUAGE is changed
     public virtual void OnNext( VoiceEnum vEnum )
     {
         List<string> textList = engText;
