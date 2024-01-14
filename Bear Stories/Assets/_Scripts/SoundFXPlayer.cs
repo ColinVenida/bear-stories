@@ -18,7 +18,8 @@ public class SoundFXPlayer : MonoBehaviour
         //keep playing its the same clip.  IE.  the button was pushed twice
         if ( currentClip == soundClip )
         {
-            return;
+            if ( !ShouldResetPlaybackTime( soundClip ) )
+                return;
         }
 
         //save the last clip's playback spot before playing a new clip
@@ -33,9 +34,20 @@ public class SoundFXPlayer : MonoBehaviour
         currentClip = soundClip;
     }
 
+    private bool ShouldResetPlaybackTime( SoundFX soundClip )
+    {
+        if ( audioSource.time == soundClip.GetPlaybackPosition() )
+        {
+            soundClip.SetPlaybackPosition( 0.0f );
+            return true;
+        }
+        return false;
+    }
     private void SaveClipTime()
     {
         float time = audioSource.time;
         currentClip.SetPlaybackPosition( time );
     }
+
+
 }

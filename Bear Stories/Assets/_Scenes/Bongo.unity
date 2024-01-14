@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 12953236}
   - component: {fileID: 12953238}
   - component: {fileID: 12953239}
-  - component: {fileID: 12953240}
+  - component: {fileID: 12953241}
   m_Layer: 5
   m_Name: Bongo-big
   m_TagString: Untagged
@@ -267,7 +267,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 12953236}
-        m_TargetAssemblyTypeName: 
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
         m_MethodName: Play
         m_Mode: 5
         m_Arguments:
@@ -308,19 +308,20 @@ MonoBehaviour:
   soundPlayer: {fileID: 0}
   soundClips:
   - {fileID: 8300000, guid: 6c8d7b87a4e4ebd47a329cfbe1becf80, type: 3}
---- !u!114 &12953240
+--- !u!114 &12953241
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 12953232}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 49ec88fa6b6a21447938793c015c2366, type: 3}
+  m_Script: {fileID: 11500000, guid: f2be2f6f361dde34980062bb05530f91, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  uiText: {fileID: 796170226}
+  animator: {fileID: 12953236}
+  stateName: Base Layer.Dance-Bongo-big
 --- !u!224 &16596659 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5133634938189413273, guid: 9ee88b85f6b820c4e95efb1665b12224,
@@ -3579,6 +3580,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -31
+      objectReference: {fileID: 0}
+    - target: {fileID: 847624096026010645, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 979257962616666532, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}

@@ -1,4 +1,6 @@
-﻿using Codice.CM.Common;
+﻿#if UNITY_EDITOR
+using Codice.CM.Common;
+#endif
 using Newtonsoft.Json.Serialization;
 using System;
 using System.Collections;

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_EDITOR
 using static UnityEditor.PlayerSettings.Switch;
+#endif
 
 public class LanguageMenu : MonoBehaviour
 {

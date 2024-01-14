@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//using static UnityEditor.PlayerSettings.Switch;
 
 public class GameSettings : MonoBehaviour, IObservable<VoiceEnum>
 {
@@ -68,6 +69,7 @@ public class GameSettings : MonoBehaviour, IObservable<VoiceEnum>
             {
                 voiceObserver.OnNext( current_language );
             }
+            PlayerPrefs.SetInt( "Selected Language", (int) current_language );
         }
     }      
 

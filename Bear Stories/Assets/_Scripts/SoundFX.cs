@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SoundFX : MonoBehaviour
-{
-    public SoundFXPlayer soundPlayer;
+{    
     public AudioClip[] soundClips;
 
     private int currentSoundIndex;  //no functions modify this value yet

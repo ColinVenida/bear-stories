@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System;
 using UnityEngine;
 using UnityEngine.UI;
+#if UNITY_EDITOR
 using Codice.CM.Client.Differences;
+#endif
 
 public class PageController : MonoBehaviour
 {

@@ -1211,30 +1211,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1105626829}
-        m_TargetAssemblyTypeName: UITranslator, GameAssembly
-        m_MethodName: TranslateUIText
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4294778808904140668}
-        m_TargetAssemblyTypeName: PopupWindow, GameAssembly
-        m_MethodName: ToggleWindow
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1221606733}
         m_TargetAssemblyTypeName: BookCoverManager, GameAssembly
         m_MethodName: TranslateCovers
@@ -2367,7 +2343,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 49
+    m_FontSize: 39
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -2402,7 +2378,8 @@ MonoBehaviour:
   labels:
   - Press your phone's back button to exit full screen
   - "Presione el bot\xF3n Atr\xE1s de su tel\xE9fono para salir de la pantalla completa  "
-  - german translation needed
+  - "German Dr\xFCcken Sie die Zur\xFCck-Taste Ihres Telefons, um den Vollbildmodus
+    zu verlassen"
 --- !u!1001 &1034209449
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3090,30 +3067,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1105626829}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: TranslateUIText
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4294778808904140668}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ToggleWindow
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1221606733}
         m_TargetAssemblyTypeName: 
         m_MethodName: TranslateCovers
@@ -3346,6 +3299,7 @@ GameObject:
   - component: {fileID: 1230992323}
   - component: {fileID: 1230992322}
   - component: {fileID: 1230992326}
+  - component: {fileID: 1230992327}
   m_Layer: 5
   m_Name: LanguageMenu
   m_TagString: Untagged
@@ -3497,6 +3451,23 @@ MonoBehaviour:
   camera: {fileID: 2115136751}
   canvas: {fileID: 871483044}
   clickParticles: {fileID: 693220258}
+--- !u!114 &1230992327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1230992320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 841dbccfb342f8547b61943e238b5154, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameSettings: {fileID: 296470111}
+  popupWindow: {fileID: 1230992323}
+  engButton: {fileID: 1176002816}
+  espButton: {fileID: 1789677837}
+  deuButton: {fileID: 442495951}
 --- !u!1 &1234696441
 GameObject:
   m_ObjectHideFlags: 0
@@ -4346,30 +4317,6 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1105626829}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: TranslateUIText
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 4294778808904140668}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: ToggleWindow
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 1221606733}
         m_TargetAssemblyTypeName: 
         m_MethodName: TranslateCovers

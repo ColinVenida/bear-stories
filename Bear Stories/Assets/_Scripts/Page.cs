@@ -83,7 +83,7 @@ public class Page : MonoBehaviour
 
     private void PlaySoundFX( SoundFX soundFX )
     {
-        Debug.Log( "Playing Sound!" );        
+        //Debug.Log( "Playing Sound!" );        
         soundFXPlayer.PlaySound_SavePreviousTime( soundFX );
     }
 

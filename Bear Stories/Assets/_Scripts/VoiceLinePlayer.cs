@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//probably don't need this class
+//class is unused. probably don't need this class
 public class VoiceLinePlayer : MonoBehaviour
 {
     private Queue<AudioClip> audioQueue;
