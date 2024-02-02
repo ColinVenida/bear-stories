@@ -45,8 +45,7 @@ public class Book : MonoBehaviour, IObserver<VoiceEnum>
 
         gameSettings.Subscribe( this );
 
-        //set the initial language to english for now
-        //ChangeLanguageText( 0 );
+        //set the initial language to english for now        
         OnNext( VoiceEnum.ENGLISH );
     }
     private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )

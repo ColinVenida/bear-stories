@@ -36,6 +36,7 @@ public class PageController : MonoBehaviour
         if ( currentPageIndex == 0 )
         {
             btnPrev.gameObject.SetActive( false );
+            btnNext.gameObject.SetActive( true );
         }
         else if ( currentPageIndex == PageArray.Length - 1 )
         {
@@ -98,6 +99,11 @@ public class PageController : MonoBehaviour
         }
     }
 
+    public void ReturnToFirstPage()
+    {
+        TurnPage( 0 );
+    }
+
     private void TurnPage( int nextPageIndex )
     {        
         //move the pages away from camera view
@@ -111,8 +117,7 @@ public class PageController : MonoBehaviour
         currentPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Right, currentPageWidthDoubled, currentPageWidth );
         nextPageTransform.SetInsetAndSizeFromParentEdge( RectTransform.Edge.Left, 0, nextPageWidth );  
                 
-        PageArray[currentPageIndex].Deactivate();
-        //PageArray[nextPageIndex].Activate( gameSettings.CURRENT_LANGUAGE );
+        PageArray[currentPageIndex].Deactivate();        
         PageArray[nextPageIndex].Activate();
 
         //update the currentPage reference
