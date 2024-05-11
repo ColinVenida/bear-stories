@@ -14,8 +14,8 @@ public class StoryBox : MonoBehaviour
 
     public bool haveTextOnSeparateLines;
 
-    private const int SPACE_BETWEEN = 50;
-    private const int LINE_HEIGHT = 110;
+    private const int SPACE_BETWEEN = 30;
+    private const int LINE_HEIGHT = 125;
     private RectTransform storyBoxRT;
 
     public void Start()
@@ -125,7 +125,7 @@ public class StoryBox : MonoBehaviour
     }
     private void AdjustStoryBoxPosition( int linesInBox )    
     {
-        const float BOTTOM_OFFSET = 50.0f;
+        const float BOTTOM_OFFSET = 100.0f;
         float adjustedY = (LINE_HEIGHT * linesInBox) + BOTTOM_OFFSET;  
         storyBoxRT.anchoredPosition = new Vector3( storyBoxRT.anchoredPosition.x, adjustedY );  
     }
