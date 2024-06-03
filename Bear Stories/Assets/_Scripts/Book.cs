@@ -3,17 +3,22 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Collections;
 using UnityEngine;
+using UnityEngine.TextCore.Text;
 using UnityEngine.UI;
+
+
 
 public class Book : MonoBehaviour, IObserver<VoiceEnum>
 {
     public GameSettings gameSettings;
     //the txt files of the story
-    public TextAsset textEng;
-    public TextAsset textEsp;
-    public TextAsset textDeus;
+    public UnityEngine.TextAsset textEng;
+    public UnityEngine.TextAsset textEsp;
+    public UnityEngine.TextAsset textDeus;
 
-    public Text[] storyText;     //array that references all the UI Texts in the book Pages   
+    public Text[] storyText;     //array that references all the UI Texts in the book Pages
+    public TextElement[] storyTextElements;
+    
     public Dropdown[] storyDrops;   //array that refferences all the UI Dropdowns in the book Pages
     
     public ParticleSystem clickParticles;    
@@ -42,15 +47,17 @@ public class Book : MonoBehaviour, IObserver<VoiceEnum>
         SplitStory( textEng, engText, engDrops );
         SplitStory( textEsp, espText, espDrops );
         SplitStory( textDeus, deusText, deusDrops );
+        
 
         gameSettings.Subscribe( this );
 
         //set the initial language to english for now        
         OnNext( VoiceEnum.ENGLISH );
     }
-    private void SplitStory( TextAsset textAss, List<string> langText, List<List<string>> langDrops )
+    private void SplitStory( UnityEngine.TextAsset textAss, List<string> langText, List<List<string>> langDrops )
     {        
         string story = textAss.text;
+       
         string[] splitStory = story.Split( new char[] { '\n' } );
         
         for ( int i = 0; i < splitStory.Length; i++ )
