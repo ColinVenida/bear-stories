@@ -29,10 +29,10 @@ public class Page : MonoBehaviour
         PopulateSelectedVLDropdownOptions();
         AddVoiceListenersToDropdowns();
         AddListenersToSoundFXButtons();
-        if ( isFirstPage )
-        {            
-            Activate();
-        }
+        //if ( isFirstPage )
+        //{            
+        //    Activate();
+        //}
     }    
 
     private void PopulateSelectedVLDropdownOptions()

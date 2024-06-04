@@ -8,9 +8,11 @@ using static UnityEditor.PlayerSettings.Switch;
 
 public class LanguageMenu : MonoBehaviour
 {
-    public GameSettings gameSettings;    
-    public PopupWindow popupWindow;    
+    public GameSettings gameSettings;
+    public Page firstPage;
+    public PopupWindow popupWindow;
 
+    private bool activateFirstPage = true;
     public Button engButton;
     public Button espButton;
     public Button deuButton;
@@ -25,6 +27,12 @@ public class LanguageMenu : MonoBehaviour
     {
         gameSettings.CURRENT_LANGUAGE = ParseLanguageInt( language );
         popupWindow.ToggleWindow();
+
+        if ( activateFirstPage )
+        {
+            firstPage.Activate();
+            activateFirstPage = false;
+        }
     }
 
     public void ChangeLanguageFromPlayerPref( int language )

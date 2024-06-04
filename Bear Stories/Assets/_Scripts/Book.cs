@@ -18,7 +18,7 @@ public class Book : MonoBehaviour, IObserver<VoiceEnum>
 
     public Text[] storyText;     //array that references all the UI Texts in the book Pages
     public TextElement[] storyTextElements;
-    
+      
     public Dropdown[] storyDrops;   //array that refferences all the UI Dropdowns in the book Pages
     
     public ParticleSystem clickParticles;    
