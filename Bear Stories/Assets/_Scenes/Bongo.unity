@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 12953236}
   - component: {fileID: 12953238}
   - component: {fileID: 12953239}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Bongo-big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -383,7 +383,7 @@ GameObject:
   - component: {fileID: 121636746}
   - component: {fileID: 121636745}
   - component: {fileID: 121636747}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: ShadowImage
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -512,7 +512,7 @@ GameObject:
   - component: {fileID: 186909222}
   - component: {fileID: 186909223}
   - component: {fileID: 186909224}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StoryText4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -881,192 +881,24 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 3a4e8d2f9b66b7d459670fc3d62e39eb, type: 3}
   page: {fileID: 41021598}
   audioSource: {fileID: 275655184}
---- !u!1 &304029628
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 304029629}
-  - component: {fileID: 304029631}
-  - component: {fileID: 304029630}
-  - component: {fileID: 304029633}
-  - component: {fileID: 304029632}
-  - component: {fileID: 304029634}
-  - component: {fileID: 304029635}
-  m_Layer: 5
-  m_Name: Soogie
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &304029629
+--- !u!224 &304029629 stripped
 RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3060059881005672831}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.0004554, y: 1.0004554, z: 1.0004554}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1682730237}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 830, y: -130}
-  m_SizeDelta: {x: 500, y: 550}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &304029630
+--- !u!114 &304029632 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 3467754455628062973, guid: 8e4a6543b6127f24da370c8b015451a4,
+    type: 3}
+  m_PrefabInstance: {fileID: 3060059881005672831}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300012, guid: c41d4f2538a493b449a09ed2f12d28f7, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
---- !u!222 &304029631
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
-  m_CullTransparentMesh: 0
---- !u!114 &304029632
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Highlighted
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 304029630}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 304029633}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: Play
-        m_Mode: 5
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: Dance-Soogie
-          m_BoolArgument: 0
-        m_CallState: 2
---- !u!95 &304029633
-Animator:
-  serializedVersion: 7
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 6a2e4fd230ac9124dad4be4d37f4f2b4, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
---- !u!114 &304029634
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f3f92957e1975e343ae03e271f8a5676, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  camera: {fileID: 275655182}
-  canvas: {fileID: 2015558603}
-  clickParticles: {fileID: 2097830740}
---- !u!114 &304029635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 304029628}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1aaaf2cd5c299794d9ec2589261f1ff0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundClips:
-  - {fileID: 8300000, guid: 898aff7225c3500489817a4fee5ef79b, type: 3}
 --- !u!1 &305559017
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,7 +910,7 @@ GameObject:
   - component: {fileID: 305559018}
   - component: {fileID: 305559020}
   - component: {fileID: 305559019}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1219,7 +1051,7 @@ GameObject:
   - component: {fileID: 404438330}
   - component: {fileID: 404438332}
   - component: {fileID: 404438331}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Jungle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1362,7 +1194,7 @@ GameObject:
   - component: {fileID: 463809181}
   - component: {fileID: 463809183}
   - component: {fileID: 463809182}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1449,7 +1281,7 @@ GameObject:
   - component: {fileID: 472086315}
   - component: {fileID: 472086316}
   - component: {fileID: 472086317}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StoryText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1576,7 +1408,7 @@ GameObject:
   - component: {fileID: 499902716}
   - component: {fileID: 499902717}
   - component: {fileID: 499902718}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Choogie-big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2480,6 +2312,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bongo
       objectReference: {fileID: 0}
+    - target: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3125177881186280985, guid: fd1e8782a58651143a82de537d56a435,
         type: 3}
       propertyPath: m_Pivot.x
@@ -2620,7 +2457,7 @@ GameObject:
   - component: {fileID: 577227522}
   - component: {fileID: 577227524}
   - component: {fileID: 577227523}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Jungle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2695,7 +2532,7 @@ GameObject:
   - component: {fileID: 611094285}
   - component: {fileID: 611094287}
   - component: {fileID: 611094286}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2770,7 +2607,7 @@ GameObject:
   - component: {fileID: 627373472}
   - component: {fileID: 627373474}
   - component: {fileID: 627373473}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StoryText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3369,8 +3206,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.5700073, y: -94.75}
-  m_SizeDelta: {x: 1241.66, y: 807.71}
+  m_AnchoredPosition: {x: 6.5700073, y: -6.480011}
+  m_SizeDelta: {x: 1241.66, y: 1307.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &654496585
 MonoBehaviour:
@@ -3428,6 +3265,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bongo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3125177881186280985, guid: fd1e8782a58651143a82de537d56a435,
         type: 3}
@@ -3569,7 +3411,7 @@ GameObject:
   - component: {fileID: 701076280}
   - component: {fileID: 701076281}
   - component: {fileID: 701076282}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StoryText3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3718,7 +3560,7 @@ PrefabInstance:
     - target: {fileID: 294295389164519167, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 2935
+      value: 2871
       objectReference: {fileID: 0}
     - target: {fileID: 294295389164519167, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -4182,6 +4024,11 @@ PrefabInstance:
       propertyPath: 'objectsWithVoiceLines.Array.data[0]'
       value: 
       objectReference: {fileID: 1591707413}
+    - target: {fileID: 2329471492420363084, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2414720400076859012, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_RootOrder
@@ -5338,6 +5185,11 @@ PrefabInstance:
       propertyPath: m_ChildForceExpandHeight
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7854470321180202454, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7904910010583313792, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
       propertyPath: m_Sprite
@@ -5429,6 +5281,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -223
+      objectReference: {fileID: 0}
+    - target: {fileID: 8095912161035737632, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_Text
+      value: adfsgsdfhshsr
       objectReference: {fileID: 0}
     - target: {fileID: 8114749009872061560, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -5941,6 +5798,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Book
+      objectReference: {fileID: 0}
+    - target: {fileID: 8144410372999417331, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8144410373178383874, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
@@ -6657,7 +6519,7 @@ GameObject:
   - component: {fileID: 781663678}
   - component: {fileID: 781663677}
   - component: {fileID: 781663676}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StoryText4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6736,7 +6598,7 @@ GameObject:
   - component: {fileID: 796170225}
   - component: {fileID: 796170227}
   - component: {fileID: 796170226}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: AnimationDebug
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6933,7 +6795,7 @@ GameObject:
   - component: {fileID: 834697860}
   - component: {fileID: 834697861}
   - component: {fileID: 834697862}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Roogie-big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7156,6 +7018,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toogie
       objectReference: {fileID: 0}
+    - target: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2889642146308924072, guid: 190c6876d8f03104fa7d1b961920d924,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -7300,7 +7167,7 @@ GameObject:
   - component: {fileID: 885184065}
   - component: {fileID: 885184066}
   - component: {fileID: 885184067}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Toogie-big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7486,7 +7353,7 @@ GameObject:
   - component: {fileID: 895693295}
   - component: {fileID: 895693296}
   - component: {fileID: 895693297}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Soogie-big
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7720,6 +7587,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toogie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2889642146308924072, guid: 190c6876d8f03104fa7d1b961920d924,
         type: 3}
@@ -8003,6 +7875,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Roogie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6506151040731942748, guid: ee6147794cc7b1d4aacea71eb0fb147f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -8611,6 +8488,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Choogie
       objectReference: {fileID: 0}
+    - target: {fileID: 6818856998524449788, guid: 1913404c4d849a94dbba9628cf42b5fd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8702,7 +8584,7 @@ GameObject:
   - component: {fileID: 1232829250}
   - component: {fileID: 1232829249}
   - component: {fileID: 1232829248}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: StoryText5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8808,7 +8690,7 @@ GameObject:
   - component: {fileID: 1252607685}
   - component: {fileID: 1252607687}
   - component: {fileID: 1252607686}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9058,7 +8940,7 @@ GameObject:
   - component: {fileID: 1558070097}
   - component: {fileID: 1558070098}
   - component: {fileID: 1558070099}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: TapIcon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9400,6 +9282,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Choogie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818856998524449788, guid: 1913404c4d849a94dbba9628cf42b5fd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9827,7 +9714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1591707412}
   - component: {fileID: 1591707413}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: VoiceLineObject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10522,7 +10409,7 @@ GameObject:
   - component: {fileID: 1684356729}
   - component: {fileID: 1684356731}
   - component: {fileID: 1684356730}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Jungle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10729,7 +10616,7 @@ GameObject:
   - component: {fileID: 1833245176}
   - component: {fileID: 1833245178}
   - component: {fileID: 1833245177}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: JungleArch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10882,7 +10769,7 @@ GameObject:
   - component: {fileID: 1864419511}
   - component: {fileID: 1864419513}
   - component: {fileID: 1864419512}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: Jungle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10964,6 +10851,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Toogie
+      objectReference: {fileID: 0}
+    - target: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2889642146308924072, guid: 190c6876d8f03104fa7d1b961920d924,
         type: 3}
@@ -11112,6 +11004,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bongo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3125177881186280985, guid: fd1e8782a58651143a82de537d56a435,
         type: 3}
@@ -11533,6 +11430,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Toogie
       objectReference: {fileID: 0}
+    - target: {fileID: 2889642146308924067, guid: 190c6876d8f03104fa7d1b961920d924,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2889642146308924072, guid: 190c6876d8f03104fa7d1b961920d924,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -11662,6 +11564,139 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1592571562}
   m_SourcePrefab: {fileID: 100100000, guid: 190c6876d8f03104fa7d1b961920d924, type: 3}
+--- !u!1001 &3060059881005672831
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1682730237}
+    m_Modifications:
+    - target: {fileID: 613636441643441208, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 275655182}
+    - target: {fileID: 613636441643441208, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 2015558603}
+    - target: {fileID: 613636441643441208, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: clickParticles
+      value: 
+      objectReference: {fileID: 2097830740}
+    - target: {fileID: 2029858796579061979, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_Name
+      value: Soogie
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 550
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 830
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -130
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3786452862458275502, guid: 8e4a6543b6127f24da370c8b015451a4,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 8e4a6543b6127f24da370c8b015451a4, type: 3}
 --- !u!1001 &3125177881897808192
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11674,6 +11709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bongo
+      objectReference: {fileID: 0}
+    - target: {fileID: 3125177881186280984, guid: fd1e8782a58651143a82de537d56a435,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3125177881186280985, guid: fd1e8782a58651143a82de537d56a435,
         type: 3}
@@ -11952,6 +11992,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Roogie
       objectReference: {fileID: 0}
+    - target: {fileID: 6506151040731942748, guid: ee6147794cc7b1d4aacea71eb0fb147f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -12104,6 +12149,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Choogie
+      objectReference: {fileID: 0}
+    - target: {fileID: 6818856998524449788, guid: 1913404c4d849a94dbba9628cf42b5fd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
