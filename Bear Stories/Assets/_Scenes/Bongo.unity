@@ -4605,6 +4605,11 @@ PrefabInstance:
       objectReference: {fileID: 2066198784}
     - target: {fileID: 5686005279842870222, guid: 9ee88b85f6b820c4e95efb1665b12224,
         type: 3}
+      propertyPath: m_Text
+      value: Deutsch
+      objectReference: {fileID: 0}
+    - target: {fileID: 5686005279842870222, guid: 9ee88b85f6b820c4e95efb1665b12224,
+        type: 3}
       propertyPath: m_FontData.m_MaxSize
       value: 78
       objectReference: {fileID: 0}
